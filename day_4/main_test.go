@@ -32,6 +32,12 @@ func TestFraction_Add(t *testing.T) {
 			want:           Fraction{3, 4},
 		},
 		{
+			name:           "2/6 + 1/2 = 5/6",
+			firstFraction:  Fraction{2, 6},
+			secondFraction: Fraction{1, 2},
+			want:           Fraction{5, 6},
+		},
+		{
 			name:           "1/2 + 2/12 = 2/3",
 			firstFraction:  Fraction{1, 2},
 			secondFraction: Fraction{2, 12},
@@ -86,4 +92,115 @@ func TestFraction_Reduce(t *testing.T) {
 	res := reduce(fraction.Numerator, fraction.Denominator)
 	want := Fraction{1, 2}
 	assert.Equal(t, want, res)
+}
+
+func TestFraction_Subtract(t *testing.T) {
+	tests := []struct {
+		name           string
+		firstFraction  Fraction
+		secondFraction Fraction
+		want           Fraction
+	}{
+		{
+			name:           "2/3 - 1/3 = 1/3",
+			firstFraction:  Fraction{2, 3},
+			secondFraction: Fraction{1, 3},
+			want:           Fraction{1, 3},
+		},
+		{
+			name:           "10/15 - 7/15 = 1/5",
+			firstFraction:  Fraction{10, 15},
+			secondFraction: Fraction{7, 15},
+			want:           Fraction{1, 5},
+		},
+		{
+			name:           "1/2 - 2/6 = 1/6",
+			firstFraction:  Fraction{1, 2},
+			secondFraction: Fraction{2, 6},
+			want:           Fraction{1, 6},
+		},
+		{
+			name:           "9/10 - 1/5 = 7/10",
+			firstFraction:  Fraction{9, 10},
+			secondFraction: Fraction{1, 5},
+			want:           Fraction{7, 10},
+		},
+		{
+			name:           "1/3 - 2/10 = 2/15",
+			firstFraction:  Fraction{1, 3},
+			secondFraction: Fraction{2, 10},
+			want:           Fraction{2, 15},
+		},
+		{
+			name:           "7/10 - 1/7 = 39/70",
+			firstFraction:  Fraction{7, 10},
+			secondFraction: Fraction{1, 7},
+			want:           Fraction{39, 70},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := tt.firstFraction.Subtract(tt.secondFraction)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
+
+func TestFraction_Multiply(t *testing.T) {
+	tests := []struct {
+		name           string
+		firstFraction  Fraction
+		secondFraction Fraction
+		want           Fraction
+	}{
+		{
+			name:           "2/3 * 1/3 = 2/9",
+			firstFraction:  Fraction{2, 3},
+			secondFraction: Fraction{1, 3},
+			want:           Fraction{2, 9},
+		},
+		{
+			name:           "1/2 * 2/6 = 1/6",
+			firstFraction:  Fraction{1, 2},
+			secondFraction: Fraction{2, 6},
+			want:           Fraction{1, 6},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := tt.firstFraction.Multiply(tt.secondFraction)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
+
+func TestFraction_Divide(t *testing.T) {
+	tests := []struct {
+		name           string
+		firstFraction  Fraction
+		secondFraction Fraction
+		want           Fraction
+	}{
+		{
+			name:           "2/3 / 1/3 = 2/1",
+			firstFraction:  Fraction{2, 3},
+			secondFraction: Fraction{1, 3},
+			want:           Fraction{2, 1},
+		},
+		{
+			name:           "1/2 / 2/7 = 7/4",
+			firstFraction:  Fraction{1, 2},
+			secondFraction: Fraction{2, 7},
+			want:           Fraction{7, 4},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := tt.firstFraction.Divide(tt.secondFraction)
+			assert.Equal(t, tt.want, result)
+		})
+	}
 }
