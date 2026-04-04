@@ -17,13 +17,13 @@ func TestFraction_Add(t *testing.T) {
 			name:           "1/3 + 2/3 = 3/3",
 			firstFraction:  Fraction{1, 3},
 			secondFraction: Fraction{2, 3},
-			want:           Fraction{3, 3},
+			want:           Fraction{1, 1},
 		},
 		{
-			name:           "1/5 + 3/5 = 4/5",
-			firstFraction:  Fraction{1, 5},
-			secondFraction: Fraction{3, 5},
-			want:           Fraction{4, 5},
+			name:           "1/4 + 1/4 = 1/2",
+			firstFraction:  Fraction{1, 4},
+			secondFraction: Fraction{1, 4},
+			want:           Fraction{1, 2},
 		},
 		{
 			name:           "1/2 + 1/4 = 3/4",
@@ -32,10 +32,10 @@ func TestFraction_Add(t *testing.T) {
 			want:           Fraction{3, 4},
 		},
 		{
-			name:           "1/2 + 1/12 = 7/12",
+			name:           "1/2 + 2/12 = 2/3",
 			firstFraction:  Fraction{1, 2},
-			secondFraction: Fraction{1, 12},
-			want:           Fraction{7, 12},
+			secondFraction: Fraction{2, 12},
+			want:           Fraction{2, 3},
 		},
 		{
 			name:           "1/2 + 1/3 = 5/6",
@@ -74,9 +74,16 @@ func TestFindGreatestCommonDivisor(t *testing.T) {
 		assert.Equal(t, 1, res)
 	})
 	t.Run("stack overflow", func(t *testing.T) {
-		a := 1836311903
-		b := 1134903170
+		a := 1134903170
+		b := 1836311903
 		res := findGreatestCommonDivisor(a, b)
 		assert.Equal(t, 1, res)
 	})
+}
+
+func TestFraction_Reduce(t *testing.T) {
+	fraction := Fraction{24, 48}
+	res := reduce(fraction.Numerator, fraction.Denominator)
+	want := Fraction{1, 2}
+	assert.Equal(t, want, res)
 }
