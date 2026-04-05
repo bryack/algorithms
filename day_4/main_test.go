@@ -204,3 +204,81 @@ func TestFraction_Divide(t *testing.T) {
 		})
 	}
 }
+
+func TestFraction_gcdOfStrings(t *testing.T) {
+	tests := []struct {
+		name         string
+		firstString  string
+		secondString string
+		want         string
+	}{
+		{
+			name:         "1 example",
+			firstString:  "ABCAB",
+			secondString: "ABC",
+			want:         "",
+		},
+		{
+			name:         "2 example",
+			firstString:  "ABCABC",
+			secondString: "ABC",
+			want:         "ABC",
+		},
+		{
+			name:         "3 example",
+			firstString:  "ABCABCABC",
+			secondString: "ABC",
+			want:         "ABC",
+		},
+		{
+			name:         "4 example",
+			firstString:  "ABCACABC",
+			secondString: "ABC",
+			want:         "",
+		},
+		{
+			name:         "4 example",
+			firstString:  "ABABAB",
+			secondString: "ABAB",
+			want:         "AB",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := gcdOfStrings(tt.firstString, tt.secondString)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
+
+// func TestFraction_gcd(t *testing.T) {
+// 	tests := []struct {
+// 		name  string
+// 		input string
+// 		want  string
+// 	}{
+// 		{
+// 			name:  "simple",
+// 			input: "ABAB",
+// 			want:  "AB",
+// 		},
+// 		{
+// 			name:  "simple",
+// 			input: "ABABAB",
+// 			want:  "AB",
+// 		},
+// 		{
+// 			name:  "simple",
+// 			input: "ABC",
+// 			want:  "ABC",
+// 		},
+// 	}
+
+// 	for _, tt := range tests {
+// 		t.Run(tt.name, func(t *testing.T) {
+// 			result := gcd(tt.input)
+// 			assert.Equal(t, tt.want, result)
+// 		})
+// 	}
+// }

@@ -70,3 +70,11 @@ func reduce(a, b int) Fraction {
 	multiple := findGreatestCommonDivisor(a, b)
 	return Fraction{a / multiple, b / multiple}
 }
+
+func gcdOfStrings(s, t string) string {
+	if s+t == t+s {
+		gcd := findGreatestCommonDivisor(len(s), len(t))
+		return s[:gcd]
+	}
+	return ""
+}
