@@ -2,6 +2,7 @@ package main
 
 import (
 	"slices"
+	"strconv"
 )
 
 func findGCD(nums []int) int {
@@ -52,5 +53,28 @@ func GCD(a, b int) int {
 		}
 		x = y
 		y = d
+	}
+}
+
+func simplifiedFractions(n int) []string {
+	s := make([]string, 0, n*n)
+	for j := 2; j <= n; j++ {
+		for i := 1; i < j; i++ {
+			if simplifiedFractionsGCD(j, i) == 1 {
+				s = append(s, strconv.Itoa(i)+"/"+strconv.Itoa(j))
+			}
+		}
+	}
+	return s
+}
+
+func simplifiedFractionsGCD(a, b int) int {
+	for {
+		d := a % b
+		if d == 0 {
+			return b
+		}
+		a = b
+		b = d
 	}
 }

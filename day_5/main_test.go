@@ -77,3 +77,73 @@ func TestHasGroupsSizeX(t *testing.T) {
 		})
 	}
 }
+
+func TestSimplifiedFractions(t *testing.T) {
+	tests := []struct {
+		name  string
+		input int
+		want  []string
+	}{
+		{
+			name:  "n=1",
+			input: 1,
+			want:  []string{},
+		},
+		{
+			name:  "n=2",
+			input: 2,
+			want:  []string{"1/2"},
+		},
+		{
+			name:  "n=3",
+			input: 3,
+			want:  []string{"1/2", "1/3", "2/3"},
+		},
+		{
+			name:  "n=4",
+			input: 4,
+			want:  []string{"1/2", "1/3", "1/4", "2/3", "3/4"},
+		},
+		{
+			name:  "n=6",
+			input: 6,
+			want:  []string{"1/2", "1/3", "1/4", "1/5", "1/6", "2/3", "2/5", "3/4", "3/5", "4/5", "5/6"},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := simplifiedFractions(tt.input)
+			assert.ElementsMatch(t, tt.want, result)
+		})
+	}
+}
+
+func TestSimplifiedFractionsGCD(t *testing.T) {
+	tests := []struct {
+		name string
+		a    int
+		b    int
+		want int
+	}{
+		{
+			name: "n=1",
+			a:    1,
+			b:    2,
+			want: 1,
+		},
+		{
+			name: "n=2",
+			a:    6,
+			b:    4,
+			want: 2,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := simplifiedFractionsGCD(tt.b, tt.a)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
