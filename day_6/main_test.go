@@ -192,3 +192,29 @@ func TestConvertToTitle(t *testing.T) {
 		})
 	}
 }
+
+func TestTitleToNumber(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  int
+	}{
+		{name: "A", input: "A", want: 1},
+		{name: "B", input: "B", want: 2},
+		{name: "Z", input: "Z", want: 26},
+		{name: "AA", input: "AA", want: 27},
+		{name: "AB", input: "AB", want: 28},
+		{name: "BB", input: "BB", want: 54},
+		{name: "ZY", input: "ZY", want: 701},
+		{name: "AZ", input: "AZ", want: 52},
+		{name: "DD", input: "DD", want: 108},
+		{name: "AAA", input: "AAA", want: 703},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := titleToNumber(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

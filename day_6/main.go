@@ -56,3 +56,12 @@ func convertToTitle(columnNumber int) string {
 
 	return string(char)
 }
+
+func titleToNumber(columnTitle string) int {
+	count := 0
+	for _, r := range columnTitle {
+		count = count*26 + int(r-'A'+1)
+	}
+
+	return count
+}
