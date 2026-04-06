@@ -29,3 +29,30 @@ func USDRUB(d, c int, rate float64) (int, int) {
 	kop := int(math.Round((usd - float64(rub)) * 100))
 	return rub, kop
 }
+
+func convertToTitle(columnNumber int) string {
+	if columnNumber > 26 {
+		s := []rune{}
+		for {
+			remainder := columnNumber % 26
+			quotient := columnNumber / 26
+			if remainder == 0 {
+				remainder = 26
+				quotient--
+			}
+			s = append(s, rune(int('A')+(remainder-1)))
+			if quotient == 0 {
+				break
+			}
+			columnNumber = quotient
+		}
+		for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+			s[i], s[j] = s[j], s[i]
+		}
+		return string(s)
+	}
+
+	char := rune(int('A') + (columnNumber - 1))
+
+	return string(char)
+}

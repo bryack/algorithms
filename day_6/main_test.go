@@ -167,3 +167,28 @@ func TestUSDRUB(t *testing.T) {
 		})
 	}
 }
+
+func TestConvertToTitle(t *testing.T) {
+	tests := []struct {
+		name  string
+		input int
+		want  string
+	}{
+		{name: "A", input: 1, want: "A"},
+		{name: "Z", input: 26, want: "Z"},
+		{name: "AA", input: 27, want: "AA"},
+		{name: "AB", input: 28, want: "AB"},
+		{name: "BB", input: 54, want: "BB"},
+		{name: "ZY", input: 701, want: "ZY"},
+		{name: "AZ", input: 52, want: "AZ"},
+		{name: "DD", input: 108, want: "DD"},
+		{name: "AAA", input: 703, want: "AAA"},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := convertToTitle(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
