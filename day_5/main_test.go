@@ -138,6 +138,12 @@ func TestSimplifiedFractionsGCD(t *testing.T) {
 			b:    4,
 			want: 2,
 		},
+		{
+			name: "n=2",
+			a:    324,
+			b:    144,
+			want: 36,
+		},
 	}
 
 	for _, tt := range tests {
