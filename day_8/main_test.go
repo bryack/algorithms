@@ -27,3 +27,22 @@ func TestConvertToBase7(t *testing.T) {
 		})
 	}
 }
+
+func TestToHex(t *testing.T) {
+	tests := []struct {
+		name  string
+		input int
+		want  string
+	}{
+		{name: "10 - A", input: 10, want: "a"},
+		{name: "26 - 1a", input: 26, want: "1a"},
+		{name: "-1 - ffffffff", input: -1, want: "ffffffff"},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := toHex(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
