@@ -1,4 +1,13 @@
-# Настройка обучения алгоритмам
+# ⚠️ УСТАРЕЛО — см. новую структуру skills
+
+Информация перенесена в:
+- **INDEX**: `.serena/skills/INDEX.md`
+- **Методология**: `.serena/skills/algorithms-mentor/SKILL.md`
+- **Фазы**: `.serena/skills/algorithms-mentor/references/phases.md`
+
+---
+
+# Настройка обучения алгоритмам (legacy)
 
 **Ученик**: Анна (Go backend-разработчик)
 **Срок**: 6 месяцев (жёсткий дедлайн)

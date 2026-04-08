@@ -1,4 +1,12 @@
-# Pattern Recognition: Алгоритм Евклида (GCD)
+# ⚠️ УСТАРЕЛО — см. новую структуру skills
+
+Информация перенесена в:
+- **Паттерны**: `.serena/skills/algorithms-mentor/references/patterns.md`
+- **INDEX**: `.serena/skills/INDEX.md`
+
+---
+
+# Pattern Recognition: Алгоритм Евклида (GCD) (legacy)
 
 ## Когда использовать GCD
 

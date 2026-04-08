@@ -1,4 +1,12 @@
-# Workflow: Восстановление контекста после /compress
+# ⚠️ УСТАРЕЛО — см. новую структуру skills
+
+Информация перенесена в:
+- **Compress**: `.serena/skills/workflow/compress.md`
+- **INDEX**: `.serena/skills/INDEX.md`
+
+---
+
+# Workflow: Восстановление контекста после /compress (legacy)
 
 ## Процесс
 1. **Перед `/compress`**: Пользователь просит создать сводку в `.session_summary`

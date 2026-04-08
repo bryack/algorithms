@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 )
@@ -67,4 +68,8 @@ func toHex(num int) string {
 	}
 
 	return string(s)
+}
+
+func main() {
+	fmt.Println(toHex(29))
 }
