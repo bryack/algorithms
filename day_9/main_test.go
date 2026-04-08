@@ -94,3 +94,36 @@ func TestLemonadeChange(t *testing.T) {
 		})
 	}
 }
+
+func TestFindContentChildren(t *testing.T) {
+	tests := []struct {
+		name  string
+		greed []int
+		size  []int
+		want  int
+	}{
+		{name: "example 1", greed: []int{1, 2, 3}, size: []int{1, 1}, want: 1},
+		{name: "example 2", greed: []int{1, 2}, size: []int{1, 2, 3}, want: 2},
+		{name: "cookie larger than greed", greed: []int{1, 2}, size: []int{2, 2}, want: 2},
+		// Твой код: 0 (нет точных совпадений), но правильный ответ: 2 (оба ребёнка могут получить печеньку 2)
+		{name: "need greedy choice", greed: []int{1, 2, 3}, size: []int{1, 2}, want: 2},
+		// Твой код: 2 (ok), но если бы проверял в другом порядке — мог бы сломаться
+		{name: "unsorted arrays", greed: []int{3, 1, 2}, size: []int{1, 2}, want: 2},
+		// Твой код: зависит от порядка, может дать неправильный ответ
+		{name: "no cookies", greed: []int{1, 2, 3}, size: []int{}, want: 0},
+		// Твой код: 0 (ok)
+		{name: "all cookies too small", greed: []int{5, 6, 7}, size: []int{1, 2, 3}, want: 0},
+		// Твой код: 0 (ok)
+		{name: "one big cookie for all", greed: []int{1, 2, 3}, size: []int{10}, want: 1},
+		// Твой код: 0 (нет точного совпадения 10), правильный: 1
+		{name: "optimal assignment", greed: []int{1, 2, 3}, size: []int{1, 2, 3}, want: 3},
+		// Твой код: 3 (ok, точные совпадения)
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := findContentChildren(tt.greed, tt.size)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

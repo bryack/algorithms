@@ -1,6 +1,7 @@
 package main
 
 import (
+	"slices"
 	"strings"
 )
 
@@ -79,4 +80,22 @@ func lemonadeChange(bills []int) bool {
 		}
 	}
 	return true
+}
+
+func findContentChildren(g []int, s []int) int {
+	if len(s) == 0 {
+		return 0
+	}
+	slices.Sort(g)
+	slices.Sort(s)
+
+	child, cookie := 0, 0
+
+	for child < len(g) && cookie < len(s) {
+		if s[cookie] >= g[child] {
+			child++
+		}
+		cookie++
+	}
+	return child
 }
