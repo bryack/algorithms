@@ -1,6 +1,8 @@
 package main
 
-import "strings"
+import (
+	"strings"
+)
 
 type RomanNumeral struct {
 	Value  int
@@ -36,4 +38,45 @@ func intToRoman(num int) string {
 	}
 
 	return builder.String()
+}
+
+func maxProfit(prices []int) int {
+	if len(prices) < 2 {
+		return 0
+	}
+
+	s := 0
+	for i := 0; i < len(prices)-1; i++ {
+		if prices[i] < prices[i+1] {
+			s += prices[i+1] - prices[i]
+		}
+	}
+
+	return s
+}
+
+func lemonadeChange(bills []int) bool {
+	ten, five := 0, 0
+	for _, v := range bills {
+		switch v {
+		case 5:
+			five++
+		case 10:
+			if five < 1 {
+				return false
+			}
+			ten++
+			five--
+		case 20:
+			if ten >= 1 && five >= 1 {
+				ten--
+				five--
+			} else if five >= 3 {
+				five -= 3
+			} else {
+				return false
+			}
+		}
+	}
+	return true
 }

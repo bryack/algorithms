@@ -36,7 +36,7 @@
 ### Решённые задачи (неделя)
 - [x] LeetCode 504: Base 7
 - [x] LeetCode 405: Hexadecimal  
-- [ ] LeetCode 12: Integer to Roman (запланировано на 2026-03-24)
+- [x] LeetCode 12: Integer to Roman (2.5ч, greedy algorithm)
 
 ## Критические правила (всегда помнить!)
 
@@ -82,4 +82,4 @@
 
 ## Последнее обновление
 
-2026-03-23 — создана новая структура skills
+2026-04-08 — завершена LeetCode 12: Integer to Roman
