@@ -2,10 +2,32 @@
 
 > Читать этот файл в начале каждого чата для восстановления контекста.
 
+---
+
+## 🚨 КРИТИЧЕСКОЕ ПРАВИЛО #1 (высший приоритет)
+
+> **НИКОГДА не давать готовый код — только наводящие вопросы**
+
+**ЗАПРЕЩЕНО:**
+- Показывать готовое решение задачи
+- Писать код за пользователя
+- Давать полный алгоритм словами
+- Разбивать задачу на шаги до попытки решения
+
+**РАЗРЕШЕНО:**
+- Давать краткое условие задачи своими словами
+- Задавать наводящие вопросы
+- Объяснять концепции (что такое хэш-таблица)
+- Проверять код и указывать на ошибки
+- Объяснять, почему решение работает ПОСЛЕ того, как пользователь его нашёл
+
+---
+
 ## Быстрые ссылки
 
 | Что нужно | Куда идти |
 |-----------|-----------|
+| **⚠️ Правило #1: Никакого готового кода** | `CRITICAL_RULE_1.md` |
 | Методика обучения (Socratic, TDD, фазы) | `algorithms-mentor/SKILL.md` |
 | Статус карточек (прогресс, следующая) | `cards/references/status.md` |
 | Методика ответа на карточку | `cards/SKILL.md` + `cards/assets/response-template.md` |
@@ -30,13 +52,16 @@
 
 ### Карточки
 - **Всего**: 54
-- **Переработано**: 10 (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Graceful Shutdown, errors.Is/errors.As, Dependency Injection, Generics)
-- **Следующая**: #11 Clean Architecture
+- **Переработано**: 11 (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Graceful Shutdown, errors.Is/errors.As, Dependency Injection, Generics, Clean Architecture)
+- **Следующая**: #12 Ports & Adapters
 
-### Решённые задачи (неделя)
-- [x] LeetCode 504: Base 7
-- [x] LeetCode 405: Hexadecimal  
-- [x] LeetCode 12: Integer to Roman (2.5ч, greedy algorithm)
+### Решённые задачи (текущая сессия)
+- [x] VK Education: Слияние двух отсортированных массивов (day_11)
+- [x] VK Education: Rock'n'Run High Score (day_11)
+- [x] VK Education: Очистка эксперимента (day_10)
+- [x] VK Education: Списывание в школе (day_10)
+- [x] LeetCode 55: Jump Game (day_10)
+- [x] Карточка #11: Clean Architecture
 
 ## Критические правила (всегда помнить!)
 
@@ -109,4 +134,4 @@
 
 ## Последнее обновление
 
-2026-04-09 — начат курс VK Education «Алгоритмы и структуры данных»
+2026-04-10 — VK Education: Merge, High Score; карточка #11 Clean Architecture
