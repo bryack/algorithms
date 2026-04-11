@@ -1,0 +1,36 @@
+package main
+
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	i, j := m-1, n-1
+	count := m + n - 1
+
+	for i >= 0 && j >= 0 {
+		if nums1[i] < nums2[j] {
+			nums1[count] = nums2[j]
+			j--
+		} else {
+			nums1[count] = nums1[i]
+			i--
+		}
+		count--
+	}
+	copy(nums1, nums2[:j+1])
+}
+
+func maxProduct(nums []int) int {
+	if len(nums) < 3 {
+		return (nums[0] - 1) * (nums[1] - 1)
+	}
+	max1 := max(nums[0], nums[1])
+	max2 := min(nums[0], nums[1])
+
+	for i := 2; i < len(nums); i++ {
+		if nums[i] > max1 {
+			max2 = max1
+			max1 = nums[i]
+		} else if nums[i] > max2 {
+			max2 = nums[i]
+		}
+	}
+	return (max1 - 1) * (max2 - 1)
+}
