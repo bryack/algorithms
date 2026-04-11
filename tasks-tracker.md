@@ -29,9 +29,10 @@
 | # | Статус | Задача | Сложность | Паттерн |
 |---|--------|--------|-----------|---------|
 | 1 | ✅ | **VK Education: Rock'n'Run High Score** | Easy | Linear max scan |
-| 2 | ⬜ | **LeetCode 1464**: Maximum Product of Two Elements | Easy | Find 2 largest |
-| 3 | ⬜ | **LeetCode 414**: Third Maximum Number | Easy | Find 3rd largest (edge cases!) |
-| 4 | ⬜ | **LeetCode 485**: Max Consecutive Ones | Easy | Consecutive series |
+| 2 | ✅ | **LeetCode 1464**: Maximum Product of Two Elements | Easy | Find 2 largest |
+| 3 | ✅ | **LeetCode 414**: Third Maximum Number | Easy | Find 3rd largest (edge cases: duplicates!) |
+| 4 | ✅ | **LeetCode 628**: Maximum Product of Three Numbers | Easy | 2 min + 1 max (negatives!) |
+| 5 | ✅ | **LeetCode 485**: Max Consecutive Ones | Easy | Consecutive series |
 
 ### Комбинированные
 
@@ -48,14 +49,15 @@
 
 1. ~~VK Education: Merge~~ ✅
 2. ~~VK Education: Max~~ ✅
-3. LeetCode 88: Merge Sorted Array
-4. LeetCode 1464: Maximum Product
-5. LeetCode 485: Max Consecutive Ones
-6. LeetCode 1470: Shuffle the Array
-7. LeetCode 21: Merge Two Sorted Lists
-8. LeetCode 414: Third Maximum Number
-9. LeetCode 2206: Divide Array Into Equal Pairs
-10. LeetCode 2293: Min Max Game
+3. LeetCode 88: Merge Sorted Array ✅
+4. LeetCode 1464: Maximum Product ✅
+5. LeetCode 414: Third Maximum Number
+6. LeetCode 628: Maximum Product of Three Numbers
+7. LeetCode 485: Max Consecutive Ones
+8. LeetCode 1470: Shuffle the Array
+9. LeetCode 21: Merge Two Sorted Lists
+10. LeetCode 2206: Divide Array Into Equal Pairs
+11. LeetCode 2293: Min Max Game
 
 ---
 
