@@ -22,7 +22,7 @@
 | 1 | ✅ | **VK Education: Merge Two Sorted Arrays** | Easy | Two pointers (forward) |
 | 2 | ✅ | **LeetCode 88**: Merge Sorted Array | Easy | Two pointers (backward, in-place) |
 | 3 | ⬜ | **LeetCode 21**: Merge Two Sorted Lists | Easy | Merge linked lists |
-| 4 | ⬜ | **LeetCode 1470**: Shuffle the Array | Easy | Array interleaving |
+| 4 | ✅ | **LeetCode 1470**: Shuffle the Array | Easy | Array interleaving |
 
 ### Паттерн: Поиск минимума/максимума
 

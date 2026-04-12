@@ -317,3 +317,57 @@ func TestFindMaxConsecutiveOnes(t *testing.T) {
 		})
 	}
 }
+
+func TestShuffle(t *testing.T) {
+	tests := []struct {
+		name      string
+		firstArr  []int
+		firstSize int
+		want      []int
+	}{
+		{
+			name:      "test 1",
+			firstArr:  []int{2, 5, 1, 3, 4, 7},
+			firstSize: 3,
+			want:      []int{2, 3, 5, 4, 1, 7},
+		},
+		{
+			name:      "test 1",
+			firstArr:  []int{1, 2, 3, 4, 4, 3, 2, 1},
+			firstSize: 4,
+			want:      []int{1, 4, 2, 3, 3, 2, 4, 1},
+		},
+		{
+			name:      "test 1",
+			firstArr:  []int{1, 1, 2, 2},
+			firstSize: 2,
+			want:      []int{1, 2, 1, 2},
+		},
+		{
+			name:      "minimum size n=1",
+			firstArr:  []int{1, 2},
+			firstSize: 1,
+			want:      []int{1, 2},
+		},
+		{
+			name:      "all same elements",
+			firstArr:  []int{1, 1, 1, 1},
+			firstSize: 2,
+			want:      []int{1, 1, 1, 1},
+		},
+		{
+			name:      "alternating pattern",
+			firstArr:  []int{11, 22, 33, 44, 55, 66},
+			firstSize: 3,
+			want:      []int{11, 44, 22, 55, 33, 66},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := shuffle(tt.firstArr, tt.firstSize)
+
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

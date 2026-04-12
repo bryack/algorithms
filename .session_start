@@ -1,32 +1,4 @@
-2026-04-09 09:53:04  # SESSION_START
-2026-04-09 09:58:09  # JOURNAL: LeetCode 55 - Jump Game (start)
-2026-04-09 11:51:59  # BREAK_START
-2026-04-09 13:28:54  # BREAK_END
-2026-04-09 14:15:21  # JOURNAL: LeetCode 55 - Jump Game (завершена, ~2.5ч активного времени)
-2026-04-09 15:49:45  # BREAK_START
-2026-04-09 15:59:44  # BREAK_END
-2026-04-09 16:01:07  # JOURNAL: VK Education - Задача 'Списывание в школе' (start)
-2026-04-09 18:30:39  # BREAK_START
-2026-04-09 19:53:21  # BREAK_END
-2026-04-09 19:54:34  # JOURNAL: VK Education - Списывание в школе (завершена, ~2.5ч)
-2026-04-09 19:54:34  # JOURNAL: VK Education - Очистка эксперимента (start)
-2026-04-09 20:42:46  # JOURNAL: VK Education - Очистка эксперимента (завершена, ~1ч, принято платформой)
-2026-04-09 20:42:46  # SESSION_START - Карточки Go
-2026-04-09 21:17:40  # SESSION_END - Карточки Go завершены, сессия закрыта
-2026-04-10 10:15:08  # SESSION_START - VK Education: Урок 1.4 Массивы (часть 2)
-2026-04-10 12:47:46  # JOURNAL: VK Education - Merge Two Sorted Arrays (завершена, ~2.5ч)
-2026-04-10 12:47:46  # BREAK_START
-2026-04-10 14:26:00  # BREAK_END
-2026-04-10 15:55:33  # JOURNAL: VK Education - Rock'n'Run High Score (завершена, ~1.25ч, отправлено в All Cups)
-2026-04-10 16:25:00  # JOURNAL: Карточки - Clean Architecture (start)
-2026-04-10 17:07:34  # JOURNAL: Anki - повторение карточек (start)
-2026-04-10 18:07:40  # JOURNAL: Anki - повторение карточек (завершено)
-2026-04-10 18:07:40  # BREAK_START
-2026-04-10 20:35:06  # SESSION_END - Сессия завершена
-2026-04-11 09:35:07  # SESSION_START
-2026-04-11 16:29:47  # JOURNAL: LeetCode 414 - Third Maximum Number (завершена)
-2026-04-11 16:29:47  # JOURNAL: LeetCode 628 - Maximum Product of Three Numbers (start)
-2026-04-11 17:34:40  # JOURNAL: LeetCode 628 - Maximum Product of Three Numbers (завершена, ~1ч)
-2026-04-11 17:34:40  # JOURNAL: LeetCode 485 - Max Consecutive Ones (start)
-2026-04-11 17:56:38  # JOURNAL: LeetCode 485 - Max Consecutive Ones (завершена, ~20мин)
-2026-04-11 17:56:38  # BREAK_START
+2026-04-12 09:28:39  # SESSION_START
+2026-04-12 09:39:28  # BREAK_START (Hello New Job! - подготовка резюме)
+2026-04-12 10:42:13  # BREAK_END (Hello New Job! - подготовка резюме)
+2026-04-12 10:42:13  # JOURNAL: LeetCode 21. Merge Two Sorted Lists (resume)
