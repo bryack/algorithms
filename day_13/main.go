@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -70,13 +68,33 @@ func divideArray(nums []int) bool {
 	for i := 0; i < len(nums); i++ {
 		arr[nums[i]]++
 	}
-
-	fmt.Println(arr)
-
 	for _, v := range arr {
 		if v%2 != 0 {
 			return false
 		}
 	}
 	return true
+}
+
+func minMaxGame(nums []int) int {
+	if len(nums) == 1 {
+		return nums[0]
+	}
+	i := 0
+	for i < len(nums)/2 {
+		if i%2 == 0 {
+			nums[i] = min(nums[2*i], nums[2*i+1])
+		} else {
+			nums[i] = max(nums[2*i], nums[2*i+1])
+		}
+
+		if i == len(nums)/2-1 {
+			nums = nums[:len(nums)/2]
+			i = 0
+		} else {
+			i++
+		}
+	}
+
+	return nums[0]
 }

@@ -39,7 +39,7 @@
 | # | Статус | Задача | Сложность | Паттерн |
 |---|--------|--------|-----------|---------|
 | 1 | ✅ | **LeetCode 2206**: Divide Array Into Equal Pairs | Easy | Frequency counter |
-| 2 | 🔄 | **LeetCode 2293**: Min Max Game | Easy | Recursive min/max |
+| 2 | ✅ | **LeetCode 2293**: Min Max Game | Easy | Recursive min/max |
 
 ---
 
