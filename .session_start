@@ -17,3 +17,13 @@
 2026-04-12 16:41:37  # BREAK_END
 2026-04-12 16:41:50  # JOURNAL: Карточка #12 - Ports & Adapters (start)
 2026-04-12 17:12:20  # JOURNAL: Карточка #12 - Ports & Adapters (complete)
+2026-04-12 17:22:28  # JOURNAL: VK Education (start)
+2026-04-12 17:44:13  # VK_PLAN: Урок 1.5 Списки - Задача 1: Вставка в начало (insertAtHead)
+2026-04-12 17:44:13  # VK_PLAN: Задача 2: Вставка в конец (insertAtTail) - pending
+2026-04-12 17:44:13  # VK_PLAN: Задача 3: Вставка в середину (insertAtIndex) - pending
+2026-04-12 18:59:26  # JOURNAL: VK Education - Три операции со связным списком (insertAtHead, insertAtTail, insertAtIndex) complete
+2026-04-12 18:59:26  # BREAK_START (VK Education - лекция по спискам)
+2026-04-12 19:13:31  # BREAK_END (VK Education - лекция по спискам)
+2026-04-12 19:13:34  # VK_PLAN: Задача 4: Развернуть односвязный список (reverseList)
+2026-04-12 19:13:34  # VK_PLAN: Задача 5: Проверить является ли список циклическим (hasCycle) - pending
+2026-04-12 19:13:34  # VK_PLAN: Задача 6: Найти середину односвязного списка (middleNode) - pending

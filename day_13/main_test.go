@@ -239,3 +239,204 @@ func TestMinMaxGame(t *testing.T) {
 		})
 	}
 }
+
+func TestInsertAtHead(t *testing.T) {
+	tests := []struct {
+		name string
+		list []int
+		val  int
+		want []int
+	}{
+		{
+			name: "insert into non-empty list",
+			list: []int{1, 2, 3},
+			val:  0,
+			want: []int{0, 1, 2, 3},
+		},
+		{
+			name: "insert into empty list",
+			list: []int{},
+			val:  0,
+			want: []int{0},
+		},
+		{
+			name: "insert into single element list",
+			list: []int{5},
+			val:  10,
+			want: []int{10, 5},
+		},
+		{
+			name: "insert negative number",
+			list: []int{-1, -2},
+			val:  -3,
+			want: []int{-3, -1, -2},
+		},
+		{
+			name: "insert duplicate value",
+			list: []int{1, 1, 1},
+			val:  1,
+			want: []int{1, 1, 1, 1},
+		},
+		{
+			name: "insert large number",
+			list: []int{1000000},
+			val:  999999,
+			want: []int{999999, 1000000},
+		},
+		{
+			name: "insert zero into positive list",
+			list: []int{1, 2, 3},
+			val:  0,
+			want: []int{0, 1, 2, 3},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			list1 := sliceToList(tt.list)
+			resList := insertAtHead(list1, tt.val)
+
+			result := listToSlice(resList)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
+
+func TestInsertAtTail(t *testing.T) {
+	tests := []struct {
+		name string
+		list []int
+		val  int
+		want []int
+	}{
+		{
+			name: "insert into non-empty list",
+			list: []int{1, 2, 3},
+			val:  0,
+			want: []int{1, 2, 3, 0},
+		},
+		{
+			name: "insert into empty list",
+			list: []int{},
+			val:  0,
+			want: []int{0},
+		},
+		{
+			name: "insert into single element list",
+			list: []int{5},
+			val:  10,
+			want: []int{5, 10},
+		},
+		{
+			name: "insert negative number",
+			list: []int{-1, -2},
+			val:  -3,
+			want: []int{-1, -2, -3},
+		},
+		{
+			name: "insert duplicate value",
+			list: []int{1, 1, 1},
+			val:  1,
+			want: []int{1, 1, 1, 1},
+		},
+		{
+			name: "insert large number",
+			list: []int{1000000},
+			val:  999999,
+			want: []int{1000000, 999999},
+		},
+		{
+			name: "insert zero into list",
+			list: []int{1, 2, 3},
+			val:  0,
+			want: []int{1, 2, 3, 0},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			list1 := sliceToList(tt.list)
+			resList := insertAtTail(list1, tt.val)
+
+			result := listToSlice(resList)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
+
+func TestInsertAtIndex(t *testing.T) {
+	tests := []struct {
+		name  string
+		list  []int
+		val   int
+		index int
+		want  []int
+	}{
+		{
+			name:  "insert into middle of list",
+			list:  []int{1, 2, 3},
+			val:   99,
+			index: 1,
+			want:  []int{1, 99, 2, 3},
+		},
+		{
+			name:  "insert at index 0 (head)",
+			list:  []int{1, 2, 3},
+			val:   0,
+			index: 0,
+			want:  []int{0, 1, 2, 3},
+		},
+		{
+			name:  "insert at end of list",
+			list:  []int{1, 2, 3},
+			val:   4,
+			index: 3,
+			want:  []int{1, 2, 3, 4},
+		},
+		{
+			name:  "insert into single element list",
+			list:  []int{5},
+			val:   10,
+			index: 1,
+			want:  []int{5, 10},
+		},
+		{
+			name:  "insert into empty list at index 0",
+			list:  []int{},
+			val:   42,
+			index: 0,
+			want:  []int{42},
+		},
+		{
+			name:  "insert with negative value",
+			list:  []int{-1, -2, -3},
+			val:   -99,
+			index: 2,
+			want:  []int{-1, -2, -99, -3},
+		},
+		{
+			name:  "insert duplicate value",
+			list:  []int{1, 2, 3},
+			val:   2,
+			index: 2,
+			want:  []int{1, 2, 2, 3},
+		},
+		{
+			name:  "test 6",
+			list:  []int{1, 2, 3},
+			val:   2,
+			index: 5,
+			want:  []int{1, 2, 3},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			list1 := sliceToList(tt.list)
+			resList := insertAtIndex(list1, tt.val, tt.index)
+
+			result := listToSlice(resList)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

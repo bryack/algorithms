@@ -95,6 +95,46 @@ func minMaxGame(nums []int) int {
 			i++
 		}
 	}
-
 	return nums[0]
+}
+
+func insertAtHead(head *ListNode, val int) *ListNode {
+	return &ListNode{Val: val, Next: head}
+}
+
+func insertAtTail(head *ListNode, val int) *ListNode {
+	if head == nil {
+		return &ListNode{Val: val, Next: nil}
+	}
+
+	tail := head
+	for tail != nil {
+		if tail.Next == nil {
+			break
+		}
+		tail = tail.Next
+	}
+	tail.Next = &ListNode{Val: val, Next: nil}
+	return head
+}
+
+func insertAtIndex(head *ListNode, val int, index int) *ListNode {
+	if index < 0 {
+		return head
+	}
+	if index == 0 {
+		return &ListNode{Val: val, Next: head}
+	}
+
+	current := head
+	for i := 0; i != index-1; i++ {
+		if current == nil {
+			return head
+		}
+		current = current.Next
+	}
+
+	current.Next = &ListNode{Val: val, Next: current.Next}
+
+	return head
 }
