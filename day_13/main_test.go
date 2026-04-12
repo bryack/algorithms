@@ -92,3 +92,74 @@ func TestMergeTwoLists(t *testing.T) {
 		})
 	}
 }
+
+func TestDivideArray(t *testing.T) {
+	tests := []struct {
+		name     string
+		nums     []int
+		expected bool
+	}{
+		{
+			name:     "example 1 - can form pairs",
+			nums:     []int{3, 2, 3, 2, 1, 1},
+			expected: true,
+		},
+		{
+			name:     "example 1 - can form pairs",
+			nums:     []int{3, 2, 3, 2, 2, 2},
+			expected: true,
+		},
+		{
+			name:     "example 2 - cannot form pairs",
+			nums:     []int{1, 2, 3, 4},
+			expected: false,
+		},
+		{
+			name:     "two identical elements",
+			nums:     []int{5, 5},
+			expected: true,
+		},
+		{
+			name:     "two different elements",
+			nums:     []int{1, 2},
+			expected: false,
+		},
+		{
+			name:     "all same element even count",
+			nums:     []int{7, 7, 7, 7},
+			expected: true,
+		},
+		{
+			name:     "all same element odd count",
+			nums:     []int{7, 7, 7},
+			expected: false,
+		},
+		{
+			name:     "multiple pairs different values",
+			nums:     []int{1, 1, 2, 2, 3, 3, 4, 4},
+			expected: true,
+		},
+		{
+			name:     "one odd frequency breaks pairs",
+			nums:     []int{1, 1, 2, 2, 3, 3, 4},
+			expected: false,
+		},
+		{
+			name:     "single element odd frequency among evens",
+			nums:     []int{1, 1, 2, 2, 3, 3, 5},
+			expected: false,
+		},
+		{
+			name:     "empty array",
+			nums:     []int{},
+			expected: true,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := divideArray(tt.nums)
+			assert.Equal(t, tt.expected, result)
+		})
+	}
+}

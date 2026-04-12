@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -60,4 +62,21 @@ func sliceToList(s []int) *ListNode {
 		current = current.Next
 	}
 	return list
+}
+
+func divideArray(nums []int) bool {
+	var arr [501]int
+
+	for i := 0; i < len(nums); i++ {
+		arr[nums[i]]++
+	}
+
+	fmt.Println(arr)
+
+	for _, v := range arr {
+		if v%2 != 0 {
+			return false
+		}
+	}
+	return true
 }

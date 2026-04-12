@@ -21,7 +21,7 @@
 |---|--------|--------|-----------|---------|
 | 1 | ✅ | **VK Education: Merge Two Sorted Arrays** | Easy | Two pointers (forward) |
 | 2 | ✅ | **LeetCode 88**: Merge Sorted Array | Easy | Two pointers (backward, in-place) |
-| 3 | ⬜ | **LeetCode 21**: Merge Two Sorted Lists | Easy | Merge linked lists |
+| 3 | ✅ | **LeetCode 21**: Merge Two Sorted Lists | Easy | Merge linked lists |
 | 4 | ✅ | **LeetCode 1470**: Shuffle the Array | Easy | Array interleaving |
 
 ### Паттерн: Поиск минимума/максимума
@@ -38,8 +38,8 @@
 
 | # | Статус | Задача | Сложность | Паттерн |
 |---|--------|--------|-----------|---------|
-| 1 | ⬜ | **LeetCode 2206**: Divide Array Into Equal Pairs | Easy | Frequency counter |
-| 2 | ⬜ | **LeetCode 2293**: Min Max Game | Easy | Recursive min/max |
+| 1 | ✅ | **LeetCode 2206**: Divide Array Into Equal Pairs | Easy | Frequency counter |
+| 2 | 🔄 | **LeetCode 2293**: Min Max Game | Easy | Recursive min/max |
 
 ---
 
