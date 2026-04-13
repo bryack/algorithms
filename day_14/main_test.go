@@ -82,23 +82,79 @@ func sliceToList(s []int) *ListNode {
 
 func TestHasCycle(t *testing.T) {
 	tests := []struct {
-		name  string
-		input []int
-		want  bool
+		name         string
+		input        []int
+		cycleToIndex int
+		want         bool
 	}{
 		{
-			name:  "three elements",
-			input: []int{1, 2, 3},
-			want:  true,
+			name:         "cycle at middle",
+			input:        []int{1, 2, 3},
+			cycleToIndex: 1,
+			want:         true,
+		},
+		{
+			name:         "no cycle (nil tail)",
+			input:        []int{1, 2, 3},
+			cycleToIndex: -1,
+			want:         false,
+		},
+		{
+			name:         "empty list",
+			input:        []int{},
+			cycleToIndex: -1,
+			want:         false,
+		},
+		{
+			name:         "cycle at head (last points to first)",
+			input:        []int{1, 2, 3},
+			cycleToIndex: 0,
+			want:         true,
+		},
+		{
+			name:         "single element self-cycle",
+			input:        []int{5},
+			cycleToIndex: 0,
+			want:         true,
+		},
+		{
+			name:         "single element no cycle",
+			input:        []int{5},
+			cycleToIndex: -1,
+			want:         false,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			list := sliceToList(tt.input)
+			list := sliceToListWithCycle(tt.input, tt.cycleToIndex)
 
 			result := hasCycle(list)
 			assert.Equal(t, tt.want, result)
 		})
 	}
+}
+
+func sliceToListWithCycle(values []int, cycleToIndex int) *ListNode {
+	if len(values) == 0 {
+		return nil
+	}
+	var cycleNode *ListNode
+	list := &ListNode{Val: values[0]}
+	if cycleToIndex == 0 {
+		cycleNode = list
+	}
+	current := list
+
+	for i := 1; i < len(values); i++ {
+		node := &ListNode{Val: values[i]}
+		if i == cycleToIndex {
+			cycleNode = node
+		}
+		current.Next = node
+
+		current = current.Next
+	}
+	current.Next = cycleNode
+	return list
 }
