@@ -1,29 +1,3 @@
-2026-04-12 09:28:39  # SESSION_START
-2026-04-12 09:39:28  # BREAK_START (Hello New Job! - подготовка резюме)
-2026-04-12 10:42:13  # BREAK_END (Hello New Job! - подготовка резюме)
-2026-04-12 10:42:13  # JOURNAL: LeetCode 21. Merge Two Sorted Lists (resume)
-2026-04-12 11:34:45  # JOURNAL: LeetCode 21. Merge Two Sorted Lists (complete)
-2026-04-12 11:34:45  # JOURNAL: LeetCode 2206. Divide Array Into Equal Pairs (start)
-2026-04-12 12:02:00  # BREAK_START
-2026-04-12 13:09:56  # BREAK_END
-2026-04-12 13:35:46  # JOURNAL: LeetCode 2206. Divide Array Into Equal Pairs (complete)
-2026-04-12 13:55:38  # JOURNAL: LeetCode 2206. Divide Array Into Equal Pairs - OPTIMIZED
-2026-04-12 13:55:38  # JOURNAL: LeetCode 2293. Min Max Game (start)
-2026-04-12 14:40:16  # JOURNAL: LeetCode 2293. Min Max Game (complete)
-2026-04-12 15:26:17  # JOURNAL: LeetCode 2293. Min Max Game - OPTIMIZED (removed copy)
-2026-04-12 15:26:17  # JOURNAL: Anki - повторение карточек (start)
-2026-04-12 16:10:11  # JOURNAL: Anki - повторение карточек (complete)
-2026-04-12 16:10:17  # BREAK_START
-2026-04-12 16:41:37  # BREAK_END
-2026-04-12 16:41:50  # JOURNAL: Карточка #12 - Ports & Adapters (start)
-2026-04-12 17:12:20  # JOURNAL: Карточка #12 - Ports & Adapters (complete)
-2026-04-12 17:22:28  # JOURNAL: VK Education (start)
-2026-04-12 17:44:13  # VK_PLAN: Урок 1.5 Списки - Задача 1: Вставка в начало (insertAtHead)
-2026-04-12 17:44:13  # VK_PLAN: Задача 2: Вставка в конец (insertAtTail) - pending
-2026-04-12 17:44:13  # VK_PLAN: Задача 3: Вставка в середину (insertAtIndex) - pending
-2026-04-12 18:59:26  # JOURNAL: VK Education - Три операции со связным списком (insertAtHead, insertAtTail, insertAtIndex) complete
-2026-04-12 18:59:26  # BREAK_START (VK Education - лекция по спискам)
-2026-04-12 19:13:31  # BREAK_END (VK Education - лекция по спискам)
-2026-04-12 19:13:34  # VK_PLAN: Задача 4: Развернуть односвязный список (reverseList)
-2026-04-12 19:13:34  # VK_PLAN: Задача 5: Проверить является ли список циклическим (hasCycle) - pending
-2026-04-12 19:13:34  # VK_PLAN: Задача 6: Найти середину односвязного списка (middleNode) - pending
+2026-04-13 09:54:44  # SESSION_START
+2026-04-13 09:57:48  # JOURNAL: VK Education - reverseList (start)
+2026-04-13 11:23:34  # JOURNAL: VK Education - reverseList (complete, ~1.5h)
