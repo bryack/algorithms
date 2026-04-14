@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bytes"
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -157,4 +159,173 @@ func sliceToListWithCycle(values []int, cycleToIndex int) *ListNode {
 	}
 	current.Next = cycleNode
 	return list
+}
+
+func TestMiddleNode(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		want  int
+	}{
+		{
+			name:  "odd length",
+			input: []int{1, 2, 3, 4, 5},
+			want:  3,
+		},
+		{
+			name:  "even length — second middle",
+			input: []int{1, 2, 3, 4},
+			want:  3,
+		},
+		{
+			name:  "single element",
+			input: []int{42},
+			want:  42,
+		},
+		{
+			name:  "empty list",
+			input: []int{},
+			want:  0,
+		},
+		{
+			name:  "two elements",
+			input: []int{1, 2},
+			want:  2,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			list := sliceToList(tt.input)
+			res := middleNode(list)
+			if res == nil {
+				assert.Equal(t, tt.want, 0)
+			} else {
+				result := listToSlice(res)
+				assert.Equal(t, tt.want, result[0])
+			}
+		})
+	}
+}
+
+func TestFindNearestNeighbours(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  string
+	}{
+		{
+			name: "basic example",
+			input: `4
+1 3 4 11`,
+			want: "3 4",
+		},
+		{
+			name: "two elements",
+			input: `2
+		10 20`,
+			want: "10 20",
+		},
+		{
+			name: "all equal elements",
+			input: `5
+		7 7 7 7 7`,
+			want: "7 7",
+		},
+		{
+			name: "uniform spacing",
+			input: `6
+		2 4 6 8 10 12`,
+			want: "2 4",
+		},
+		{
+			name: "min diff at the end",
+			input: `5
+		1 10 20 25 26`,
+			want: "25 26",
+		},
+		{
+			name: "large values",
+			input: `3
+		100000 200000 200001`,
+			want: "200000 200001",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			r := strings.NewReader(tt.input)
+			w := bytes.Buffer{}
+			findNearestNeighbours(r, &w)
+			assert.Equal(t, tt.want, w.String())
+
+		})
+	}
+}
+
+func TestRemoveElements(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		val   int
+		want  []int
+	}{
+		{
+			name:  "remove from middle",
+			input: []int{1, 2, 6, 3, 4, 5, 6},
+			val:   6,
+			want:  []int{1, 2, 3, 4, 5},
+		},
+		{
+			name:  "empty list",
+			input: []int{},
+			val:   1,
+			want:  []int{},
+		},
+		{
+			name:  "all elements match",
+			input: []int{7, 7, 7, 7},
+			val:   7,
+			want:  []int{},
+		},
+		{
+			name:  "remove from head",
+			input: []int{1, 1, 1, 2, 3, 4, 5},
+			val:   1,
+			want:  []int{2, 3, 4, 5},
+		},
+		{
+			name:  "single element matches",
+			input: []int{6},
+			val:   6,
+			want:  []int{},
+		},
+		{
+			name:  "consecutive duplicates at start",
+			input: []int{6, 6, 1, 2, 3},
+			val:   6,
+			want:  []int{1, 2, 3},
+		},
+		{
+			name:  "no elements match",
+			input: []int{1, 2, 3, 4, 5},
+			val:   9,
+			want:  []int{1, 2, 3, 4, 5},
+		},
+		{
+			name:  "consecutive in middle",
+			input: []int{1, 2, 6, 6, 6, 3},
+			val:   6,
+			want:  []int{1, 2, 3},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			list := sliceToList(tt.input)
+			res := removeElements(list, tt.val)
+			result := listToSlice(res)
+			assert.Equal(t, tt.want, result)
+		})
+	}
 }

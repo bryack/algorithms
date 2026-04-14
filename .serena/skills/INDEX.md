@@ -52,8 +52,8 @@
 
 ### Карточки
 - **Всего**: 54
-- **Переработано**: 11 (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Graceful Shutdown, errors.Is/errors.As, Dependency Injection, Generics, Clean Architecture)
-- **Следующая**: #12 Ports & Adapters
+- **Переработано**: 13 (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Graceful Shutdown, errors.Is/errors.As, Dependency Injection, Generics, Clean Architecture, Ports & Adapters, DDD)
+- **Следующая**: #14 FSM
 
 ### Решённые задачи (текущая сессия)
 - [x] VK Education: Слияние двух отсортированных массивов (day_11)
@@ -109,6 +109,7 @@
 - ❌ Нельзя сдавать на Go (платформа не поддерживает)
 - ✅ Писать сначала на Go (TDD), потом переводить на C++
 - ⚠️ При переводе помнить: C++ использует `std::vector`, ручное управление вводом/выводом через `iostream`, отсутствие встроенных `min`/`max` как в Go 1.21+
+- 📁 **C++ файлы класть в подпапку `vk/`** (например, `day_14/vk/task.cpp`) — иначе Go компилятор ругается на чужие файлы в пакете
 
 ## Обучающие курсы
 
