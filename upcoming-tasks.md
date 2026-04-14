@@ -5,8 +5,8 @@
 Следующие задачи для практики после VK Education 1.5 "Списки":
 
 - [x] **203. Remove Linked List Elements** — Удалить все узлы со значением `val` ✅
-- [ ] **83. Remove Duplicates from Sorted List** — Удалить дубликаты из отсортированного списка
-- [ ] **234. Palindrome Linked List** — Проверить, является ли список палиндромом
+- [x] **83. Remove Duplicates from Sorted List** — Удалить дубликаты из отсортированного списка ✅
+- [x] **234. Palindrome Linked List** — Проверить, является ли список палиндромом ✅
 - [ ] **160. Intersection of Two Linked Lists** — Найти узел пересечения двух списков
 
 ## Примечания
