@@ -1,10 +1,3 @@
-2026-04-15 09:29:25  # SESSION_START
-2026-04-15 09:32:58  # JOURNAL: VK Education 1.6 - Очереди, деки и стек (start)
-2026-04-15 10:57:19  # BREAK_START: карточки
-2026-04-15 12:53:33  # BREAK_END: карточки
-2026-04-15 12:53:33  # BREAK_START
-2026-04-15 13:48:26  # BREAK_END
-2026-04-15 13:58:50  # BREAK_START: вакансия
-2026-04-15 16:55:43  # BREAK_END
-2026-04-15 17:59:47  # JOURNAL: Stack on linked list (complete)
-2026-04-15 18:42:04  # JOURNAL: SliceStack (complete)
+2026-04-21 09:59:02  # SESSION_START
+2026-04-21 10:31:15  # JOURNAL: Лекция VK Education 1.6 Очереди, деки и стек (завершена)
+2026-04-21 10:31:15  # JOURNAL: RingQueue Dequeue реализация (start)
