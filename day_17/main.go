@@ -43,4 +43,5 @@ func (q *RingQueue) IsEmpty() bool {
 
 func (q *RingQueue) IsFull() bool {
 	return q.size == len(q.items)
+
 }
