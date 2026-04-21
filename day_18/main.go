@@ -72,3 +72,31 @@ func (d *Dequeue) PopBack() (int, bool) {
 	d.size--
 	return res, true
 }
+
+func isValid(s string) bool {
+	if len(s)%2 != 0 {
+		return false
+	}
+	arr := make([]rune, 0, len(s)/2)
+	pairs := map[rune]rune{
+		')': '(',
+		'}': '{',
+		']': '[',
+	}
+	for _, r := range s {
+		_, ok := pairs[r]
+		if !ok {
+			arr = append(arr, r)
+		} else {
+			if len(arr) == 0 {
+				return false
+			}
+			if arr[len(arr)-1] != pairs[r] {
+				return false
+			}
+			arr = arr[:len(arr)-1]
+		}
+	}
+
+	return len(arr) == 0
+}

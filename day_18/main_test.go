@@ -225,3 +225,26 @@ func TestDequeue_PopBack(t *testing.T) {
 		})
 	}
 }
+
+func TestIsValid(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  bool
+	}{
+		{name: "test 1", input: "()", want: true},
+		{name: "test 2", input: "()[]{}", want: true},
+		{name: "test 3", input: "([)]", want: false},
+		{name: "test 4", input: "{[()]}", want: true},
+		{name: "test 5", input: "{", want: false},
+		{name: "test 6", input: "{{", want: false},
+		{name: "test 7", input: ")(", want: false},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := isValid(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
