@@ -10,9 +10,12 @@
 | [x] | **387. First Unique Char** | Easy | Frequency Counting | 2026-04-24 |
 | [x] | **2351. First Letter Twice** | Easy | Frequency Counting | 2026-04-24 |
 | [x] | **49. Group Anagrams** | Medium | Categorization / Map Keys | 2026-04-24 |
-| [ ] | **205. Isomorphic Strings** | Easy | String Normalization / Mapping | |
-| [ ] | **219. Contains Duplicate II** | Easy | Sliding Window / HashMap | |
-| [ ] | **1002. Find Common Chars** | Easy | Frequency Intersection | |
+| [x] | **205. Isomorphic Strings** | Easy | String Normalization / Mapping | 2026-04-25 |
+| [x] | **219. Contains Duplicate II** | Easy | Sliding Window / HashMap | 2026-04-25 |
+| [x] | **1002. Find Common Chars** | Easy | Frequency Intersection | 2026-04-25 |
+| [x] | **Practice: 350. Intersection of Two Arrays II** | Easy | Frequency Counting / Intersection | 2026-04-25 |
+| [ ] | **Practice: 383. Ransom Note** | Easy | Frequency Counting / Sufficiency | |
+| [ ] | **Practice: 1189. Max Num of Balloons** | Easy | Frequency Counting / Limiting Factor | |
 | [ ] | **347. Top K Frequent Elements** | Medium | Bucket Sort / Heap | |
 | [ ] | **238. Product of Array Except Self** | Medium | Prefix & Suffix Products | |
 | [ ] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | |
