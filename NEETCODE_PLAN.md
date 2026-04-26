@@ -17,6 +17,9 @@
 | [x] | **Practice: 383. Ransom Note** | Easy | Frequency Counting / Sufficiency | 2026-04-26 |
 | [x] | **Practice: 1189. Max Num of Balloons** | Easy | Frequency Counting / Limiting Factor | 2026-04-26 |
 | [x] | **347. Top K Frequent Elements** | Medium | Bucket Sort / Heap | 2026-04-26 |
+| [x] | **Practice: 451. Sort Characters By Frequency** | Medium | Bucket Sort / String Building | 2026-04-26 | |
+| [ ] | **Practice: 1636. Sort Array by Inc Frequency** | Easy | Bucket Sort / Custom Sort | | |
+| [ ] | **Practice: 692. Top K Frequent Words** | Medium | Bucket Sort / Lexicographical Sort | | |
 | [ ] | **238. Product of Array Except Self** | Medium | Prefix & Suffix Products | |
 | [ ] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | |
 

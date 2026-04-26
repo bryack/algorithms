@@ -87,3 +87,23 @@ func TestBinarySearch(t *testing.T) {
 		})
 	}
 }
+
+func TestFrequencySort(t *testing.T) {
+	tests := []struct {
+		name string
+		text string
+		want string
+	}{
+		{name: "test 1", text: "tree", want: "eert"},
+		{name: "test 2", text: "cccaaa", want: "aaaccc"},
+		{name: "test 3", text: "Aabb", want: "bbaA"},
+		{name: "test 4", text: "Aaaabbc", want: "aaabbAc"},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := frequencySort(tt.text)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

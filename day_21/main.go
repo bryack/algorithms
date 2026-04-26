@@ -1,7 +1,10 @@
 package main
 
 import (
+	"cmp"
 	"math"
+	"slices"
+	"strings"
 )
 
 func isValid(s, t string) bool {
@@ -119,4 +122,39 @@ func binarySearch(nums []int, target int) int {
 		}
 	}
 	return -1
+}
+
+func frequencySort(s string) string {
+	if len(s) == 1 {
+		return s
+	}
+
+	m := make(map[byte]int, len(s))
+	for i := 0; i < len(s); i++ {
+		m[s[i]]++
+	}
+
+	type charFreq struct {
+		char  byte
+		count int
+	}
+	bucket := make([]charFreq, 0, 62)
+	for key, value := range m {
+		bucket = append(bucket, charFreq{char: key, count: value})
+	}
+
+	slices.SortFunc(bucket, func(a, b charFreq) int {
+		return cmp.Compare(a.count, b.count)
+	})
+
+	var builder strings.Builder
+	builder.Grow(len(s))
+
+	for i := len(bucket) - 1; i >= 0; i-- {
+		for j := 0; j < bucket[i].count; j++ {
+			builder.WriteByte(bucket[i].char)
+		}
+	}
+
+	return builder.String()
 }
