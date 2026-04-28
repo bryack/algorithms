@@ -1,0 +1,30 @@
+package main
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
+
+func TestSubarraySum(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		k     int
+		want  int
+	}{
+		{name: "test 1", input: []int{1, 1, 1}, k: 2, want: 2},
+		{name: "test 2", input: []int{1, 2, 3}, k: 3, want: 2},
+		{name: "test 3", input: []int{3, 4, -7, 2, 3, 1}, k: 5, want: 2},
+		{name: "empty array", input: []int{}, k: 5, want: 0},
+		{name: "k=0 with zeros", input: []int{0, 0}, k: 0, want: 3},
+		{name: "negative numbers", input: []int{-1, -1, 1}, k: -2, want: 1},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := subarraySum(tt.input, tt.k)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
