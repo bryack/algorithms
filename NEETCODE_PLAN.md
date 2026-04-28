@@ -21,11 +21,11 @@
 | [x] | **Practice: 1636. Sort Array by Inc Frequency** | Easy | Bucket Sort / Custom Sort | 2026-04-27 | |
 | [x] | **Practice: 692. Top K Frequent Words** | Medium | Bucket Sort / Lexicographical Sort | 2026-04-27 | |
 | [x] | **238. Product of Array Except Self** | Medium | Prefix & Suffix Products | 2026-04-27 |
-| [x] | **Practice: 303. Range Sum Query - Immutable** | Easy | Prefix Sums | 2026-04-26 | |
+| [x] | **Practice: 303. Range Sum Query - Immutable** | Easy | Prefix Sums | 2026-04-27 | |
 | [x] | **1480. Running Sum of 1d Array** | Easy | Prefix Sum | 2026-04-28 | |
-| [ ] | **1732. Find the Highest Altitude** | Easy | Prefix Sum | | |
-| [ ] | **724. Find Pivot Index** | Easy | Prefix Sum | | |
-| [ ] | **Practice: 560. Subarray Sum Equals K** | Medium | Prefix Sums + HashMap | | |
+| [x] | **1732. Find the Highest Altitude** | Easy | Prefix Sum | 2026-04-28 | |
+| [x] | **724. Find Pivot Index** | Easy | Prefix Sum | 2026-04-28 | |
+| [x] | **Practice: 560. Subarray Sum Equals K** | Medium | Prefix Sums + HashMap | 2026-04-28 | |
 | [ ] | **Practice: 525. Contiguous Array** | Medium | Prefix Sums (0 as -1) | | |
 | [ ] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | |
 

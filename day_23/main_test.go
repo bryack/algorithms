@@ -65,3 +65,22 @@ func TestLargestAltitude(t *testing.T) {
 		})
 	}
 }
+
+func TestPivotIndex(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		want  int
+	}{
+		{name: "test 1", input: []int{1, 7, 3, 6, 5, 6}, want: 3},
+		{name: "test 2", input: []int{1, 2, 3}, want: -1},
+		{name: "test 3", input: []int{2, 1, -1}, want: 0},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := pivotIndex(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

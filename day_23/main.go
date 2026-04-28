@@ -51,3 +51,20 @@ func largestAltitude(gain []int) int {
 	}
 	return count
 }
+
+func pivotIndex(nums []int) int {
+	totalSum := 0
+	for i := 0; i < len(nums); i++ {
+		totalSum += nums[i]
+	}
+
+	leftSum := 0
+	for i := 0; i < len(nums); i++ {
+		rightSum := totalSum - leftSum - nums[i]
+		if leftSum == rightSum {
+			return i
+		}
+		leftSum += nums[i]
+	}
+	return -1
+}
