@@ -1,5 +1,7 @@
 2026-04-28 10:05:45  # SESSION_START
 2026-04-28 10:27:11  # JOURNAL: 217 Contains Duplicate (разминка, завершена)
-2026-04-28 15:07:44  # JOURNAL: 560 Subarray Sum Equals K (завершена)
 2026-04-28 12:54:01  # BREAK_START
 2026-04-28 14:54:02  # BREAK_END
+2026-04-28 15:07:44  # JOURNAL: 560 Subarray Sum Equals K (завершена)
+2026-04-28 15:20:02  # JOURNAL: 1480 Running Sum of 1d Array (start)
+2026-04-28 15:40:32  # JOURNAL: 1480 Running Sum of 1d Array (завершена)

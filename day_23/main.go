@@ -28,3 +28,20 @@ func subarraySum(nums []int, k int) int {
 	}
 	return count
 }
+
+func runningSum(nums []int) []int {
+	if len(nums) == 1 {
+		return nums
+	}
+
+	prefixSum := 0
+	for i := 0; i < len(nums); i++ {
+		prefixSum += nums[i]
+		nums[i] = prefixSum
+	}
+	return nums
+}
+
+func largestAltitude(gain []int) int {
+
+}
