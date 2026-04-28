@@ -43,5 +43,11 @@ func runningSum(nums []int) []int {
 }
 
 func largestAltitude(gain []int) int {
-
+	prefixSum := 0
+	count := 0
+	for i := 0; i < len(gain); i++ {
+		prefixSum += gain[i]
+		count = max(count, prefixSum)
+	}
+	return count
 }

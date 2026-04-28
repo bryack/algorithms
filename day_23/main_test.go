@@ -55,6 +55,7 @@ func TestLargestAltitude(t *testing.T) {
 		want  int
 	}{
 		{name: "test 1", input: []int{-5, 1, 5, 0, -7}, want: 1},
+		{name: "test 2", input: []int{-4, -3, -2, -1, 4, 3, 2}, want: 0},
 	}
 
 	for _, tt := range tests {
