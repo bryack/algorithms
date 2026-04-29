@@ -6,7 +6,7 @@
 | :---: | :--- | :---: | :--- | :--- | :--- |
 | [x] | **217. Contains Duplicate** | Easy | Hash Set (map[int]struct{}) | 2026-04-24 | 2026-06-28 (повтор, хорошо усвоено) |
 | [x] | **242. Valid Anagram** | Easy | Frequency Map / Array [26]int | 2026-04-24 | 2026-05-03 (Efficiency) |
-| [x] | **1. Two Sum** | Easy | HashMap (One-pass) | 2026-04-24 | |
+| [x] | **1. Two Sum** | Easy | HashMap (One-pass) | 2026-04-24 | 2026-05-06 (повтор) |
 | [x] | **387. First Unique Char** | Easy | Frequency Counting | 2026-04-24 | |
 | [x] | **2351. First Letter Twice** | Easy | Frequency Counting | 2026-04-24 | |
 | [x] | **49. Group Anagrams** | Medium | Categorization / Map Keys | 2026-04-24 | |
@@ -26,7 +26,7 @@
 | [x] | **1732. Find the Highest Altitude** | Easy | Prefix Sum | 2026-04-28 | |
 | [x] | **724. Find Pivot Index** | Easy | Prefix Sum | 2026-04-28 | |
 | [x] | **Practice: 560. Subarray Sum Equals K** | Medium | Prefix Sums + HashMap | 2026-04-28 | |
-| [ ] | **Practice: 525. Contiguous Array** | Medium | Prefix Sums (0 as -1) | | |
+| [x] | **Practice: 525. Contiguous Array** | Medium | Prefix Sums (0 as -1) | 2026-04-29 | |
 | [ ] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | |
 
 ## Ежедневная разминка (Repetition)

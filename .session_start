@@ -1,12 +1,7 @@
-2026-04-28 10:05:45  # SESSION_START
-2026-04-28 10:27:11  # JOURNAL: 217 Contains Duplicate (разминка, завершена)
-2026-04-28 12:54:01  # BREAK_START
-2026-04-28 14:54:02  # BREAK_END
-2026-04-28 15:07:44  # JOURNAL: 560 Subarray Sum Equals K (завершена)
-2026-04-28 15:20:02  # JOURNAL: 1480 Running Sum of 1d Array (start)
-2026-04-28 16:17:08  # JOURNAL: 1732 Find the Highest Altitude (завершена)
-2026-04-28 16:27:10  # JOURNAL: 724 Find Pivot Index (start)
-2026-04-28 17:57:48  # JOURNAL: 724 Find Pivot Index (завершена)
-2026-04-28 15:40:32  # JOURNAL: 1480 Running Sum of 1d Array (завершена)
-2026-04-28 17:58:28  # BREAK_START
-2026-04-28 19:48:20  # BREAK_END
+2026-04-29 10:21:07  # SESSION_START
+2026-04-29 10:49:45  # JOURNAL: Two Sum (start)
+2026-04-29 11:08:00  # JOURNAL: Two Sum (завершена, ~19м)
+2026-04-29 11:15:14  # JOURNAL: 525. Contiguous Array (start)
+2026-04-29 12:30:30  # BREAK_START
+2026-04-29 13:08:59  # BREAK_END
+2026-04-29 13:57:31  # JOURNAL: 525. Contiguous Array (завершена, ~1ч)
