@@ -36,3 +36,33 @@ func findMaxLength(nums []int) int {
 	}
 	return maxLen
 }
+
+func longestConsecutive(nums []int) int {
+	if len(nums) <= 1 {
+		return len(nums)
+	}
+
+	m := make(map[int]struct{}, len(nums))
+	for _, num := range nums {
+		m[num] = struct{}{}
+	}
+
+	maxLen := 0
+
+	for key := range m {
+		if _, ok := m[key-1]; !ok {
+			currentLen := 1
+			currentNum := key
+			for {
+				if _, ok := m[currentNum+1]; ok {
+					currentLen++
+					currentNum++
+				} else {
+					break
+				}
+			}
+			maxLen = max(currentLen, maxLen)
+		}
+	}
+	return maxLen
+}

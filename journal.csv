@@ -10,6 +10,8 @@
 2026-04-29,Алгоритмы,LeetCode 1: Two Sum (повторение),"Повторение задачи. One-pass HashMap: ищем complement в мапе, если нет - добавляем текущий элемент. O(n) time, O(n) space.",day_24/main.go,1,0.3ч,Разминка: вербализация + код. Ревью: 2026-05-06
 2026-04-29,Алгоритмы,LeetCode 525: Contiguous Array,"Решена задача на поиск максимального подмассива с равным количеством 0 и 1. Prefix Sum паттерн: prefixSum-- для 0, prefixSum++ для 1. Когда prefixSum повторяется - количество нулей и единиц между точками равно. O(n) time, O(n) space.",day_24/main.go,3,1ч,Ключевой инсайт: превращаем в задачу на prefix sum
 2025-03-26,Математика,Умножение/деление многозначных чисел,Unit 14 на Khan Academy,-,1,0.5ч,Вспомнила быстро
+2026-04-29,Карточки,Go - повторение,"Повторила карточки по Go (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Defer, errors, DI, Generics, Clean Architecture, Ports & Adapters, DDD). Интервальное повторение для закрепления в долговременной памяти.",Программирование Карточки.csv,1,0.6ч,Интервальное повторение
+2026-04-29,Математика,Khan Academy Unit 13: Pythagorean theorem in 3D,"Изучено применение теоремы Пифагора в трёхмерном пространстве. Расчёт диагоналей прямоугольных призм, расстояний между точками в 3D.",Khan Academy,2,0.3ч,Завершение темы
 2025-03-26,Математика,Деление дробей,Unit 15 на Khan Academy,day_3/main.go (расчёт времени загрузки),3,1ч,Перевернуть и умножить — не забывать!
 2025-03-26,Математика,Умножение/деление десятичных дробей,Unit 16 на Khan Academy,-,2,1ч,Перемещать запятую — удобно
 2025-03-26,Go,Практика: дроби в коде,Решила задачу на расчёт времени загрузки файла,day_3/main.go,2,1ч,Связала дроби с реальной задачей: ⅔ МБ/с
@@ -119,3 +121,4 @@
 2026-04-27,Алгоритмы,LeetCode 692: Top K Frequent Words,"Решена задача на поиск топ-K слов. Использован Bucket Sort с лексикографической сортировкой внутри бакетов.",day_22/main.go,3,0.8ч,Паттерн: Bucket Sort Lexicographical."
 2026-04-27,Алгоритмы,LeetCode 238: Product of Array Except Self,"Решена задача на вычисление произведения всех элементов, кроме текущего. Использован паттерн Prefix & Suffix Products.",day_22/main.go,3,0.5ч,Паттерн: Prefix & Suffix Products O(N) time O(1) space."
 2026-04-27,Алгоритмы,LeetCode 303: Range Sum Query - Immutable,"Решена задача на префиксные суммы. Реализованы Constructor и SumRange.",day_22/main.go,2,0.6ч,Паттерн: Prefix Sums."
+2026-04-29,Алгоритмы,LeetCode 128: Longest Consecutive Sequence,"Решена последняя задача в блоке Arrays & Hashing. Использован Intelligent HashSet Search.",day_22/main.go,3,0.8ч,Паттерн: Intelligent HashSet Search."
