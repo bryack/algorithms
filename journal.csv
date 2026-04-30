@@ -122,3 +122,5 @@
 2026-04-27,Алгоритмы,LeetCode 238: Product of Array Except Self,"Решена задача на вычисление произведения всех элементов, кроме текущего. Использован паттерн Prefix & Suffix Products.",day_22/main.go,3,0.5ч,Паттерн: Prefix & Suffix Products O(N) time O(1) space."
 2026-04-27,Алгоритмы,LeetCode 303: Range Sum Query - Immutable,"Решена задача на префиксные суммы. Реализованы Constructor и SumRange.",day_22/main.go,2,0.6ч,Паттерн: Prefix Sums."
 2026-04-29,Алгоритмы,LeetCode 128: Longest Consecutive Sequence,"Решена последняя задача в блоке Arrays & Hashing. Использован Intelligent HashSet Search.",day_22/main.go,3,0.8ч,Паттерн: Intelligent HashSet Search."
+2026-04-29,Алгоритмы,LeetCode 128: Longest Consecutive Sequence,"Решена последняя задача в блоке Arrays & Hashing. Использован Intelligent HashSet Search.",day_24/main.go,3,0.8ч,Паттерн: Intelligent HashSet Search."
+2026-04-30,Алгоритмы,LeetCode 387: First Unique Character (разминка),"Решена задача на поиск первого уникального символа через два прохода с массивом частот.",day_25/main.go,1,0.3ч,Разминка: O(N) time O(1) space."

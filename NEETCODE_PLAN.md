@@ -7,7 +7,7 @@
 | [x] | **217. Contains Duplicate** | Easy | Hash Set (map[int]struct{}) | 2026-04-24 | 2026-06-28 (повтор, хорошо усвоено) |
 | [x] | **242. Valid Anagram** | Easy | Frequency Map / Array [26]int | 2026-04-24 | 2026-05-03 (Efficiency) |
 | [x] | **1. Two Sum** | Easy | HashMap (One-pass) | 2026-04-24 | 2026-05-06 (повтор) |
-| [x] | **387. First Unique Char** | Easy | Frequency Counting | 2026-04-24 | |
+| [x] | **387. First Unique Char** | Easy | Frequency Counting | 2026-04-24 | 2026-05-21 (повтор) |
 | [x] | **2351. First Letter Twice** | Easy | Frequency Counting | 2026-04-24 | |
 | [x] | **49. Group Anagrams** | Medium | Categorization / Map Keys | 2026-04-24 | |
 | [x] | **205. Isomorphic Strings** | Easy | String Normalization / Mapping | 2026-04-25 | 2026-05-04 (Algorithmic Logic) |
