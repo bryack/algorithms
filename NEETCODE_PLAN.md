@@ -29,7 +29,7 @@
 | [x] | **Practice: 525. Contiguous Array** | Medium | Prefix Sums (0 as -1) | 2026-04-29 | |
 | [x] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | 2026-04-29 |
 | [x] | **202. Happy Number** | Easy | HashSet / Floyd | 2026-04-30 |
-| [ ] | **36. Valid Sudoku** | Medium | Matrix / HashSet | | |
+| [x] | **36. Valid Sudoku** | Medium | Matrix / HashSet | 2026-04-30 | |
 | [ ] | **Practice: 532. K-diff Pairs in an Array** | Medium | HashSet / Two Pointers | | |
 
 ## Ежедневная разминка (Repetition)

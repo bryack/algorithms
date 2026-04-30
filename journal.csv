@@ -125,3 +125,4 @@
 2026-04-29,Алгоритмы,LeetCode 128: Longest Consecutive Sequence,"Решена последняя задача в блоке Arrays & Hashing. Использован Intelligent HashSet Search.",day_24/main.go,3,0.8ч,Паттерн: Intelligent HashSet Search."
 2026-04-30,Алгоритмы,LeetCode 387: First Unique Character (разминка),"Решена задача на поиск первого уникального символа через два прохода с массивом частот.",day_25/main.go,1,0.3ч,Разминка: O(N) time O(1) space."
 2026-04-30,Алгоритмы,LeetCode 202: Happy Number,"Решена задача двумя способами: через HashSet и алгоритм Флойда (Черепаха и Заяц). Достигнута O(1) space сложность.",day_25/main.go,2,1.2ч,Паттерн: Cycle Detection (Floyd's Algorithm)."
+2026-04-30,Алгоритмы,LeetCode 36: Valid Sudoku,"Решена задача на валидацию матрицы 9x9. Использованы три двумерных массива bool для O(1) проверки дубликатов в строках, колонках и боксах.",day_25/main.go,2,0.8ч,Паттерн: Matrix Validation with Direct Addressing."

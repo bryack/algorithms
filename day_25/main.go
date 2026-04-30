@@ -56,3 +56,26 @@ func isHappyFloyd(n int) bool {
 	}
 	return fast == 1
 }
+
+func isValidSudoku(board [][]byte) bool {
+	var rowArr [9][9]bool
+	var colArr [9][9]bool
+	var boxArr [9][9]bool
+
+	for r, row := range board {
+		for c, num := range row {
+			if num == '.' {
+				continue
+			}
+
+			if rowArr[r][num-'1'] == true || colArr[c][num-'1'] == true || boxArr[(r/3)*3+(c/3)][num-'1'] == true {
+				return false
+			}
+
+			rowArr[r][num-'1'] = true
+			colArr[c][num-'1'] = true
+			boxArr[(r/3)*3+(c/3)][num-'1'] = true
+		}
+	}
+	return true
+}
