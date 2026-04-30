@@ -79,3 +79,32 @@ func isValidSudoku(board [][]byte) bool {
 	}
 	return true
 }
+
+func findPairs(nums []int, k int) int {
+	m := make(map[int]int, len(nums))
+
+	for _, n := range nums {
+		m[n]++
+	}
+
+	if k == 0 {
+		count := 0
+		for _, value := range m {
+			if value > 1 {
+				count++
+			}
+		}
+		return count
+	}
+
+	if k > 0 {
+		count := 0
+		for key := range m {
+			if _, ok := m[key+k]; ok {
+				count++
+			}
+		}
+		return count
+	}
+	return 0
+}

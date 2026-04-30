@@ -30,7 +30,8 @@
 | [x] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | 2026-04-29 |
 | [x] | **202. Happy Number** | Easy | HashSet / Floyd | 2026-04-30 |
 | [x] | **36. Valid Sudoku** | Medium | Matrix / HashSet | 2026-04-30 | |
-| [ ] | **Practice: 532. K-diff Pairs in an Array** | Medium | HashSet / Two Pointers | | |
+| [x] | **Practice: 532. K-diff Pairs in an Array** | Medium | HashSet / Two Pointers | 2026-04-30 | |
+| [ ] | **380. Insert Delete GetRandom O(1)** | Medium | Map + Dynamic Array | | |
 
 ## Ежедневная разминка (Repetition)
 0. **Warm-up**: Перед новой задачей решаем одну из уже выполненных ([x]) самостоятельно.

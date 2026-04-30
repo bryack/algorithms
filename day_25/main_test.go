@@ -89,3 +89,23 @@ func TestIsValidSudoku(t *testing.T) {
 		})
 	}
 }
+
+func TestFindPairs(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		k    int
+		want int
+	}{
+		{name: "test 1", nums: []int{3, 1, 4, 1, 5}, k: 2, want: 2},
+		{name: "test 2", nums: []int{1, 2, 3, 4, 5}, k: 1, want: 4},
+		{name: "test 3", nums: []int{1, 3, 1, 5, 4}, k: 0, want: 1},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := findPairs(tt.nums, tt.k)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
