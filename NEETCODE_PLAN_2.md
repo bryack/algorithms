@@ -6,7 +6,7 @@
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
 | [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | 🟢 L4 | |
-| [ ] | **283. Move Zeroes** | Easy | Two Pointers (fast & slow) | | | |
+| [x] | **283. Move Zeroes** | Easy | Two Pointers (fast & slow) | 2026-05-01 | 🟢 L4 | |
 | [ ] | **977. Squares of a Sorted Array** | Easy | Two Pointers (fill from end) | | | |
 | [ ] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array) | | | |
 | [ ] | **15. 3Sum** | Medium | Two Pointers + Sorting | | | |

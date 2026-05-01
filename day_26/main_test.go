@@ -80,3 +80,22 @@ func TestReverseString(t *testing.T) {
 		})
 	}
 }
+
+func TestMoveZeroes(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		want  []int
+	}{
+		{name: "test 1", input: []int{0, 1, 0, 3, 12}, want: []int{1, 3, 12, 0, 0}},
+		{name: "test 2", input: []int{0}, want: []int{0}},
+		{name: "test 3", input: []int{0, 1, 0, 3, 12, 0, 2, 0}, want: []int{1, 3, 12, 2, 0, 0, 0, 0}},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			moveZeroes(tt.input)
+			assert.Equal(t, tt.want, tt.input)
+		})
+	}
+}
