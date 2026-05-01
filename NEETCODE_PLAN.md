@@ -31,7 +31,7 @@
 | [x] | **202. Happy Number** | Easy | HashSet / Floyd | 2026-04-30 |
 | [x] | **36. Valid Sudoku** | Medium | Matrix / HashSet | 2026-04-30 | |
 | [x] | **Practice: 532. K-diff Pairs in an Array** | Medium | HashSet / Two Pointers | 2026-04-30 | |
-| [ ] | **380. Insert Delete GetRandom O(1)** | Medium | Map + Dynamic Array | | |
+| [x] | **380. Insert Delete GetRandom O(1)** | Medium | Map + Dynamic Array | 2026-05-01 | |
 
 ## Ежедневная разминка (Repetition)
 0. **Warm-up**: Перед новой задачей решаем одну из уже выполненных ([x]) самостоятельно.
