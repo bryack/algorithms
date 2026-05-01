@@ -1,6 +1,9 @@
 package main
 
-import "math/rand"
+import (
+	"math/rand"
+	"unicode"
+)
 
 func repeatedCharacter(s string) string {
 	var arr [26]bool
@@ -51,4 +54,29 @@ func (this *RandomizedSet) Remove(val int) bool {
 
 func (this *RandomizedSet) GetRandom() int {
 	return this.nums[rand.Intn(len(this.nums))]
+}
+
+func isPalindrome(s string) bool {
+	left := 0
+	right := len(s) - 1
+
+	for left < right {
+		if !unicode.IsDigit(rune(s[left])) && !unicode.IsLetter(rune(s[left])) {
+			left++
+			continue
+		}
+
+		if !unicode.IsDigit(rune(s[right])) && !unicode.IsLetter(rune(s[right])) {
+			right--
+			continue
+		}
+
+		if unicode.ToLower(rune(s[left])) != unicode.ToLower(rune(s[right])) {
+			return false
+		}
+
+		left++
+		right--
+	}
+	return true
 }
