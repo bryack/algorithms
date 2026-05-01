@@ -63,3 +63,20 @@ func TestIsPalindrome(t *testing.T) {
 		})
 	}
 }
+
+func TestReverseString(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []byte
+		want  []byte
+	}{
+		{name: "test 1", input: []byte{'h', 'e', 'l', 'l', 'o'}, want: []byte{'o', 'l', 'l', 'e', 'h'}},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			reverseString(tt.input)
+			assert.Equal(t, tt.want, tt.input)
+		})
+	}
+}
