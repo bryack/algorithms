@@ -89,21 +89,11 @@ func reverseString(s []byte) {
 
 func moveZeroes(nums []int) {
 	i := 0
-	j := 0
 
-	for j < len(nums) {
+	for j := 0; j < len(nums); j++ {
 		if nums[j] != 0 {
-			nums[i] = nums[j]
+			nums[i], nums[j] = nums[j], nums[i]
 			i++
-			j++
-		} else {
-			j++
 		}
-
-	}
-
-	for i < len(nums) {
-		nums[i] = 0
-		i++
 	}
 }

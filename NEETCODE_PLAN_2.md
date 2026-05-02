@@ -6,8 +6,8 @@
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
 | [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | 🟢 L4 | |
-| [x] | **283. Move Zeroes** | Easy | Two Pointers (fast & slow) | 2026-05-01 | 🟢 L4 | |
-| [ ] | **977. Squares of a Sorted Array** | Easy | Two Pointers (fill from end) | | | |
+| [x] | **283. Move Zeroes** | Easy | Two Pointers (fast & slow) | 2026-05-01 | 🟠 L2 (2-pass: L4, 1-pass: подсмотрено) | 2026-05-04 |
+| [x] | **977. Squares of a Sorted Array** | Easy | Two Pointers (fill from end) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
 | [ ] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array) | | | |
 | [ ] | **15. 3Sum** | Medium | Two Pointers + Sorting | | | |
 | [ ] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | | | |
