@@ -26,3 +26,23 @@ func TestSortedSquares(t *testing.T) {
 		})
 	}
 }
+
+func TestTwoSum(t *testing.T) {
+	tests := []struct {
+		name   string
+		input  []int
+		target int
+		want   []int
+	}{
+		{name: "test 1", input: []int{2, 7, 11, 15}, target: 9, want: []int{1, 2}},
+		{name: "test 2", input: []int{2, 3, 4}, target: 6, want: []int{1, 3}},
+		{name: "test 3", input: []int{-1, 0}, target: -1, want: []int{1, 2}},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := twoSum(tt.input, tt.target)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

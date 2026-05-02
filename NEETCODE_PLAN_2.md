@@ -1,17 +1,30 @@
-# NeetCode Roadmap — Two Pointers
+# NeetCode Roadmap — Two Pointers (250)
 
 Цель: Освоить технику двух указателей для оптимизации алгоритмов с массивами и строками.
 
 | Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
-| [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
 | [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | 🟢 L4 | |
+| [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
+| [ ] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) | | | |
+| [ ] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | | | |
+| [ ] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | | | |
+| [ ] | **392. Is Subsequence** | Easy | Two Pointers (converging check) | | | |
+| [ ] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | | | |
+| [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
+| [ ] | **15. 3Sum** | Medium | Two Pointers + Sorting | | | |
+| [ ] | **18. 4Sum** | Medium | Two Pointers + Sorting | | | |
+| [ ] | **189. Rotate Array** | Medium | Two Pointers / Reverse | | | |
+| [ ] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | | | |
+| [ ] | **881. Boats to Save People** | Medium | Two Pointers (greedy pairing) | | | |
+| [ ] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | | | |
+
+## Bonus (NeetCode 150, уже решены)
+
+| Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
+| :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [x] | **283. Move Zeroes** | Easy | Two Pointers (fast & slow) | 2026-05-01 | 🟠 L2 (2-pass: L4, 1-pass: подсмотрено) | 2026-05-04 |
 | [x] | **977. Squares of a Sorted Array** | Easy | Two Pointers (fill from end) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
-| [ ] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array) | | | |
-| [ ] | **15. 3Sum** | Medium | Two Pointers + Sorting | | | |
-| [ ] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | | | |
-| [ ] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | | | |
 
 ## Легенда оценки (Retention)
 
@@ -30,6 +43,14 @@
 3. **Понимание** — можешь ли объяснить алгоритм своими словами и воспроизвести позже?
 4. **Качество кода** — обработаны ли edge cases, чистый ли код, верный ли Big O анализ?
 5. **Нужно ли повторение** — ставить дату ревью, если оценка L1-L3
+
+---
+
+## Правило перехода
+
+> **Не начинать новую задачу, пока текущая не доведена до L4.**
+>
+> Исключение: разминка (warm-up) перед новой задачей — повторение уже решённой ([x]) задачи.
 
 ---
 

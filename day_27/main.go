@@ -44,3 +44,21 @@ func sortedSquares(nums []int) []int {
 	}
 	return s
 }
+
+func twoSum(numbers []int, target int) []int {
+	i, j := 0, len(numbers)-1
+
+	for {
+		sum := numbers[i] + numbers[j]
+		if sum == target {
+			return []int{i + 1, j + 1}
+		}
+
+		if sum > target {
+			j--
+		}
+		if sum < target {
+			i++
+		}
+	}
+}

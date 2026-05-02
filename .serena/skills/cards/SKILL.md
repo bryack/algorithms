@@ -128,3 +128,80 @@ A: [Ответ 2]
 - ❌ Задавать вопросы уровня Senior для Junior позиции
 - ❌ Слишком абстрактные вопросы без связи с практикой
 - ❌ Длинные ответы, которые невозможно запомнить
+
+---
+
+## Работа с CSV-карточками
+
+Карточки хранятся в корне проекта в файле `Программирование Карточки.csv` (формат `Front,Back`).
+
+### Добавление / обновление карточки
+
+Для безопасной перезаписи CSV используется Python-скрипт:
+
+```bash
+python3 .serena/skills/cards/scripts/update_csv_card.py '<Front>' '<Back>'
+```
+
+Что делает скрипт:
+1. Читает CSV через `csv.reader`/`csv.writer` с `newline=''` (best practice из Context7 — иначе newlines внутри quoted fields и `\r\n` ломаются)
+2. Ищет строку по **точному** совпадению `Front` (не substring)
+3. Заменяет `Back` на новый текст
+4. Пишет результат во временный файл и атомарно заменяет оригинал через `os.replace`
+5. Если карточка не найдена — выводит `Card not found` и возвращает exit code `1`
+
+### Способы передать Back
+
+**Однострочный** — аргументом:
+```bash
+python3 .serena/skills/cards/scripts/update_csv_card.py "Название" "Однострочный ответ"
+```
+
+**Многострочный** — через stdin (рекомендуется):
+```bash
+python3 .serena/skills/cards/scripts/update_csv_card.py "Название" - << 'EOF'
+Первая строка
+Вторая строка
+EOF
+```
+
+**Из файла**:
+```bash
+python3 .serena/skills/cards/scripts/update_csv_card.py "Название" --file back.txt
+```
+
+### Проверенные edge cases
+
+- Back с запятыми — CSV writer автоматически оборачивает в кавычки
+- Back с кавычками — экранируются удвоением `""`
+- Back с `\n` и `\r\n` — корректно сохраняются внутри quoted field
+- Пустой Back — записывается как пустое поле
+- Большой Back (15+ KB) — работает без проблем
+- Точное совпадение Front — не substring, соседние карточки не затрагиваются
+
+### Альтернатива: inline Python
+
+Если нужно сложное редактирование (дописать в конец, а не заменить полностью):
+
+```python
+python3 << 'EOF'
+import csv
+import os
+
+filepath = "Программирование Карточки.csv"
+temp_path = filepath + ".tmp"
+target_front = "..."
+questions_block = "\n\n---\n\n## Вопросы для собеседования\n..."
+
+with open(filepath, newline='', encoding='utf-8') as infile, \
+     open(temp_path, 'w', newline='', encoding='utf-8') as outfile:
+    reader = csv.reader(infile)
+    writer = csv.writer(outfile, quoting=csv.QUOTE_MINIMAL)
+    for row in reader:
+        if len(row) >= 2 and row[0] == target_front:
+            row[1] = row[1] + questions_block
+        writer.writerow(row)
+
+os.replace(temp_path, filepath)
+EOF
+```
