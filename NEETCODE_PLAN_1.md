@@ -9,9 +9,9 @@
 | [x] | **1. Two Sum** | Easy | HashMap (One-pass) | 2026-04-24 | 2026-05-06 (повтор) |
 | [x] | **387. First Unique Char** | Easy | Frequency Counting | 2026-04-24 | 2026-05-21 (повтор) |
 | [x] | **2351. First Letter Twice** | Easy | Frequency Counting | 2026-04-24 | 2026-05-23 (повтор) |
-| [x] | **49. Group Anagrams** | Medium | Categorization / Map Keys | 2026-04-24 | |
+| [x] | **49. Group Anagrams** | Medium | Categorization / Map Keys | 2026-04-24 | 2026-05-30 (повтор) |
 | [x] | **205. Isomorphic Strings** | Easy | String Normalization / Mapping | 2026-04-25 | 2026-05-04 (Algorithmic Logic) |
-| [x] | **219. Contains Duplicate II** | Easy | Sliding Window / HashMap | 2026-04-25 | |
+| [x] | **219. Contains Duplicate II** | Easy | Sliding Window / HashMap | 2026-04-25 | 2026-06-07 |
 | [x] | **1002. Find Common Chars** | Easy | Frequency Intersection | 2026-04-25 | |
 | [x] | **Practice: 350. Intersection of Two Arrays II** | Easy | Frequency Counting / Intersection | 2026-04-25 | |
 | [x] | **Practice: 383. Ransom Note** | Easy | Frequency Counting / Sufficiency | 2026-04-26 |
