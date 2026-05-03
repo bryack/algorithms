@@ -1,5 +1,7 @@
 package main
 
+import "strings"
+
 func containsNearbyDuplicate(nums []int, k int) bool {
 	m := make(map[int]int, len(nums)/2)
 
@@ -43,4 +45,28 @@ func isPalindrome(s string, i, j int) bool {
 		j--
 	}
 	return true
+}
+
+func mergeAlternately(word1 string, word2 string) string {
+	var builder strings.Builder
+	builder.Grow(len(word1) + len(word2))
+	i := 0
+
+	for i < len(word1) {
+		if i < len(word2) {
+			builder.WriteByte(word1[i])
+			builder.WriteByte(word2[i])
+		} else {
+			builder.WriteByte(word1[i])
+		}
+		i++
+	}
+	if i < len(word2) {
+		for i < len(word2) {
+			builder.WriteByte(word2[i])
+			i++
+		}
+
+	}
+	return builder.String()
 }

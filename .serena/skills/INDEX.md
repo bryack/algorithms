@@ -45,12 +45,13 @@
 ### Фазы обучения
 - Фаза 0: Математический фундамент (недели 1-2) ✅
 - Фаза 1: Массивы + Рекурсия (недели 3-7) ✅
-- Фаза 1.5: [NeetCode] Arrays & Hashing (В процессе) 🔄
+- Фаза 1.5: [NeetCode] Arrays & Hashing (34 задачи) ✅
+- Фаза 1.6: [NeetCode] Two Pointers (в процессе) 🔄 ← **Текущий блок**
 - Фаза 2: Линейные структуры (недели 8-12) ← **Приостановлено для закрепления базы**
 - Фаза 3: Деревья и Графы (недели 13-18)
 
 ### Текущий план
-Отслеживается в файле `NEETCODE_PLAN.md`. Цель — решить 7 ключевых задач на мапы и массивы.
+Отслеживается в файле `NEETCODE_PLAN_2.md` (Two Pointers). Цель — закрепить технику двух указателей.
 - Фаза 4: ДП базовое (недели 19-20)
 - Фаза 5: Полировка (недели 21-24)
 
@@ -59,15 +60,16 @@
 - **Переработано**: 22 (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Graceful Shutdown, errors.Is/errors.As, Dependency Injection, Generics, Clean Architecture, Ports & Adapters, DDD)
 - **Следующая**: #14 FSM
 
-### Решённые задачи (текущая сессия)
-- [x] VK Education: Слияние двух отсортированных массивов (day_11)
-- [x] VK Education: Rock'n'Run High Score (day_11)
-- [x] VK Education: Очистка эксперимента (day_10)
-- [x] VK Education: Списывание в школе (day_10)
-- [x] LeetCode 55: Jump Game (day_10)
-- [x] Карточка #11: Clean Architecture
-- [x] Стек на односвязном списке (day_16)
-- [x] Стек на динамическом массиве (SliceStack, day_16)
+### Решённые задачи (текущая сессия — Two Pointers)
+- [x] 283. Move Zeroes (day_26)
+- [x] 125. Valid Palindrome (day_26)
+- [x] 344. Reverse String (day_26)
+- [x] 380. Insert Delete GetRandom O(1) (day_26)
+- [x] 49. Group Anagrams (day_27)
+- [x] 977. Squares of a Sorted Array (day_27)
+- [x] 167. Two Sum II — Input Array Is Sorted (day_27)
+- [x] 219. Contains Duplicate II — warm-up (day_28)
+- [x] 680. Valid Palindrome II (day_28)
 
 ## Критические правила (всегда помнить!)
 
@@ -145,12 +147,22 @@
   - Роберт Седжвик, фундаментальное понимание алгоритмов
   - Статус: первый юнит пройден, возвращаюсь периодически
 
+- **The Nature of GO PROGRAMMING** (igoroutine.courses)
+  - Курс по глубинному пониманию Go
+  - Статус: начат 2026-05-03, первое задание
+
 ### Завершённые
 - **Khan Academy** — Arithmetic (Units 1-19)
 - **Khan Academy** — Basic Geometry (Units 1-6)
 - **Khan Academy** — Coordinate Plane (Unit 7)
 - **Khan Academy** — Decomposing to find area (Unit 8)
+- **Khan Academy** — Area and perimeter (Unit 9)
+- **Khan Academy** — Multiply to find area (Unit 10)
+- **Khan Academy** — Decompose figures to find area (Unit 11)
+- **Khan Academy** — Volume (Unit 12)
+- **Khan Academy** — Triangle side lengths / Pythagorean theorem (Unit 13)
+- **Khan Academy** — Geometric transformations (Unit 14)
 
 ## Последнее обновление
 
-2026-04-16 — Переход к Фазе 2 (Линейные структуры). Реализованы стек на списке и на массиве. Начата работа над очередью (кольцевой буфер).
+2026-05-03 — Завершён NeetCode Arrays & Hashing (34 задачи). Переход к Two Pointers. Начат курс "The Nature of GO PROGRAMMING".
