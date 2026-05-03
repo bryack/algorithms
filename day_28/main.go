@@ -70,3 +70,24 @@ func mergeAlternately(word1 string, word2 string) string {
 	}
 	return builder.String()
 }
+
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	first, second, writeIdx := m-1, n-1, m+n-1
+
+	for first >= 0 && second >= 0 {
+		if nums1[first] >= nums2[second] {
+			nums1[writeIdx] = nums1[first]
+			first--
+		} else {
+			nums1[writeIdx] = nums2[second]
+			second--
+		}
+		writeIdx--
+	}
+
+	for second >= 0 {
+		nums1[writeIdx] = nums2[second]
+		writeIdx--
+		second--
+	}
+}

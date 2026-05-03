@@ -7,7 +7,7 @@
 | [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | 🟢 L4 | |
 | [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
 | [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) | 2026-05-03 | 🔴 L2 | 2026-05-05 |
-| [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-05-03 | 🟠 L2 | 2026-05-15 |
+| [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-05-03 | 🔴 L1 | 2026-05-06 |
 | [ ] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | | | |
 | [ ] | **392. Is Subsequence** | Easy | Two Pointers (converging check) | | | |
 | [ ] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | | | |
