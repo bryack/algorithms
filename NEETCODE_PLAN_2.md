@@ -10,7 +10,7 @@
 | [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-05-03 | 🔴 L1 | 2026-05-06 |
 | [x] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | 2026-05-03 | 🔴 L1 | 2026-05-06 |
 | [x] | **392. Is Subsequence** | Easy | Two Pointers (converging check) | 2026-05-04 | ⚪ L5 | 2026-09-04 |
-| [ ] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | | | |
+| [x] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | 2026-05-04 | 🟡 L3 | 2026-05-05 |
 | [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
 | [ ] | **15. 3Sum** | Medium | Two Pointers + Sorting | | | |
 | [ ] | **18. 4Sum** | Medium | Two Pointers + Sorting | | | |

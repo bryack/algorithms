@@ -25,3 +25,23 @@ func TestIsSubsequence(t *testing.T) {
 		})
 	}
 }
+
+func TestRemoveDuplicates(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		want int
+	}{
+		{name: "test 1", nums: []int{1, 1, 2}, want: 2},
+		{name: "test 2", nums: []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}, want: 5},
+		{name: "test 3", nums: []int{0}, want: 1},
+		{name: "test 4", nums: []int{1, 2, 3}, want: 3},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := removeDuplicates(tt.nums)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

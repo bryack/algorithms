@@ -43,3 +43,21 @@ func isSubsequence(s string, t string) bool {
 	}
 	return i == len(s)
 }
+
+func removeDuplicates(nums []int) int {
+	if len(nums) == 1 {
+		return 1
+	}
+	slow, fast := 0, 1
+
+	for fast < len(nums) {
+		if nums[slow] == nums[fast] {
+			fast++
+		} else {
+			nums[slow+1] = nums[fast]
+			fast++
+			slow++
+		}
+	}
+	return slow + 1
+}
