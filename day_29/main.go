@@ -22,9 +22,24 @@ func commonChars(words []string) []string {
 	for i := 0; i < len(arrDefault); i++ {
 		if arrDefault[i] > 0 {
 			for j := 0; j < arrDefault[i]; j++ {
-				s = append(s, string(i+'a'))
+				s = append(s, string(rune(i+'a')))
 			}
 		}
 	}
 	return s
+}
+
+func isSubsequence(s string, t string) bool {
+	if len(t) < len(s) {
+		return false
+	}
+
+	i, j := 0, 0
+	for i < len(s) && j < len(t) {
+		if s[i] == t[j] {
+			i++
+		}
+		j++
+	}
+	return i == len(s)
 }
