@@ -1,5 +1,7 @@
 package main
 
+import "slices"
+
 func commonChars(words []string) []string {
 	var arrDefault [26]int
 	var s []string
@@ -60,4 +62,41 @@ func removeDuplicates(nums []int) int {
 		}
 	}
 	return slow + 1
+}
+
+func threeSum(nums []int) [][]int {
+	res := make([][]int, 0, len(nums)/2)
+
+	slices.Sort(nums)
+	if nums[0] > 0 {
+		return res
+	}
+
+	for i := 0; i < len(nums)-2; i++ {
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+
+		j, k := i+1, len(nums)-1
+		for j < k {
+			sum := nums[i] + nums[j] + nums[k]
+
+			if sum > 0 {
+				k--
+			} else if sum < 0 {
+				j++
+			} else if sum == 0 {
+				res = append(res, []int{nums[i], nums[j], nums[k]})
+				j++
+				k--
+				for j < k && nums[j] == nums[j-1] {
+					j++
+				}
+				for j < k && nums[k] == nums[k+1] {
+					k--
+				}
+			}
+		}
+	}
+	return res
 }

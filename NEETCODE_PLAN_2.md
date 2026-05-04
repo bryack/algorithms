@@ -12,7 +12,7 @@
 | [x] | **392. Is Subsequence** | Easy | Two Pointers (converging check) | 2026-05-04 | ⚪ L5 | 2026-09-04 |
 | [x] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | 2026-05-04 | 🟡 L3 | 2026-05-05 |
 | [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
-| [ ] | **15. 3Sum** | Medium | Two Pointers + Sorting | | | |
+| [x] | **15. 3Sum** | Medium | Two Pointers + Sorting | 2026-05-04 | 🟠 L2 | 2026-05-06 |
 | [ ] | **18. 4Sum** | Medium | Two Pointers + Sorting | | | |
 | [ ] | **189. Rotate Array** | Medium | Two Pointers / Reverse | | | |
 | [ ] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | | | |

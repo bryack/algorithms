@@ -45,3 +45,29 @@ func TestRemoveDuplicates(t *testing.T) {
 		})
 	}
 }
+
+func TestThreeSum(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		want [][]int
+	}{
+		{name: "test 1", nums: []int{-1, 0, 1, 2, -1, -4}, want: [][]int{
+			{-1, -1, 2},
+			{-1, 0, 1},
+		},
+		},
+		{name: "test 2", nums: []int{0, 1, 1}, want: [][]int{}},
+		{name: "test 3", nums: []int{0, 0, 0}, want: [][]int{
+			{0, 0, 0},
+		},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := threeSum(tt.nums)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
