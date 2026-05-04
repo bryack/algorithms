@@ -8,7 +8,7 @@
 | [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
 | [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) | 2026-05-03 | 🔴 L2 | 2026-05-05 |
 | [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-05-03 | 🔴 L1 | 2026-05-06 |
-| [ ] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | | | |
+| [x] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | 2026-05-03 | 🔴 L1 | 2026-05-06 |
 | [ ] | **392. Is Subsequence** | Easy | Two Pointers (converging check) | | | |
 | [ ] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | | | |
 | [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
