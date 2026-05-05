@@ -12,8 +12,8 @@
 | [x] | **49. Group Anagrams** | Medium | Categorization / Map Keys | 2026-04-24 | 2026-05-30 (повтор) |
 | [x] | **205. Isomorphic Strings** | Easy | String Normalization / Mapping | 2026-04-25 | 2026-05-04 (Algorithmic Logic) |
 | [x] | **219. Contains Duplicate II** | Easy | Sliding Window / HashMap | 2026-04-25 | 2026-06-07 |
-| [x] | **1002. Find Common Chars** | Easy | Frequency Intersection | 2026-04-25 | | 2026-07-04 (повтор, хорошо усвоено) |
-| [x] | **Practice: 350. Intersection of Two Arrays II** | Easy | Frequency Counting / Intersection | 2026-04-25 | |
+| [x] | **1002. Find Common Chars** | Easy | Frequency Intersection | 2026-04-25 | 2026-07-04 (повтор, хорошо усвоено) | |
+| [x] | **Practice: 350. Intersection of Two Arrays II** | Easy | Frequency Counting / Intersection | 2026-04-25 | | 2026-05-15 (повтор, нужно закрепить) |
 | [x] | **Practice: 383. Ransom Note** | Easy | Frequency Counting / Sufficiency | 2026-04-26 |
 | [x] | **Practice: 1189. Max Num of Balloons** | Easy | Frequency Counting / Limiting Factor | 2026-04-26 |
 | [x] | **347. Top K Frequent Elements** | Medium | Bucket Sort / Heap | 2026-04-26 |
