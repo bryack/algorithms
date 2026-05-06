@@ -48,3 +48,23 @@ func TestMaxArea(t *testing.T) {
 		})
 	}
 }
+
+func TestNumRescueBoats(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		k     int
+		want  int
+	}{
+		{name: "test 1", input: []int{1, 2}, k: 3, want: 1},
+		{name: "test 2", input: []int{3, 2, 2, 1}, k: 3, want: 3},
+		{name: "test 3", input: []int{3, 5, 3, 4}, k: 5, want: 4},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := numRescueBoats(tt.input, tt.k)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

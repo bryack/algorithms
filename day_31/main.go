@@ -1,5 +1,7 @@
 package main
 
+import "slices"
+
 func canConstruct(ransomNote string, magazine string) bool {
 	if len(magazine) < len(ransomNote) {
 		return false
@@ -51,4 +53,23 @@ func maxArea(height []int) int {
 		}
 	}
 	return maxArea
+}
+
+func numRescueBoats(people []int, limit int) int {
+	boats := 0
+
+	slices.Sort(people)
+	i, j := 0, len(people)-1
+	for i <= j {
+		sum := people[i] + people[j]
+		if sum <= limit {
+			boats++
+			i++
+			j--
+		} else {
+			boats++
+			j--
+		}
+	}
+	return boats
 }

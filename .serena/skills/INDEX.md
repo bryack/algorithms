@@ -70,6 +70,10 @@
 - [x] 167. Two Sum II — Input Array Is Sorted (day_27)
 - [x] 219. Contains Duplicate II — warm-up (day_28)
 - [x] 680. Valid Palindrome II (day_28)
+- [x] 18. 4Sum (day_30)
+- [x] 383. Ransom Note — warm-up (day_31)
+- [x] 189. Rotate Array (day_31)
+- [x] 11. Container With Most Water (day_31)
 
 ## Критические правила (всегда помнить!)
 
@@ -151,6 +155,14 @@
   - Курс по глубинному пониманию Go
   - Статус: начат 2026-05-03, первое задание
 
+- **Nand to Tetris** — «From Nand to Tetris» (архитектура компьютера)
+  - Практика: построение компьютера от логических вентилей до ОС
+  - Статус: Lab 1 в процессе (NOT, AND, OR, XOR, MUX, DMUX, NOT16, AND16, OR16, MUX16)
+
+- **sql-academy.org** — Практика SQL
+  - Схема «Расписание», PostgreSQL
+  - Статус: пройден оператор LIKE
+
 ### Завершённые
 - **Khan Academy** — Arithmetic (Units 1-19)
 - **Khan Academy** — Basic Geometry (Units 1-6)
@@ -165,4 +177,4 @@
 
 ## Последнее обновление
 
-2026-05-03 — Завершён NeetCode Arrays & Hashing (34 задачи). Переход к Two Pointers. Начат курс "The Nature of GO PROGRAMMING".
+2026-05-06 — Добавлены задачи Two Pointers (4Sum, Rotate Array, Container With Most Water). Пройден оператор LIKE в SQL Academy. Начат Nand to Tetris Lab 1.
