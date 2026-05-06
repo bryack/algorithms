@@ -14,7 +14,7 @@
 | [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-05-02 | 🟡 L3 | 2026-05-04 |
 | [x] | **15. 3Sum** | Medium | Two Pointers + Sorting | 2026-05-04 | 🟠 L2 | 2026-05-06 |
 | [x] | **18. 4Sum** | Medium | Two Pointers + Sorting | 2026-05-05 | 🟠 L2 | 2026-05-07 |
-| [ ] | **189. Rotate Array** | Medium | Two Pointers / Reverse | | | |
+| [x] | **189. Rotate Array** | Medium | Two Pointers / Reverse | 2026-05-06 | 🟡 L3 | 2026-05-08 |
 | [ ] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | | | |
 | [ ] | **881. Boats to Save People** | Medium | Two Pointers (greedy pairing) | | | |
 | [ ] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | | | |
