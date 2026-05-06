@@ -27,3 +27,24 @@ func TestRotate(t *testing.T) {
 		})
 	}
 }
+
+func TestMaxArea(t *testing.T) {
+	tests := []struct {
+		name  string
+		input []int
+		want  int
+	}{
+		{name: "test 1", input: []int{1, 8, 6, 2, 5, 4, 8, 3, 7}, want: 49},
+		{name: "test 2", input: []int{1, 1}, want: 1},
+		{name: "test 3", input: []int{1, 2, 3, 4, 5}, want: 6},
+		{name: "test 4", input: []int{5, 4, 3, 2, 1}, want: 6},
+		{name: "test 5", input: []int{5, 5, 5, 5}, want: 15},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := maxArea(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}

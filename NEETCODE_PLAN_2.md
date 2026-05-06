@@ -15,7 +15,7 @@
 | [x] | **15. 3Sum** | Medium | Two Pointers + Sorting | 2026-05-04 | 🟠 L2 | 2026-05-06 |
 | [x] | **18. 4Sum** | Medium | Two Pointers + Sorting | 2026-05-05 | 🟠 L2 | 2026-05-07 |
 | [x] | **189. Rotate Array** | Medium | Two Pointers / Reverse | 2026-05-06 | 🟡 L3 | 2026-05-08 |
-| [ ] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | | | |
+| [x] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | 2026-05-06 | 🟠 L2 | 2026-05-08 |
 | [ ] | **881. Boats to Save People** | Medium | Two Pointers (greedy pairing) | | | |
 | [ ] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | | | |
 

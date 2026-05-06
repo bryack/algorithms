@@ -36,3 +36,19 @@ func rotate(nums []int, k int) {
 		nums[i], nums[j] = nums[j], nums[i]
 	}
 }
+
+func maxArea(height []int) int {
+	maxArea := 0
+	i, j := 0, len(height)-1
+
+	for i < j {
+		if height[i] <= height[j] {
+			maxArea = max(maxArea, (j-i)*height[i])
+			i++
+		} else {
+			maxArea = max(maxArea, (j-i)*height[j])
+			j--
+		}
+	}
+	return maxArea
+}
