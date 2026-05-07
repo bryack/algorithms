@@ -32,3 +32,31 @@ func maxNumberOfBalloons(text string) int {
 
 	return count
 }
+
+func trap(height []int) int {
+	if len(height) <= 2 {
+		return 0
+	}
+	i, j := 0, len(height)-1
+	maxLeft, maxRight := height[0], height[len(height)-1]
+	count := 0
+
+	for i < j {
+		if maxLeft <= maxRight {
+			i++
+			if height[i] >= maxLeft {
+				maxLeft = max(maxLeft, height[i])
+			} else {
+				count += maxLeft - height[i]
+			}
+		} else {
+			j--
+			if height[j] >= maxRight {
+				maxRight = max(maxRight, height[j])
+			} else {
+				count += maxRight - height[j]
+			}
+		}
+	}
+	return count
+}

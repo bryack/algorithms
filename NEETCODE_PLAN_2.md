@@ -17,7 +17,7 @@
 | [x] | **189. Rotate Array** | Medium | Two Pointers / Reverse | 2026-05-06 | 🟡 L3 | 2026-05-08 |
 | [x] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | 2026-05-06 | 🟠 L2 | 2026-05-08 |
 | [x] | **881. Boats to Save People** | Medium | Two Pointers (greedy pairing) | 2026-05-06 | 🟠 L2 | 2026-05-08 |
-| [ ] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | | | |
+| [x] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | 2026-05-07 | 🔴 L1 | 2026-05-21 |
 
 ## Bonus (NeetCode 150, уже решены)
 
