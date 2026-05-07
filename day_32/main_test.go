@@ -28,3 +28,39 @@ func TestTrap(t *testing.T) {
 		})
 	}
 }
+
+func TestIsPalindrome(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  bool
+	}{
+		{
+			name:  "test 1",
+			input: "A man, a plan, a canal: Panama",
+			want:  true,
+		},
+		{
+			name:  "test 2",
+			input: "race a car",
+			want:  false,
+		},
+		{
+			name:  "test 3",
+			input: " ",
+			want:  true,
+		},
+		{
+			name:  "test 4",
+			input: "a1,ma:  m1a",
+			want:  true,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := isPalindrome(tt.input)
+			assert.Equal(t, tt.want, result)
+		})
+	}
+}
