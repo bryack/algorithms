@@ -77,7 +77,7 @@
 
 | Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
-| [ ] | **917. Reverse Only Letters** | Easy | Two Pointers (swap letters, skip non-letters) | | | |
-| [ ] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) — повторение | | | |
+| [x] | **917. Reverse Only Letters** | Easy | Two Pointers (swap letters, skip non-letters) | 2026-05-08 | 🟢 L3 | |
+| [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) — повторение | 2026-05-08 | 🟡 L3 | |
 | [ ] | **5. Longest Palindromic Substring** | Medium | Two Pointers (expand around center) | | | |
 | [ ] | **647. Palindromic Substrings** | Medium | Two Pointers (expand around center, count) | | | |
