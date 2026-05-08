@@ -4,7 +4,7 @@
 
 | Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
-| [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | 🟢 L4 | |
+| [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | ⚪ L5 | |
 | [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🔴 L1 | 2026-05-03 |
 | [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) | 2026-05-03 | 🔴 L2 | 2026-05-05 |
 | [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-05-03 | 🔴 L1 | 2026-05-06 |
@@ -68,3 +68,16 @@
 1. **TDD**: Сначала тесты в `day_X/main_test.go`.
 2. **Go Way**: Используем `make` с аллокацией, `struct{}` для сетов, `range` для итераций.
 3. **Complexity**: Анализируем Time и Space Complexity для каждого решения.
+
+---
+
+## Дополнительная практика: Палиндромы
+
+Задачи для закрепления Two Pointers на строках и работы с Unicode в Go.
+
+| Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
+| :---: | :--- | :---: | :--- | :--- | :--- | :--- |
+| [ ] | **917. Reverse Only Letters** | Easy | Two Pointers (swap letters, skip non-letters) | | | |
+| [ ] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) — повторение | | | |
+| [ ] | **5. Longest Palindromic Substring** | Medium | Two Pointers (expand around center) | | | |
+| [ ] | **647. Palindromic Substrings** | Medium | Two Pointers (expand around center, count) | | | |
