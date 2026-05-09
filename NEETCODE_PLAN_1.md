@@ -16,8 +16,8 @@
 | [x] | **Practice: 350. Intersection of Two Arrays II** | Easy | Frequency Counting / Intersection | 2026-04-25 | | 2026-05-15 (повтор, нужно закрепить) |
 | [x] | **Practice: 383. Ransom Note** | Easy | Frequency Counting / Sufficiency | 2026-04-26 | 2026-06-06 (L4, повтор через месяц) |
 | [x] | **Practice: 1189. Max Num of Balloons** | Easy | Frequency Counting / Limiting Factor | 2026-04-26 | 2026-05-14 (повтор, L2) |
-| [x] | **347. Top K Frequent Elements** | Medium | Bucket Sort / Heap | 2026-04-26 |
-| [x] | **Practice: 451. Sort Characters By Frequency** | Medium | Bucket Sort / String Building | 2026-04-26 | |
+| [x] | **347. Top K Frequent Elements** | Medium | Bucket Sort / Heap | 2026-04-26 | 2026-05-08 |
+| [x] | **Practice: 451. Sort Characters By Frequency** | Medium | Bucket Sort / String Building | 2026-04-26 | 2026-05-09 |
 | [x] | **Practice: 1636. Sort Array by Inc Frequency** | Easy | Bucket Sort / Custom Sort | 2026-04-27 | |
 | [x] | **Practice: 692. Top K Frequent Words** | Medium | Bucket Sort / Lexicographical Sort | 2026-04-27 | |
 | [x] | **238. Product of Array Except Self** | Medium | Prefix & Suffix Products | 2026-04-27 |
