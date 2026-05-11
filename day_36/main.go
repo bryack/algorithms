@@ -27,3 +27,15 @@ func twoSum(nums []int, target int) []int {
 	}
 	return nil
 }
+
+func runningSum(nums []int) []int {
+	sum := nums[0]
+	res := make([]int, len(nums))
+	res[0] = nums[0]
+
+	for i := 1; i < len(nums); i++ {
+		sum += nums[i]
+		res[i] = sum
+	}
+	return res
+}
