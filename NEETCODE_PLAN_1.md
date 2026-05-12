@@ -24,7 +24,7 @@
 | [x] | **Practice: 303. Range Sum Query - Immutable** | Easy | Prefix Sums | 2026-04-27 | |
 | [x] | **1480. Running Sum of 1d Array** | Easy | Prefix Sum | 2026-04-28 | |
 | [x] | **1732. Find the Highest Altitude** | Easy | Prefix Sum | 2026-04-28 | |
-| [x] | **724. Find Pivot Index** | Easy | Prefix Sum | 2026-04-28 | |
+| [x] | **724. Find Pivot Index** | Easy | Prefix Sum | 2026-04-28 | 2026-05-12 |
 | [x] | **Practice: 560. Subarray Sum Equals K** | Medium | Prefix Sums + HashMap | 2026-04-28 | |
 | [x] | **Practice: 525. Contiguous Array** | Medium | Prefix Sums (0 as -1) | 2026-04-29 | |
 | [x] | **128. Longest Consecutive Sequence** | Medium | Intelligent HashSet Search | 2026-04-29 |

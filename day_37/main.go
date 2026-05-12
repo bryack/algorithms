@@ -26,3 +26,20 @@ func pivotIndex(nums []int) int {
 	}
 	return -1
 }
+
+func findMiddleIndex(nums []int) int {
+	prefixSum := 0
+	for _, n := range nums {
+		prefixSum += n
+	}
+
+	leftSum := 0
+	for i, n := range nums {
+		prefixSum -= n
+		if leftSum == prefixSum {
+			return i
+		}
+		leftSum += n
+	}
+	return -1
+}
