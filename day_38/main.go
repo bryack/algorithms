@@ -62,3 +62,43 @@ func longestConsecutive(nums []int) int {
 	}
 	return maxLen
 }
+
+func backspaceCompare(s string, t string) bool {
+	i, j := len(s)-1, len(t)-1
+
+	for i >= 0 || j >= 0 {
+		i = findNextValidIndex(s, i)
+		j = findNextValidIndex(t, j)
+
+		if i < 0 && j < 0 {
+			return true
+		}
+
+		if i < 0 || j < 0 {
+			return false
+		}
+
+		if s[i] != t[j] {
+			return false
+		}
+		i--
+		j--
+	}
+	return true
+}
+
+func findNextValidIndex(str string, i int) int {
+	bs := 0
+	for i >= 0 {
+		if str[i] == '#' {
+			bs++
+			i--
+		} else if bs > 0 {
+			bs--
+			i--
+		} else {
+			return i
+		}
+	}
+	return -1
+}
