@@ -71,3 +71,23 @@ func threeSum(nums []int) [][]int {
 	}
 	return res
 }
+
+func sortedSquares(nums []int) []int {
+	idx := len(nums) - 1
+	res := make([]int, len(nums))
+
+	i, j := 0, len(nums)-1
+	for i <= j {
+		sumI := nums[i] * nums[i]
+		sumJ := nums[j] * nums[j]
+		if sumI > sumJ {
+			res[idx] = sumI
+			i++
+		} else {
+			res[idx] = sumJ
+			j--
+		}
+		idx--
+	}
+	return res
+}
