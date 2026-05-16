@@ -75,3 +75,45 @@ func isSubsequence(s string, t string) bool {
 	}
 	return len(s) == j
 }
+
+func backspaceCompare(s string, t string) bool {
+	i, j := len(s)-1, len(t)-1
+
+	for i >= 0 || j >= 0 {
+		i = getNextValid(s, i)
+		j = getNextValid(t, j)
+
+		if i < 0 && j < 0 {
+			return true
+		}
+
+		if i < 0 || j < 0 {
+			return false
+		}
+
+		if s[i] != t[j] {
+			return false
+		}
+		i--
+		j--
+	}
+
+	return true
+}
+
+func getNextValid(s string, i int) int {
+	count := 0
+	for i >= 0 {
+		if s[i] == '#' {
+			count++
+			i--
+		} else if count > 0 {
+			count--
+			i--
+		} else {
+			return i
+		}
+	}
+
+	return -1
+}
