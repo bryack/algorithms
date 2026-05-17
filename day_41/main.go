@@ -113,3 +113,14 @@ func moveZeroes(nums []int) {
 		}
 	}
 }
+
+func isSubsequence(sub string, s string) bool {
+	j := 0
+
+	for i := 0; i < len(s); i++ {
+		if j < len(sub) && s[i] == sub[j] {
+			j++
+		}
+	}
+	return len(sub) == j
+}
