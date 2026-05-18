@@ -30,3 +30,27 @@ func TestNumOfSubarrays(t *testing.T) {
 		})
 	}
 }
+
+func TestCountGoodSubstrings(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  int
+	}{
+		{name: "test1", input: "xyzzaz", want: 1},
+		{name: "test2", input: "aababcabc", want: 4},
+		{name: "empty", input: "", want: 0},
+		{name: "len_2", input: "ab", want: 0},
+		{name: "len_3_good", input: "abc", want: 1},
+		{name: "len_3_bad", input: "aaa", want: 0},
+		{name: "all_distinct", input: "abcdef", want: 4},
+		{name: "all_same", input: "aaaa", want: 0},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := countGoodSubstrings(tt.input)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}

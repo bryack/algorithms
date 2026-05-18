@@ -63,3 +63,22 @@ func numOfSubarrays(arr []int, k int, threshold int) int {
 	}
 	return res
 }
+
+func countGoodSubstrings(s string) int {
+	begin := 0
+	res := 0
+
+	for end := 0; end < len(s); end++ {
+		if end-begin == 2 {
+			if isGood(s[begin], s[begin+1], s[end]) {
+				res++
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+func isGood(begin, center, end byte) bool {
+	return begin != center && begin != end && center != end
+}

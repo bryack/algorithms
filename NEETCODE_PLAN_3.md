@@ -10,7 +10,7 @@
 | [ ] | **2461. Maximum Sum of Distinct Subarrays With Length K** | Medium | Fixed-size Sliding Window + distinct | | | |
 | [ ] | **1456. Maximum Number of Vowels in a Substring of Given Length** | Medium | Fixed-size Sliding Window (string counter) | | | |
 | [ ] | **2379. Minimum Recolors to Get K Consecutive Black Blocks** | Easy | Fixed-size Sliding Window (min ops) | | | |
-| [ ] | **1876. Substrings of Size Three with Distinct Characters** | Easy | Fixed-size Sliding Window (size 3) | | | |
+| [x] | **1876. Substrings of Size Three with Distinct Characters** | Easy | Fixed-size Sliding Window (size 3) | 2026-05-18 | 🟢 L4 | |
 | [ ] | **2653. Sliding Subarray Beauty** | Medium | Fixed-size Sliding Window (order stat) | | | |
 | [ ] | **1423. Maximum Points You Can Obtain from Cards** | Medium | Fixed-size Sliding Window (edges) | | | |
 | [ ] | **3. Longest Substring Without Repeating Characters** | Medium | Dynamic Sliding Window (distinct chars) | | | |
