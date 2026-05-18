@@ -82,3 +82,24 @@ func countGoodSubstrings(s string) int {
 func isGood(begin, center, end byte) bool {
 	return begin != center && begin != end && center != end
 }
+
+func getAverages(nums []int, k int) []int {
+	begin := 0
+	w_state := 0
+	res := make([]int, len(nums))
+	for i := range res {
+		res[i] = -1
+	}
+
+	for end := range nums {
+		w_state += nums[end]
+		w_size := end - begin + 1
+
+		if w_size == 2*k+1 {
+			res[k+begin] = w_state / w_size
+			w_state -= nums[begin]
+			begin++
+		}
+	}
+	return res
+}

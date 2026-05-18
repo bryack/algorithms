@@ -54,3 +54,27 @@ func TestCountGoodSubstrings(t *testing.T) {
 		})
 	}
 }
+
+func TestGetAverages(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		k    int
+		want []int
+	}{
+		{name: "test1", nums: []int{7, 4, 3, 9, 1, 8, 5, 2, 6}, k: 3, want: []int{-1, -1, -1, 5, 4, 4, -1, -1, -1}},
+		{name: "test2", nums: []int{100000}, k: 0, want: []int{100000}},
+		{name: "test3", nums: []int{8}, k: 100000, want: []int{-1}},
+		{name: "n3_k1", nums: []int{1, 2, 3}, k: 1, want: []int{-1, 2, -1}},
+		{name: "all_same", nums: []int{5, 5, 5, 5, 5}, k: 1, want: []int{-1, 5, 5, 5, -1}},
+		{name: "n2_k1", nums: []int{1, 2}, k: 1, want: []int{-1, -1}},
+		{name: "negatives", nums: []int{-1, -2, -3, -4, -5}, k: 1, want: []int{-1, -2, -3, -4, -1}},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := getAverages(tt.nums, tt.k)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
