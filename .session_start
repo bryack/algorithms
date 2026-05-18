@@ -1,18 +1,7 @@
-2026-05-17 08:48:03  # SESSION_START
-2026-05-17 08:49:59  # JOURNAL: 125. Valid Palindrome (start)
-2026-05-17 08:59:05  # JOURNAL: 125. Valid Palindrome (завершена)
-2026-05-17 09:01:30  # JOURNAL: 167. Two Sum II (start)
-2026-05-17 09:07:17  # JOURNAL: 167. Two Sum II (завершена)
-2026-05-17 09:10:14  # JOURNAL: 15. 3Sum (start)
-2026-05-17 09:20:46  # JOURNAL: 15. 3Sum (завершена)
-2026-05-17 09:26:22  # JOURNAL: 11. Container With Most Water (start)
-2026-05-17 09:33:25  # JOURNAL: 11. Container With Most Water (завершена)
-2026-05-17 09:39:36  # JOURNAL: 26. Remove Duplicates (start)
-2026-05-17 09:45:09  # JOURNAL: 26. Remove Duplicates (завершена)
-2026-05-17 09:46:46  # JOURNAL: 283. Move Zeroes (start)
-2026-05-17 09:52:40  # JOURNAL: 283. Move Zeroes (завершена)
-2026-05-17 10:02:55  # JOURNAL: 392. Is Subsequence (start)
-2026-05-17 10:06:59  # JOURNAL: 844. Backspace String Compare (start)
-2026-05-17 10:26:05  # JOURNAL: 844. Backspace String Compare (завершена)
-2026-05-17 10:31:18  # JOURNAL: 88. Merge Sorted Array (start)
-2026-05-17 10:39:52  # JOURNAL: 88. Merge Sorted Array (завершена)
+
+SESSION_END: 2026-05-18 11:31:32
+SESSION_START: 2026-05-18 11:31:32
+ACTIVITY_START: 2026-05-18 11:32:42 | Nature of Go - Доработка xv6, системный вызов SYS_va2pa
+ACTIVITY_END: 2026-05-18 11:57:32 | Nature of Go - Доработка xv6, системный вызов SYS_va2pa
+ACTIVITY_START: 2026-05-18 12:35:09 | Telegram-видео: LeetCode 125 Valid Palindrome — разбор решения
+ACTIVITY_END: 2026-05-18 12:59:03 | Telegram-видео: LeetCode 125 Valid Palindrome — разбор решения
