@@ -54,3 +54,23 @@ func countGoodSubstrings(s string) int {
 	}
 	return res
 }
+
+func getAverages(nums []int, k int) []int {
+	begin := 0
+	w_state := 0
+	res := make([]int, len(nums))
+
+	for i := range res {
+		res[i] = -1
+	}
+
+	for end := range nums {
+		w_state += nums[end]
+		if end-begin == 2*k {
+			res[begin+k] = w_state / (end - begin + 1)
+			w_state -= nums[begin]
+			begin++
+		}
+	}
+	return res
+}
