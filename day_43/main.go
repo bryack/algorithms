@@ -130,12 +130,23 @@ func maxVowels(s string, k int) int {
 	return res
 }
 
-// func countVowels(m map[byte]int, s string) int {
-// 	count := 0
-// 	for i := range s {
-// 		if _, ok := m[s[i]]; ok {
-// 			count++
-// 		}
-// 	}
-// 	return count
-// }
+func minimumRecolors(blocks string, k int) int {
+	begin := 0
+	wState := 0
+	res := 100
+
+	for end := range blocks {
+		if blocks[end] == 'W' {
+			wState++
+		}
+
+		if end-begin+1 == k {
+			res = min(res, wState)
+			if blocks[begin] == 'W' {
+				wState--
+			}
+			begin++
+		}
+	}
+	return res
+}

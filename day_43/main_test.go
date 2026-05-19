@@ -61,3 +61,29 @@ func TestMaxVowels(t *testing.T) {
 		})
 	}
 }
+
+func TestMinimumRecolors(t *testing.T) {
+	tests := []struct {
+		name string
+		s    string
+		k    int
+		want int
+	}{
+		{name: "classic", s: "WBBWWBBWBW", k: 7, want: 3},
+		{name: "already valid", s: "WBWBBBW", k: 2, want: 0},
+		{name: "all black", s: "BBBBB", k: 3, want: 0},
+		{name: "all white", s: "WWWWW", k: 3, want: 3},
+		{name: "k equals 1 white", s: "W", k: 1, want: 1},
+		{name: "k equals 1 black", s: "B", k: 1, want: 0},
+		{name: "len equals k mixed", s: "WBWBW", k: 5, want: 3},
+		{name: "white at start", s: "WBBBB", k: 3, want: 0},
+		{name: "alternating", s: "WBWBWB", k: 2, want: 1},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := minimumRecolors(tt.s, tt.k)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
