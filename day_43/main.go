@@ -102,3 +102,40 @@ func maximumSubarraySum(nums []int, k int) int64 {
 	}
 	return int64(res)
 }
+
+func maxVowels(s string, k int) int {
+	begin := 0
+	res := 0
+	m := map[byte]struct{}{
+		'a': struct{}{},
+		'e': struct{}{},
+		'i': struct{}{},
+		'o': struct{}{},
+		'u': struct{}{},
+	}
+	wState := 0
+
+	for end := range s {
+		if _, ok := m[s[end]]; ok {
+			wState++
+		}
+		if end-begin+1 == k {
+			res = max(res, wState)
+			if _, ok := m[s[begin]]; ok {
+				wState--
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+// func countVowels(m map[byte]int, s string) int {
+// 	count := 0
+// 	for i := range s {
+// 		if _, ok := m[s[i]]; ok {
+// 			count++
+// 		}
+// 	}
+// 	return count
+// }

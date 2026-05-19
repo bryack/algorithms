@@ -32,3 +32,32 @@ func TestMaximumSubarraySum(t *testing.T) {
 		})
 	}
 }
+
+func TestMaxVowels(t *testing.T) {
+	tests := []struct {
+		name string
+		s    string
+		k    int
+		want int
+	}{
+		{name: "classic", s: "abciiidef", k: 3, want: 3},
+		{name: "all vowels", s: "aeiou", k: 2, want: 2},
+		{name: "mixed", s: "leetcode", k: 3, want: 2},
+		{name: "no vowels", s: "bcdfg", k: 3, want: 0},
+		{name: "all same vowel", s: "aaaaa", k: 3, want: 3},
+		{name: "k equals 1 vowel", s: "abcde", k: 1, want: 1},
+		{name: "k equals 1 consonant", s: "bcdfg", k: 1, want: 0},
+		{name: "k equals len all vowels", s: "aeiou", k: 5, want: 5},
+		{name: "k equals len no vowels", s: "bcdfg", k: 5, want: 0},
+		{name: "single char vowel", s: "a", k: 1, want: 1},
+		{name: "single char consonant", s: "b", k: 1, want: 0},
+		{name: "vowels at edges", s: "aeibcdou", k: 4, want: 3},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := maxVowels(tt.s, tt.k)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
