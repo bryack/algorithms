@@ -1,21 +1,3 @@
-
-SESSION_END: 2026-05-18 11:31:32
-SESSION_START: 2026-05-18 11:31:32
-ACTIVITY_START: 2026-05-18 11:32:42 | Nature of Go - Доработка xv6, системный вызов SYS_va2pa
-ACTIVITY_END: 2026-05-18 11:57:32 | Nature of Go - Доработка xv6, системный вызов SYS_va2pa
-ACTIVITY_START: 2026-05-18 12:35:09 | Telegram-видео: LeetCode 125 Valid Palindrome — разбор решения
-ACTIVITY_END: 2026-05-18 12:59:03 | Telegram-видео: LeetCode 125 Valid Palindrome — разбор решения
-2026-05-18 14:22:11  # BREAK_START
-2026-05-18 15:17:12  # BREAK_END
-ACTIVITY_START: 2026-05-18 15:18:17 | Anki — заполнение карточек по алгоритмическим задачам
-ACTIVITY_END: 2026-05-18 15:33:37 | Anki — заполнение карточек по алгоритмическим задачам
-ACTIVITY_START: 2026-05-18 15:34:55 | Лекция Влада Тена — 02 Sliding Window
-ACTIVITY_END: 2026-05-18 16:00:14 | Лекция Влада Тена — 02 Sliding Window
-ACTIVITY_START: 2026-05-18 16:00:14 | LeetCode 643: Maximum Average Subarray I
-ACTIVITY_END: 2026-05-18 16:22:49 | LeetCode 643: Maximum Average Subarray I
-ACTIVITY_START: 2026-05-18 16:38:02 | LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
-ACTIVITY_END: 2026-05-18 17:03:32 | LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
-ACTIVITY_START: 2026-05-18 17:09:11 | LeetCode 1876: Substrings of Size Three with Distinct Characters
-ACTIVITY_END: 2026-05-18 18:20:13 | LeetCode 1876: Substrings of Size Three with Distinct Characters
-ACTIVITY_START: 2026-05-18 18:23:36 | LeetCode 2090: K Radius Subarray Averages
-ACTIVITY_END: 2026-05-18 20:30:26 | LeetCode 2090: K Radius Subarray Averages
+2026-05-19 15:36:50 # SESSION_START
+2026-05-19 15:37:26 # ACTIVITY_START: Warm-up - LC 643: Maximum Average Subarray I
+2026-05-19 15:39:22 # ACTIVITY_END: Warm-up - LC 643: Maximum Average Subarray I
