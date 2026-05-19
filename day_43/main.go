@@ -1,6 +1,8 @@
 package main
 
-import "math"
+import (
+	"math"
+)
 
 func findMaxAverage(nums []int, k int) float64 {
 	begin := 0
@@ -73,4 +75,30 @@ func getAverages(nums []int, k int) []int {
 		}
 	}
 	return res
+}
+
+func maximumSubarraySum(nums []int, k int) int64 {
+	begin := 0
+	w_state := 0
+	res := 0
+	m := make(map[int]int, len(nums))
+
+	for end := range nums {
+		w_state += nums[end]
+		m[nums[end]]++
+
+		if end-begin+1 == k {
+			if len(m) == k {
+
+				res = max(res, w_state)
+			}
+			w_state -= nums[begin]
+			m[nums[begin]]--
+			if m[nums[begin]] <= 0 {
+				delete(m, nums[begin])
+			}
+			begin++
+		}
+	}
+	return int64(res)
 }
