@@ -150,3 +150,31 @@ func minimumRecolors(blocks string, k int) int {
 	}
 	return res
 }
+
+func getSubarrayBeauty(nums []int, k int, x int) []int {
+	begin := 0
+	res := make([]int, 0, len(nums)-k+1)
+	var freq [101]int
+
+	for end := range nums {
+		freq[nums[end]+50]++
+		if end-begin+1 == k {
+			count := 0
+			found := false
+			for i := -50; i < 0; i++ {
+				count += freq[i+50]
+				if count >= x {
+					res = append(res, i)
+					found = true
+					break
+				}
+			}
+			if !found {
+				res = append(res, 0)
+			}
+			freq[nums[begin]+50]--
+			begin++
+		}
+	}
+	return res
+}
