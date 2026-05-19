@@ -39,3 +39,18 @@ func numOfSubarrays(arr []int, k int, threshold int) int {
 	}
 	return res
 }
+
+func countGoodSubstrings(s string) int {
+	begin := 0
+	res := 0
+
+	for end := range s {
+		if end-begin+1 == 3 {
+			if s[begin] != s[begin+1] && s[begin] != s[end] && s[end] != s[begin+1] {
+				res++
+			}
+			begin++
+		}
+	}
+	return res
+}
