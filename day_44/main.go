@@ -175,3 +175,24 @@ func maxScore(cardPoints []int, k int) int {
 	}
 	return res
 }
+
+func minSubArrayLen(target int, nums []int) int {
+	begin := 0
+	wState := 0
+	res := len(nums) + 1
+
+	for end := range nums {
+		wState += nums[end]
+
+		for wState >= target {
+			wSize := end - begin + 1
+			res = min(res, wSize)
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	if res == len(nums)+1 {
+		return 0
+	}
+	return res
+}
