@@ -105,3 +105,24 @@ func isVowel(b byte) bool {
 	}
 	return false
 }
+
+func minimumRecolors(blocks string, k int) int {
+	begin := 0
+	count := 0
+	minRecolors := 100
+
+	for end := range blocks {
+		if blocks[end] == 'W' {
+			count++
+		}
+
+		if end-begin+1 == k {
+			minRecolors = min(minRecolors, count)
+			if blocks[begin] == 'W' {
+				count--
+			}
+			begin++
+		}
+	}
+	return minRecolors
+}
