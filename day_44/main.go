@@ -1,6 +1,8 @@
 package main
 
-import "slices"
+import (
+	"slices"
+)
 
 func threeSum(nums []int) [][]int {
 	slices.Sort(nums)
@@ -152,6 +154,24 @@ func getSubarrayBeauty(nums []int, k int, x int) []int {
 			freq[nums[begin]+50]--
 			begin++
 		}
+	}
+	return res
+}
+
+func maxScore(cardPoints []int, k int) int {
+	i, j := 0, len(cardPoints)-k
+	wState := 0
+
+	for x := j; x < len(cardPoints); x++ {
+		wState += cardPoints[x]
+	}
+	res := wState
+
+	for j < len(cardPoints) {
+		wState += (cardPoints[i] - cardPoints[j])
+		res = max(res, wState)
+		i++
+		j++
 	}
 	return res
 }

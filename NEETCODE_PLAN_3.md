@@ -12,7 +12,7 @@
 | [x] | **2379. Minimum Recolors to Get K Consecutive Black Blocks** | Easy | Fixed-size Sliding Window (min ops) | 2026-05-19 | 🟢 L4 | |
 | [x] | **1876. Substrings of Size Three with Distinct Characters** | Easy | Fixed-size Sliding Window (size 3) | 2026-05-18 | 🟢 L4 | |
 | [x] | **2653. Sliding Subarray Beauty** | Medium | Fixed-size Sliding Window (order stat) | 2026-05-19 | 🟢 L4 | |
-| [ ] | **1423. Maximum Points You Can Obtain from Cards** | Medium | Fixed-size Sliding Window (edges) | | | |
+| [x] | **1423. Maximum Points You Can Obtain from Cards** | Medium | Fixed-size Sliding Window (edges) | 2026-05-20 | 🟢 L2 | |
 | [ ] | **3. Longest Substring Without Repeating Characters** | Medium | Dynamic Sliding Window (distinct chars) | | | |
 | [ ] | **209. Minimum Size Subarray Sum** | Medium | Dynamic Sliding Window (sum >= target) | | | |
 | [ ] | **1004. Max Consecutive Ones III** | Medium | Dynamic Sliding Window (at most K flips) | | | |
