@@ -52,3 +52,28 @@ func getAverages(nums []int, k int) []int {
 	}
 	return res
 }
+
+func maximumSubarraySum(nums []int, k int) int64 {
+	begin := 0
+	wState := 0
+	res := 0
+	m := map[int]int{}
+
+	for end := range nums {
+		wState += nums[end]
+		m[nums[end]]++
+
+		if end-begin+1 == k {
+			if len(m) == k {
+				res = max(res, wState)
+			}
+			m[nums[begin]]--
+			if m[nums[begin]] <= 0 {
+				delete(m, nums[begin])
+			}
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return int64(res)
+}

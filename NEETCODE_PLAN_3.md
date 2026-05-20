@@ -7,7 +7,7 @@
 | [x] | **643. Maximum Average Subarray I** | Easy | Fixed-size Sliding Window | 2026-05-18 | 🟢 L4 | |
 | [x] | **1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold** | Medium | Fixed-size Sliding Window (count valid) | 2026-05-18 | 🟢 L4 | |
 | [x] | **2090. K Radius Subarray Averages** | Medium | Fixed-size Sliding Window (radius average) | 2026-05-18 | 🟢 L4 | |
-| [x] | **2461. Maximum Sum of Distinct Subarrays With Length K** | Medium | Fixed-size Sliding Window + distinct | 2026-05-19 | 🟡 L3 | 2026-05-21 |
+| [x] | **2461. Maximum Sum of Distinct Subarrays With Length K** | Medium | Fixed-size Sliding Window + distinct | 2026-05-19 | 🟢 L4 | |
 | [x] | **1456. Maximum Number of Vowels in a Substring of Given Length** | Medium | Fixed-size Sliding Window (string counter) | 2026-05-19 | 🟢 L4 | |
 | [x] | **2379. Minimum Recolors to Get K Consecutive Black Blocks** | Easy | Fixed-size Sliding Window (min ops) | 2026-05-19 | 🟢 L4 | |
 | [x] | **1876. Substrings of Size Three with Distinct Characters** | Easy | Fixed-size Sliding Window (size 3) | 2026-05-18 | 🟢 L4 | |
