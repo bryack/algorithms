@@ -54,3 +54,30 @@ func TestMinSubArrayLen(t *testing.T) {
 		})
 	}
 }
+
+func TestValidPalindrome(t *testing.T) {
+	tests := []struct {
+		name string
+		s    string
+		want bool
+	}{
+		{name: "palindrome_no_delete", s: "aba", want: true},
+		{name: "delete_one_end", s: "abca", want: true},
+		{name: "cannot_fix", s: "abc", want: false},
+		{name: "delete_inner", s: "abbca", want: true},
+		{name: "single_char", s: "a", want: true},
+		{name: "two_same", s: "aa", want: true},
+		{name: "two_diff", s: "ab", want: true},
+		{name: "all_same", s: "aaaaa", want: true},
+		{name: "long_palindrome", s: "aguokepatgbnvbqmgmlcupuufxooadssxwqacbyh", want: false},
+		{name: "delete_first", s: "baaaa", want: true},
+		{name: "delete_last", s: "aaaab", want: true},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := validPalindrome(tt.s)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
