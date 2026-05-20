@@ -77,3 +77,31 @@ func maximumSubarraySum(nums []int, k int) int64 {
 	}
 	return int64(res)
 }
+
+func maxVowels(s string, k int) int {
+	begin := 0
+	count := 0
+	maxCount := 0
+
+	for end := range s {
+		if isVowel(s[end]) {
+			count++
+		}
+
+		if end-begin+1 == k {
+			maxCount = max(maxCount, count)
+			if isVowel(s[begin]) {
+				count--
+			}
+			begin++
+		}
+	}
+	return maxCount
+}
+
+func isVowel(b byte) bool {
+	if b == 'a' || b == 'e' || b == 'i' || b == 'o' || b == 'u' {
+		return true
+	}
+	return false
+}
