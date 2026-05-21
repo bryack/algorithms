@@ -1,42 +1,14 @@
-2026-05-19 15:36:50 # SESSION_START
-2026-05-19 15:37:26 # ACTIVITY_START: Warm-up - LC 643: Maximum Average Subarray I
-2026-05-19 15:39:22 # ACTIVITY_END: Warm-up - LC 643: Maximum Average Subarray I
-2026-05-19 15:41:17 # ACTIVITY_START: Warm-up - LC 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
-2026-05-19 15:49:28 # ACTIVITY_END: Warm-up - LC 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
-2026-05-19 15:51:38 # ACTIVITY_START: Warm-up - LC 1876: Substrings of Size Three with Distinct Characters
-2026-05-19 15:58:43 # ACTIVITY_END: Warm-up - LC 1876: Substrings of Size Three with Distinct Characters
-2026-05-19 16:00:28 # ACTIVITY_START: Warm-up - LC 2090: K Radius Subarray Averages
-2026-05-19 16:07:52 # ACTIVITY_END: Warm-up - LC 2090: K Radius Subarray Averages
-2026-05-19 16:10:09 # ACTIVITY_START: LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K
-2026-05-19 17:23:32 # ACTIVITY_END: LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K
-2026-05-19 17:39:06 # ACTIVITY_START: LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length
-2026-05-19 18:06:37 # ACTIVITY_END: LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length
-2026-05-19 18:13:00 # ACTIVITY_START: Anki-карточки - LC 283: Move Zeroes
-2026-05-19 18:31:50 # ACTIVITY_END: Anki-карточки - LC 283: Move Zeroes
-2026-05-19 18:31:50 # ACTIVITY_START: Telegram-пост про Anki-карточки
-2026-05-19 19:22:42 # ACTIVITY_END: Telegram-пост про Anki-карточки
-2026-05-19 19:41:10 # ACTIVITY_START: LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks
-2026-05-19 19:42:58 # ACTIVITY_END: LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks
-2026-05-19 21:26:28 # ACTIVITY_START: LeetCode 2653: Sliding Subarray Beauty
-2026-05-19 21:37:38 # ACTIVITY_END: LeetCode 2653: Sliding Subarray Beauty
-2026-05-19 21:39:58 # SESSION_END
-2026-05-20 10:32:44 # SESSION_START
-2026-05-20 12:00:16 # ACTIVITY_START: LeetCode 2090: K Radius Subarray Averages
-2026-05-20 12:44:09 # ACTIVITY_END: LeetCode 2090: K Radius Subarray Averages
-2026-05-20 12:48:38 # ACTIVITY_START: LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K
-2026-05-20 13:12:34 # ACTIVITY_END: LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K
-2026-05-20 13:15:18 # ACTIVITY_START: LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length
-2026-05-20 13:37:01 # ACTIVITY_END: LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length
-2026-05-20 13:45:16 # ACTIVITY_START: LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks
-2026-05-20 13:47:59 # ACTIVITY_END: LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks
-2026-05-20 13:49:46 # ACTIVITY_START: LeetCode 2653: Sliding Subarray Beauty
-2026-05-20 14:15:26 # ACTIVITY_END: LeetCode 2653: Sliding Subarray Beauty
-2026-05-20 14:17:56 # ACTIVITY_START: LeetCode 1423: Maximum Points You Can Obtain from Cards
-2026-05-20 15:35:47 # ACTIVITY_END: LeetCode 1423: Maximum Points You Can Obtain from Cards
-2026-05-20 15:39:26 # ACTIVITY_START: LeetCode 209: Minimum Size Subarray Sum
-2026-05-20 16:05:09 # ACTIVITY_END: LeetCode 209: Minimum Size Subarray Sum
-2026-05-20 16:06:25 # ACTIVITY_END: LeetCode 209: Minimum Size Subarray Sum
-2026-05-20 16:09:23 # ACTIVITY_START: Anki cards - LC 209: Minimum Size Subarray Sum
-2026-05-20 16:21:00 # ACTIVITY_END: Anki cards - LC 209: Minimum Size Subarray Sum
-2026-05-20 16:21:00 # ACTIVITY_START: LeetCode 680: Valid Palindrome II
-2026-05-20 16:30:39 # ACTIVITY_END: LeetCode 680: Valid Palindrome II
+2026-05-21 09:59:21 # SESSION_START
+2026-05-21 10:00:26 # ACTIVITY_START: LeetCode 643: Maximum Average Subarray I
+2026-05-21 10:06:52 # ACTIVITY_END: LeetCode 643: Maximum Average Subarray I
+2026-05-21 10:06:52 # ACTIVITY_START: LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+2026-05-21 10:13:35 # ACTIVITY_END: LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+2026-05-21 10:13:35 # ACTIVITY_START: LeetCode 1876: Substrings of Size Three with Distinct Characters
+2026-05-21 10:29:55 # ACTIVITY_END: LeetCode 1876: Substrings of Size Three with Distinct Characters
+2026-05-21 10:29:55 # ACTIVITY_START: LeetCode 2090: K Radius Subarray Averages
+2026-05-21 10:52:04 # ACTIVITY_END: LeetCode 2090: K Radius Subarray Averages
+2026-05-21 10:52:04 # ACTIVITY_START: LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K
+2026-05-21 10:54:41 # ACTIVITY_END: LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K
+2026-05-21 10:54:41 # ACTIVITY_START: LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length
+2026-05-21 11:11:04 # ACTIVITY_END: LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length
+2026-05-21 11:14:35 # ACTIVITY_START: LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks
