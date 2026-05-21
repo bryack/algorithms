@@ -216,3 +216,25 @@ func minSubArrayLen(target int, nums []int) int {
 
 	return res
 }
+
+func longestOnes(nums []int, k int) int {
+	begin := 0
+	wState := 0
+	res := 0
+
+	for end := range nums {
+		if nums[end] == 0 {
+			wState++
+		}
+
+		for wState > k {
+			if nums[begin] == 0 {
+				wState--
+			}
+			begin++
+		}
+		wSize := end - begin + 1
+		res = max(res, wSize)
+	}
+	return res
+}
