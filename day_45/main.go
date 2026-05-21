@@ -238,3 +238,24 @@ func longestOnes(nums []int, k int) int {
 	}
 	return res
 }
+
+func longestSubarray(nums []int) int {
+	begin := 0
+	wState := 0
+	res := 0
+
+	for end := range nums {
+		if nums[end] == 0 {
+			wState++
+		}
+
+		for wState > 1 {
+			if nums[begin] == 0 {
+				wState--
+			}
+			begin++
+		}
+		res = max(res, end-begin+1)
+	}
+	return res - 1
+}

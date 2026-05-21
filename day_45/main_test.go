@@ -185,3 +185,29 @@ func TestMaxScore(t *testing.T) {
 		})
 	}
 }
+
+func TestLongestSubarray(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		want int
+	}{
+		{name: "test1", nums: []int{1, 1, 0, 1}, want: 3},
+		{name: "test2", nums: []int{0, 1, 1, 1, 0, 1, 1, 0, 1}, want: 5},
+		{name: "test3", nums: []int{1, 1, 1}, want: 2},
+		{name: "all_zeros", nums: []int{0, 0, 0}, want: 0},
+		{name: "multiple_zeros", nums: []int{1, 0, 0, 0, 1}, want: 1},
+		{name: "zero_at_end", nums: []int{1, 1, 1, 0}, want: 3},
+		{name: "zero_at_start", nums: []int{0, 1, 1, 1}, want: 3},
+		{name: "single_zero", nums: []int{0}, want: 0},
+		{name: "single_one", nums: []int{1}, want: 0},
+		{name: "alternating", nums: []int{1, 0, 1, 0, 1, 0, 1}, want: 2},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := longestSubarray(tt.nums)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
