@@ -280,3 +280,23 @@ func totalFruit(fruits []int) int {
 	}
 	return res
 }
+
+func lengthOfLongestSubstring(s string) int {
+	begin := 0
+	wState := make(map[byte]int, len(s))
+	res := 0
+
+	for end := range s {
+		wState[s[end]]++
+
+		for wState[s[end]] > 1 {
+			wState[s[begin]]--
+			if wState[s[begin]] == 0 {
+				delete(wState, s[begin])
+			}
+			begin++
+		}
+		res = max(res, end-begin+1)
+	}
+	return res
+}

@@ -235,3 +235,26 @@ func TestTotalFruit(t *testing.T) {
 		})
 	}
 }
+
+func TestLengthOfLongestSubstring(t *testing.T) {
+	tests := []struct {
+		name string
+		s    string
+		want int
+	}{
+		{name: "test1", s: "abcabcbb", want: 3},
+		{name: "test2", s: "bbbbb", want: 1},
+		{name: "test3", s: "pwwkew", want: 3},
+		{name: "empty", s: "", want: 0},
+		{name: "single_char", s: "a", want: 1},
+		{name: "all_distinct", s: "abcdef", want: 6},
+		{name: "abba", s: "abba", want: 2},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := lengthOfLongestSubstring(tt.s)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}

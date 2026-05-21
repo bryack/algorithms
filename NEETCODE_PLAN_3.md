@@ -13,7 +13,7 @@
 | [x] | **1876. Substrings of Size Three with Distinct Characters** | Easy | Fixed-size Sliding Window (size 3) | 2026-05-18 | 🟢 L4 | |
 | [x] | **2653. Sliding Subarray Beauty** | Medium | Fixed-size Sliding Window (order stat) | 2026-05-19 | 🟢 L4 | |
 | [x] | **1423. Maximum Points You Can Obtain from Cards** | Medium | Fixed-size Sliding Window (edges) | 2026-05-20 | 🟢 L2 | |
-| [ ] | **3. Longest Substring Without Repeating Characters** | Medium | Dynamic Sliding Window (distinct chars) | | | |
+| [x] | **3. Longest Substring Without Repeating Characters** | Medium | Dynamic Sliding Window (distinct chars) | 2026-05-21 | 🟢 L4 | |
 | [x] | **209. Minimum Size Subarray Sum** | Medium | Dynamic Sliding Window (sum >= target) | 2026-05-20 | 🟢 L2 | |
 | [x] | **1004. Max Consecutive Ones III** | Medium | Dynamic Sliding Window (at most K flips) | 2026-05-21 | 🟢 L4 | |
 | [x] | **1493. Longest Subarray of 1's After Deleting One Element** | Medium | Dynamic Sliding Window (at most 1 zero) | 2026-05-21 | 🟢 L4 | |
