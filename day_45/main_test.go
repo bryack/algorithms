@@ -134,3 +134,30 @@ func TestMaxVowels(t *testing.T) {
 		})
 	}
 }
+
+func TestGetSubarrayBeauty(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		k    int
+		x    int
+		want []int
+	}{
+		{name: "classic", nums: []int{1, -1, -3, -2, 3}, k: 3, x: 2, want: []int{-1, -2, -2}},
+		{name: "all negative x=2", nums: []int{-1, -2, -3, -4, -5}, k: 2, x: 2, want: []int{-1, -2, -3, -4}},
+		{name: "mixed x=1", nums: []int{-3, 1, 2, -3, 0, -3}, k: 2, x: 1, want: []int{-3, 0, -3, -3, -3}},
+		{name: "all positive", nums: []int{1, 2, 3, 4}, k: 2, x: 1, want: []int{0, 0, 0}},
+		{name: "all negative x=1", nums: []int{-5, -4, -3, -2}, k: 2, x: 1, want: []int{-5, -4, -3}},
+		{name: "k equals len", nums: []int{1, -2, 3, -4}, k: 4, x: 2, want: []int{-2}},
+		{name: "x equals k", nums: []int{-1, -2, -3}, k: 3, x: 3, want: []int{-1}},
+		{name: "positive xth element", nums: []int{-5, 1, 2}, k: 3, x: 2, want: []int{0}},
+		{name: "single window", nums: []int{-1}, k: 1, x: 1, want: []int{-1}},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := getSubarrayBeauty(tt.nums, tt.k, tt.x)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}

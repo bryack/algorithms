@@ -125,3 +125,52 @@ func maxVowels(s string, k int) int {
 func isVowel(s byte) bool {
 	return s == 'a' || s == 'e' || s == 'i' || s == 'o' || s == 'u'
 }
+
+func minimumRecolors(blocks string, k int) int {
+	begin := 0
+	wState := 0
+	res := 101
+
+	for end := range blocks {
+		if blocks[end] == 'W' {
+			wState++
+		}
+		if end-begin+1 == k {
+			res = min(res, wState)
+			if blocks[begin] == 'W' {
+				wState--
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+func getSubarrayBeauty(nums []int, k int, x int) []int {
+	begin := 0
+	var arr [101]int
+	res := make([]int, 0, len(nums))
+
+	for end := range nums {
+		arr[nums[end]+50]++
+
+		if end-begin+1 == k {
+			count := 0
+			found := false
+			for i := 0; i < 50; i++ {
+				count += arr[i]
+				if count >= x {
+					res = append(res, i-50)
+					found = true
+					break
+				}
+			}
+			if !found {
+				res = append(res, 0)
+			}
+			arr[nums[begin]+50]--
+			begin++
+		}
+	}
+	return res
+}
