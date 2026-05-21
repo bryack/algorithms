@@ -174,3 +174,22 @@ func getSubarrayBeauty(nums []int, k int, x int) []int {
 	}
 	return res
 }
+
+func maxScore(cardPoints []int, k int) int {
+	begin, end := 0, len(cardPoints)-k
+	wState := 0
+
+	for i := end; i < len(cardPoints); i++ {
+		wState += cardPoints[i]
+	}
+
+	res := wState
+
+	for end < len(cardPoints) {
+		wState = wState + cardPoints[begin] - cardPoints[end]
+		res = max(res, wState)
+		begin++
+		end++
+	}
+	return res
+}
