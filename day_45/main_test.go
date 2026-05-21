@@ -211,3 +211,27 @@ func TestLongestSubarray(t *testing.T) {
 		})
 	}
 }
+
+func TestTotalFruit(t *testing.T) {
+	tests := []struct {
+		name string
+		nums []int
+		want int
+	}{
+		{name: "test1", nums: []int{1, 2, 1}, want: 3},
+		{name: "test2", nums: []int{0, 1, 2, 2}, want: 3},
+		{name: "test3", nums: []int{1, 2, 3, 2, 2}, want: 4},
+		{name: "single_type", nums: []int{1}, want: 1},
+		{name: "all_same", nums: []int{1, 1, 1, 1}, want: 4},
+		{name: "all_unique", nums: []int{1, 2, 3, 4, 5}, want: 2},
+		{name: "transition", nums: []int{1, 2, 1, 2, 3, 3, 3}, want: 4},
+		{name: "two_types_long", nums: []int{1, 2, 2, 1, 2, 1, 1, 2}, want: 8},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := totalFruit(tt.nums)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}

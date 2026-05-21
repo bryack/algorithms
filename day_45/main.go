@@ -259,3 +259,24 @@ func longestSubarray(nums []int) int {
 	}
 	return res - 1
 }
+
+func totalFruit(fruits []int) int {
+	begin := 0
+	wState := make(map[int]int, 2)
+	res := 0
+
+	for end := range fruits {
+		wState[fruits[end]]++
+
+		for len(wState) > 2 {
+			wState[fruits[begin]]--
+			if wState[fruits[begin]] == 0 {
+				delete(wState, fruits[begin])
+			}
+			begin++
+		}
+
+		res = max(res, end-begin+1)
+	}
+	return res
+}
