@@ -90,3 +90,53 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		idx--
 	}
 }
+
+func validPalindrome(s string) bool {
+	i, j := 0, len(s)-1
+
+	for i < j {
+		if s[i] != s[j] {
+			return isPalindrome(s, i, j-1) || isPalindrome(s, i+1, j)
+		}
+		i++
+		j--
+	}
+	return true
+}
+
+func isPalindrome(s string, i, j int) bool {
+	for i < j {
+		if s[i] != s[j] {
+			return false
+		}
+		i++
+		j--
+	}
+	return true
+}
+
+func mergeAlternately(word1 string, word2 string) string {
+	buf := make([]byte, len(word1)+len(word2))
+	idx := 0
+	i, j := 0, 0
+	for i < len(word1) && j < len(word2) {
+		buf[idx] = word1[i]
+		i++
+		idx++
+		buf[idx] = word2[j]
+		j++
+		idx++
+	}
+	for i < len(word1) {
+		buf[idx] = word1[i]
+		i++
+		idx++
+	}
+	for j < len(word2) {
+		buf[idx] = word2[j]
+		j++
+		idx++
+	}
+
+	return string(buf)
+}
