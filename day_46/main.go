@@ -1,5 +1,9 @@
 package main
 
+import (
+	"slices"
+)
+
 func removeDuplicates(nums []int) int {
 	j := 0
 	for i := 0; i < len(nums); i++ {
@@ -139,4 +143,105 @@ func mergeAlternately(word1 string, word2 string) string {
 	}
 
 	return string(buf)
+}
+
+func fourSum(nums []int, target int) [][]int {
+	slices.Sort(nums)
+	res := make([][]int, 0, len(nums)/2)
+	for i := 0; i < len(nums)-2; i++ {
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+		j := i + 1
+		for j < len(nums)-1 {
+			x, y := j+1, len(nums)-1
+			for x < y {
+				sum := nums[i] + nums[j] + nums[x] + nums[y]
+				if sum == target {
+					res = append(res, []int{nums[i], nums[j], nums[x], nums[y]})
+					x++
+					y--
+					for x < y && nums[x] == nums[x-1] {
+						x++
+					}
+					for x < y && nums[y] == nums[y+1] {
+						y--
+					}
+				} else if sum > target {
+					y--
+				} else {
+					x++
+				}
+			}
+			j++
+			for j < len(nums)-1 && nums[j] == nums[j-1] {
+				j++
+			}
+
+		}
+	}
+	return res
+}
+
+func rotate(nums []int, k int) {
+	k = k % len(nums)
+	if k == 0 {
+		return
+	}
+
+	reverse(nums, 0, len(nums)-1)
+	reverse(nums, 0, k-1)
+	reverse(nums, k, len(nums)-1)
+}
+
+func reverse(nums []int, i, j int) {
+	for i < j {
+		nums[i], nums[j] = nums[j], nums[i]
+		i++
+		j--
+	}
+}
+
+func numRescueBoats(people []int, limit int) int {
+	res := 0
+	slices.Sort(people)
+
+	i, j := 0, len(people)-1
+	for i <= j {
+		sum := people[i] + people[j]
+		if sum > limit {
+			j--
+		} else {
+			i++
+			j--
+		}
+		res++
+	}
+	return res
+}
+
+func trap(height []int) int {
+	i, j := 0, len(height)-1
+	maxRight := height[j]
+	maxLeft := height[i]
+	res := 0
+
+	for i < j {
+		if maxRight > height[j] {
+			res += maxRight - height[j]
+		} else {
+			maxRight = height[j]
+		}
+		if maxLeft > height[i] {
+			res += maxLeft - height[i]
+		} else {
+			maxLeft = height[i]
+		}
+		if height[i] < height[j] {
+			i++
+		} else {
+			j--
+		}
+	}
+	return res
 }
