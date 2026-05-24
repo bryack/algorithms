@@ -144,3 +144,130 @@ func maxArea(height []int) int {
 	}
 	return maxArea
 }
+
+func numRescueBoats(people []int, limit int) int {
+	slices.Sort(people)
+
+	i, j := 0, len(people)-1
+	res := 0
+
+	for i <= j {
+		if people[j]+people[i] > limit {
+			j--
+		} else {
+			i++
+			j--
+		}
+		res++
+	}
+	return res
+}
+
+func trap(height []int) int {
+	res := 0
+	i, j := 0, len(height)-1
+	maxLeft, maxRight := 0, 0
+
+	for i < j {
+		if height[i] < maxLeft {
+			res += maxLeft - height[i]
+		}
+		if height[j] < maxRight {
+			res += maxRight - height[j]
+		}
+		maxLeft = max(maxLeft, height[i])
+		maxRight = max(maxRight, height[j])
+		if height[i] > height[j] {
+			j--
+		} else {
+			i++
+		}
+	}
+	return res
+}
+
+func reverseOnlyLetters(s string) string {
+	buf := []byte(s)
+
+	i, j := 0, len(s)-1
+	for i <= j {
+		if !isLetter(buf[i]) {
+			i++
+			continue
+		}
+		if !isLetter(buf[j]) {
+			j--
+			continue
+		}
+		buf[i], buf[j] = buf[j], buf[i]
+		i++
+		j--
+	}
+	return string(buf)
+}
+
+func isLetter(b byte) bool {
+	if b >= 'a' && b <= 'z' || b >= 'A' && b <= 'Z' {
+		return true
+	}
+	return false
+}
+
+func longestPalindrome(s string) string {
+	maxL, maxR := 0, 0
+
+	expand := func(i, j int) {
+		for i >= 0 && j < len(s) && s[i] == s[j] {
+			if j-i > maxR-maxL {
+				maxR, maxL = j, i
+			}
+			i--
+			j++
+		}
+	}
+
+	for i := 0; i < len(s); i++ {
+		expand(i, i+1)
+		expand(i, i)
+	}
+	return s[maxL : maxR+1]
+}
+
+func backspaceCompare(s string, t string) bool {
+	i, j := len(s)-1, len(t)-1
+
+	for i >= 0 || j >= 0 {
+		i = nextValid(s, i)
+		j = nextValid(t, j)
+
+		if i < 0 && j < 0 {
+			return true
+		}
+		if i < 0 || j < 0 {
+			return false
+		}
+
+		if s[i] != t[j] {
+			return false
+		}
+		i--
+		j--
+	}
+	return true
+}
+
+func nextValid(s string, i int) int {
+	count := 0
+	for i >= 0 {
+		if s[i] == '#' {
+			count++
+			i--
+		} else if count > 0 {
+			count--
+			i--
+		} else {
+			return i
+		}
+	}
+	return -1
+}
