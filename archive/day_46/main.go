@@ -2,6 +2,7 @@ package main
 
 import (
 	"slices"
+	"unicode"
 )
 
 func removeDuplicates(nums []int) int {
@@ -244,4 +245,45 @@ func trap(height []int) int {
 		}
 	}
 	return res
+}
+
+func reverseOnlyLetters(s string) string {
+	buf := []rune(s)
+
+	i, j := 0, len(s)-1
+	for i <= j {
+		if !unicode.IsLetter(buf[i]) {
+			i++
+			continue
+		}
+		if !unicode.IsLetter(buf[j]) {
+			j--
+			continue
+		}
+		buf[i], buf[j] = buf[j], buf[i]
+		i++
+		j--
+	}
+	return string(buf)
+}
+
+func longestPalindrome(s string) string {
+	maxL, maxR := 0, 0
+
+	expand := func(left, right int) {
+		for left >= 0 && right < len(s) && s[left] == s[right] {
+			if right-left > maxR-maxL {
+				maxL = left
+				maxR = right
+			}
+			left--
+			right++
+		}
+	}
+
+	for i := 0; i < len(s); i++ {
+		expand(i, i)
+		expand(i, i+1)
+	}
+	return s[maxL : maxR+1]
 }

@@ -24,6 +24,15 @@
 | [ ] | **76. Minimum Window Substring** | Hard | Dynamic Sliding Window (minimal valid) | | | |
 | [ ] | **239. Sliding Window Maximum** | Hard | Monotonic Deque | | | |
 
+## Дополнительная практика: Задачи с собеседований Яндекс
+
+Задачи из списка Яндекса, решаемые паттерном Sliding Window и отсутствующие в основном блоке.
+
+| Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
+| :---: | :--- | :---: | :--- | :--- | :--- | :--- |
+| [ ] | **487. Max Consecutive Ones II** | Medium | Dynamic Sliding Window (at most 1 zero flip) | | | |
+| [ ] | **159. Longest Substring with At Most Two Distinct Characters** | Medium | Dynamic Sliding Window (at most 2 distinct) | | | |
+
 ## Легенда оценки (Retention)
 
 | Метка | Значение | Когда ставить |

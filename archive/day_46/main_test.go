@@ -1,6 +1,7 @@
 package main
 
 import (
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -125,6 +126,50 @@ func TestTrap(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			result := trap(tt.input)
 			assert.Equal(t, tt.want, result)
+		})
+	}
+}
+
+func TestReverseOnlyLetters(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  string
+	}{
+		{name: "test1", input: "ab-cd", want: "dc-ba"},
+		{name: "test2", input: "a-bC-dEf-ghIj", want: "j-Ih-gfE-dCba"},
+		{name: "test3", input: "Test1ng-Leet=code-Q!", want: "Qedo1ct-eeLg=ntse-T!"},
+		{name: "test4", input: "a-", want: "a-"},
+		{name: "test5", input: "----", want: "----"},
+		{name: "test6", input: "asdfsf", want: "fsfdsa"},
+	}
+
+	for _, tt := range tests {
+		res := reverseOnlyLetters(tt.input)
+		assert.Equal(t, tt.want, res)
+	}
+}
+
+func TestLongestPalindrome(t *testing.T) {
+	tests := []struct {
+		name  string
+		input string
+		want  string
+	}{
+		{name: "test1", input: "babad", want: "bab"},
+		{name: "test2", input: "cbbd", want: "bb"},
+		{name: "single_char", input: "a", want: "a"},
+		{name: "all_same", input: "aaaa", want: "aaaa"},
+		{name: "no_long_palindrome", input: "abc", want: "a"},
+		{name: "palindrome_at_start", input: "abbaXYZ", want: "abba"},
+		{name: "palindrome_at_end", input: "XYZabba", want: "abba"},
+		{name: "long_palindrome_in_middle", input: "xyz" + strings.Repeat("a", 1000) + "uvw", want: strings.Repeat("a", 1000)},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := longestPalindrome(tt.input)
+			assert.Equal(t, tt.want, res)
 		})
 	}
 }

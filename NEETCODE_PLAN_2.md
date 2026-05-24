@@ -81,3 +81,16 @@
 | [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) — повторение | 2026-05-20 | 🟢 L4 | |
 | [x] | **5. Longest Palindromic Substring** | Medium | Two Pointers (expand around center) | 2026-05-09 | 🔴 L1 | 2026-05-16 |
 | [ ] | **647. Palindromic Substrings** | Medium | Two Pointers (expand around center, count) | | | |
+
+## Дополнительная практика: Задачи с собеседований Яндекс
+
+Задачи из списка Яндекса, решаемые техникой Two Pointers и отсутствующие в основном блоке.
+
+| Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
+| :---: | :--- | :---: | :--- | :--- | :--- | :--- |
+| [ ] | **228. Summary Ranges** | Easy | Two Pointers (consecutive range tracking) | | | |
+| [ ] | **443. String Compression** | Medium | Two Pointers (fast & slow, in-place overwrite) | | | |
+| [ ] | **161. One Edit Distance** | Medium | Two Pointers (compare strings with one allowed edit) | | | |
+| [ ] | **986. Interval List Intersections** | Medium | Two Pointers (two sorted interval lists) | | | |
+| [ ] | **557. Reverse Words in a String III** | Easy | Two Pointers (reverse each word in-place) | | | |
+| [ ] | **415. Add Strings** | Easy | Two Pointers (add digit strings from end with carry) | | | |
