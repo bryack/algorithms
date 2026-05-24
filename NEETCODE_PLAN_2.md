@@ -88,7 +88,7 @@
 
 | Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
-| [ ] | **228. Summary Ranges** | Easy | Two Pointers (consecutive range tracking) | | | |
+| [x] | **228. Summary Ranges** | Easy | Two Pointers (consecutive range tracking) | 2026-05-24 | 🟢 L4 | |
 | [ ] | **443. String Compression** | Medium | Two Pointers (fast & slow, in-place overwrite) | | | |
 | [ ] | **161. One Edit Distance** | Medium | Two Pointers (compare strings with one allowed edit) | | | |
 | [ ] | **986. Interval List Intersections** | Medium | Two Pointers (two sorted interval lists) | | | |

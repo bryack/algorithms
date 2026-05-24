@@ -269,3 +269,4 @@
 2026-05-24,Алгоритмы,"Warm-up — LC 917: Reverse Only Letters","Разминка. Two pointers с пропуском не-букв, in-place swap в []byte. Zero hints.","day_48/main.go",Easy,~5мин,"Решено самостоятельно, без подсказок. Retention: 🟢 L4."
 2026-05-24,Алгоритмы,"Warm-up — LC 5: Longest Palindromic Substring","Разминка. Expand-around-center с замыканием, odd/even centers. Zero hints.","day_48/main.go",Medium,~5мин,"Решено самостоятельно, без подсказок. Retention: 🟢 L4."
 2026-05-24,Алгоритмы,"Warm-up — LC 844: Backspace String Compare","Разминка. Reverse traversal с nextValid helper, backspace counter. Zero hints.","day_48/main.go",Easy,~5мин,"Решено самостоятельно, без подсказок. Retention: 🟢 L4."
+2026-05-24,Алгоритмы,"LC 228: Summary Ranges","Новая задача. Two pointers для поиска последовательных диапазонов, форматирование x->y. Zero hints.","day_48/main.go",Easy,~10мин,"Решено самостоятельно, без подсказок. Retention: 🟢 L4."

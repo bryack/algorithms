@@ -1,6 +1,9 @@
 package main
 
-import "slices"
+import (
+	"fmt"
+	"slices"
+)
 
 func mergeAlternately(word1 string, word2 string) string {
 	buf := make([]byte, len(word1)+len(word2))
@@ -270,4 +273,24 @@ func nextValid(s string, i int) int {
 		}
 	}
 	return -1
+}
+
+func summaryRanges(nums []int) []string {
+	res := make([]string, 0, len(nums))
+	i, j := 0, 0
+
+	for i < len(nums) {
+		for i+1 < len(nums) && nums[i]+1 == nums[i+1] {
+			i++
+		}
+
+		if nums[j] != nums[i] {
+			res = append(res, fmt.Sprintf("%d->%d", nums[j], nums[i]))
+		} else {
+			res = append(res, fmt.Sprintf("%d", nums[j]))
+		}
+		i++
+		j = i
+	}
+	return res
 }
