@@ -294,3 +294,39 @@ func summaryRanges(nums []int) []string {
 	}
 	return res
 }
+
+func compress(chars []byte) int {
+	idx := 0
+	end := 0
+	for end < len(chars) {
+		start := end
+		for end < len(chars) && chars[start] == chars[end] {
+			end++
+		}
+		count := end - start
+		chars[idx] = chars[start]
+		idx++
+		if count > 1 {
+			idx = writeCount(chars, idx, count)
+		}
+	}
+	return idx
+}
+
+func writeCount(chars []byte, idx int, count int) int {
+	i := idx
+	for count != 0 {
+		digit := count % 10
+		chars[idx] = byte('0' + digit)
+		count /= 10
+		idx++
+	}
+	start := i
+	end := idx - 1
+	for start < end {
+		chars[end], chars[start] = chars[start], chars[end]
+		start++
+		end--
+	}
+	return idx
+}
