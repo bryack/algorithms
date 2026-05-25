@@ -1,32 +1,5 @@
-2026-05-24 10:41:50 # SESSION_START
-2026-05-24 10:42:34 # ACTIVITY_START: Warm-up — LeetCode 1768: Merge Strings Alternately
-2026-05-24 10:44:54 # ACTIVITY_END: Warm-up — LeetCode 1768: Merge Strings Alternately
-2026-05-24 10:45:19 # ACTIVITY_START: Warm-up — LeetCode 88: Merge Sorted Array
-2026-05-24 10:52:07 # ACTIVITY_END: Warm-up — LeetCode 88: Merge Sorted Array
-2026-05-24 10:53:03 # ACTIVITY_START: Warm-up — LeetCode 392: Is Subsequence
-2026-05-24 10:57:33 # ACTIVITY_END: Warm-up — LeetCode 392: Is Subsequence
-2026-05-24 10:57:33 # ACTIVITY_START: Warm-up — LeetCode 26: Remove Duplicates from Sorted Array
-2026-05-24 10:59:01 # ACTIVITY_END: Warm-up — LeetCode 26: Remove Duplicates from Sorted Array
-2026-05-24 10:59:01 # ACTIVITY_START: Warm-up — LeetCode 18: 4Sum
-2026-05-24 11:14:00 # ACTIVITY_END: Warm-up — LeetCode 18: 4Sum
-2026-05-24 11:14:00 # ACTIVITY_START: Warm-up — LeetCode 189: Rotate Array
-2026-05-24 11:45:27 # ACTIVITY_END: Warm-up — LeetCode 189: Rotate Array
-2026-05-24 11:45:27 # ACTIVITY_START: Warm-up — LeetCode 11: Container With Most Water
-2026-05-24 11:53:23 # ACTIVITY_END: Warm-up — LeetCode 11: Container With Most Water
-2026-05-24 11:56:00 # ACTIVITY_START: Занятие №6. Введение в Go, инструменты и примитивные типы
-2026-05-24 15:22:05 # ACTIVITY_END: Занятие №6. Введение в Go, инструменты и примитивные типы
-2026-05-24 15:22:24 # ACTIVITY_START: Warm-up — LeetCode 881: Boats to Save People
-2026-05-24 16:12:16 # ACTIVITY_END: Warm-up — LeetCode 881: Boats to Save People
-2026-05-24 16:12:16 # ACTIVITY_START: Warm-up — LeetCode 917: Reverse Only Letters
-2026-05-24 16:26:19 # ACTIVITY_END: Warm-up — LeetCode 917: Reverse Only Letters
-2026-05-24 16:26:19 # ACTIVITY_START: Warm-up — LeetCode 5: Longest Palindromic Substring
-2026-05-24 17:09:03 # ACTIVITY_END: Warm-up — LeetCode 5: Longest Palindromic Substring
-2026-05-24 17:09:03 # ACTIVITY_START: Warm-up — LeetCode 844: Backspace String Compare
-2026-05-24 17:23:33 # ACTIVITY_END: Warm-up — LeetCode 844: Backspace String Compare
-2026-05-24 17:27:09 # ACTIVITY_START: LeetCode 228: Summary Ranges
-2026-05-24 18:15:55 # ACTIVITY_END: LeetCode 228: Summary Ranges
-2026-05-24 18:19:16 # ACTIVITY_START: LeetCode 443: String Compression
-2026-05-24 19:10:20 # BREAK_START
-2026-05-24 20:47:27 # BREAK_END
-2026-05-24 21:26:14 # ACTIVITY_END: LeetCode 443: String Compression
-2026-05-24 21:26:57 # SESSION_END
+2026-05-25 09:54:49 # SESSION_START
+2026-05-25 09:55:29 # ACTIVITY_START: LeetCode 189: Rotate Array (warm-up)
+2026-05-25 09:59:15 # ACTIVITY_END: LeetCode 189: Rotate Array (warm-up)
+2026-05-25 09:59:15 # ACTIVITY_START: LeetCode 11: Container With Most Water (warm-up)
+2026-05-25 10:07:59 # ACTIVITY_END: LeetCode 11: Container With Most Water (warm-up)

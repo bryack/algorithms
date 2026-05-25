@@ -271,3 +271,5 @@
 2026-05-24,Алгоритмы,"Warm-up — LC 844: Backspace String Compare","Разминка. Reverse traversal с nextValid helper, backspace counter. Zero hints.","day_48/main.go",Easy,~5мин,"Решено самостоятельно, без подсказок. Retention: 🟢 L4."
 2026-05-24,Алгоритмы,"LC 228: Summary Ranges","Новая задача. Two pointers для поиска последовательных диапазонов, форматирование x->y. Zero hints.","day_48/main.go",Easy,~10мин,"Решено самостоятельно, без подсказок. Retention: 🟢 L4."
 2026-05-24,Алгоритмы,"LC 443: String Compression","Новая задача. Two pointers fast & slow, in-place string compression с writeCount helper для многозначных чисел. TDD.","day_48/main.go",Medium,~2ч,"Решено самостоятельно. Retention: 🟢 L4."
+2026-05-25,Алгоритмы,LeetCode 189: Rotate Array (warm-up),"Разминка: решена через triple reverse (in-place). O(n) time, O(1) space. Защита от k > len через %.",day_49/main.go,Medium,0.1ч,"Zero hints, без тестов, 🟢 L4"
+2026-05-25,Алгоритмы,LeetCode 11: Container With Most Water (warm-up),"Разминка: решена через two pointers с краёв, двигаем меньшую высоту. O(n) time, O(1) space.",day_49/main.go,Medium,0.1ч,"Zero hints, без тестов, 🟢 L4"
