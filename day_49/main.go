@@ -247,3 +247,44 @@ func writeCount(chars []byte, write, count int) int {
 
 	return write
 }
+
+func isOneEditDistance(s string, t string) bool {
+	if len(s) == len(t) {
+		i := 0
+		count := 0
+		for i < len(s) {
+			if s[i] != t[i] {
+				count++
+			}
+			i++
+		}
+		return count == 1
+	}
+
+	if len(s) > len(t) {
+		return compare(t, s)
+	}
+
+	if len(s) < len(t) {
+		return compare(s, t)
+	}
+	return false
+}
+
+func compare(s, t string) bool {
+	i, j := 0, 0
+	count := 0
+	for j < len(t) {
+		if i < len(s) && s[i] != t[j] {
+			j++
+			count++
+		} else if i >= len(s) {
+			j++
+			count++
+		} else {
+			i++
+			j++
+		}
+	}
+	return i == len(s) && count == 1
+}

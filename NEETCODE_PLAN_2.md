@@ -90,7 +90,7 @@
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [x] | **228. Summary Ranges** | Easy | Two Pointers (consecutive range tracking) | 2026-05-24 | 🟢 L4 | |
 | [x] | **443. String Compression** | Medium | Two Pointers (fast & slow, in-place overwrite) | 2026-05-24 | 🟢 L4 | |
-| [ ] | **161. One Edit Distance** | Medium | Two Pointers (compare strings with one allowed edit) | | | |
+| [x] | **161. One Edit Distance** | Medium | Two Pointers (compare strings with one allowed edit) | 2026-05-25 | 🟢 L4 | |
 | [ ] | **986. Interval List Intersections** | Medium | Two Pointers (two sorted interval lists) | | | |
 | [ ] | **557. Reverse Words in a String III** | Easy | Two Pointers (reverse each word in-place) | | | |
 | [ ] | **415. Add Strings** | Easy | Two Pointers (add digit strings from end with carry) | | | |
