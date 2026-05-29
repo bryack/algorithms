@@ -1,6 +1,8 @@
 # Skill: SQL Practice Problems
 
 > Формулировка SQL-задач по схеме "Расписание" для практики.
+>
+> **Последнее обновление: 2026-05-27**
 
 ---
 
@@ -27,7 +29,11 @@
 
 ## СУБД
 
-Пользователь тренируется на **PostgreSQL** (sql-academy.org). Это влияет на доступные операторы и функции (например, `ILIKE` для регистронезависимого поиска, синтаксис `LIMIT`/`OFFSET`, строковые функции и т.д.).
+Пользователь тренируется на **PostgreSQL** (sql-academy.org). Это влияет на доступные операторы и функции:
+- `ILIKE` — регистронезависимый поиск
+- `~*` / `SIMILAR TO` — регулярные выражения
+- `LIMIT` / `OFFSET` — пагинация
+- Строковые функции и дата/время — PostgreSQL-специфичные
 
 ---
 
@@ -104,11 +110,12 @@
 
 ### Уровень Easy
 - SELECT + WHERE (без JOIN)
-- IS NULL, BETWEEN, IN, LIKE
-- ORDER BY, LIMIT
+- ✅ LIKE / ILIKE, ✅ регулярные выражения (`~*`, `SIMILAR TO`)
+- ✅ ORDER BY, ✅ LIMIT
+- ✅ IS NULL, ✅ BETWEEN, ✅ IN
 
 ### Уровень Medium
-- INNER JOIN (2-3 таблицы)
+- ✅ INNER JOIN (2–3+ таблицы)
 - GROUP BY + агрегаты (COUNT, SUM, AVG)
 - HAVING
 

@@ -1,5 +1,7 @@
 # Skills Index — Algorithms Learning Project
 
+> **Последнее обновление: 2026-05-27**
+>
 > Читать этот файл в начале каждого чата для восстановления контекста.
 
 ---
@@ -44,7 +46,7 @@
 - Фаза 1: Массивы + Рекурсия (недели 3-7) ✅
 - Фаза 1.5: [NeetCode] Arrays & Hashing (34 задачи) ✅
 - Фаза 1.6: [NeetCode] Two Pointers (15 задач) ✅
-- **Фаза 1.7: [NeetCode] Sliding Window (в процессе) 🔄 ← Текущий блок**
+- **Фаза 1.7: [NeetCode] Sliding Window (завершается) 🔄 ← Текущий блок — 13/16 основных + 2/2 бонусных решены, осталось 4 задачи**
 - Фаза 2: Линейные структуры (недели 8-12) ← **Приостановлено до завершения NeetCode 150**
 - Фаза 3: Деревья и Графы (недели 13-18)
 - Фаза 4: ДП базовое (недели 19-20)
@@ -56,11 +58,12 @@
 - **Всего**: 63
 - **Переработано**: 22 (Goroutines, Channels, Select, Mutex, WaitGroup, Context, Graceful Shutdown, errors.Is/errors.As, Dependency Injection, Generics, Clean Architecture, Ports & Adapters, DDD)
 - **Следующая**: #14 FSM
+- **Очередь**: gRPC vs REST, PostgreSQL Indexes
 
 **Алгоритмические Anki (новый процесс):**
 - Методология: 3 карточки на задачу — Type A (Pattern), Type B (Mechanics), Type C (Edge Case)
 - Без кода на тыле, max 4 предложения
-- Активно создаются для закрепления паттернов (LC 125, 977, 1732, 724, 202, 15, 643 и др.)
+- Активно создаются для закрепления паттернов (LC 125, 977, 1732, 724, 202, 15, 643, 167, 283, 680, 1768, 88, 392, 26, 18, 189 и др.)
 
 ---
 
@@ -144,17 +147,17 @@
 
 - **The Nature of GO PROGRAMMING** (igoroutine.courses)
   - Курс по глубинному пониманию Go
-  - **Прогресс:** 3+ лекции + задание xv6 SYS_va2pa
+  - **Прогресс:** Лекции (3+) + xv6 SYS_va2pa ✅ + Go assembler (Sum, Fibonacci) ✅ + SIMD slices.Contains ✅
 
 - **Nand to Tetris** — «From Nand to Tetris» (архитектура компьютера)
   - **Прогресс:** Lab 1 (комбинационные чипы) + Lab 2 (HalfAdder/FullAdder) частично
 
 - **sql-academy.org** — Практика SQL
   - Схема «Расписание», PostgreSQL
-  - **Прогресс:** пройдены LIKE/ILIKE, регулярные выражения, ORDER BY, LIMIT, JOIN с 3 таблицами
+  - **Прогресс:** пройдены LIKE/ILIKE, регулярные выражения, ORDER BY, LIMIT, JOIN с 3+ таблицами, IS NULL, BETWEEN, IN
 
 - **Telegram-канал** — Видео-разборы алгоритмов
-  - **Прогресс:** LC 977, LC 1732, LC 167, LC 125
+  - **Прогресс:** LC 977, LC 1732, LC 167, LC 125, LC 680, LC 283, LC 1768
   - **Цель:** Тренировка объяснения кода как на собеседовании
 
 ### Приостановленные

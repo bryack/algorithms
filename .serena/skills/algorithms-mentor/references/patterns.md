@@ -247,6 +247,68 @@ dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + cost[i][j]
 
 ---
 
+## Greedy
+
+### Когда использовать
+- Локально оптимальный выбор ведёт к глобально оптимальному
+- Минимум/максимум при фиксированном порядке обработки
+- "Собрать всю возможную прибыль", "минимальное количество операций"
+
+### Классические задачи
+- Best Time to Buy and Sell Stock II (122)
+- Lemonade Change (860)
+- Assign Cookies (455)
+- Jump Game (55)
+
+---
+
+## Prefix Sum
+
+### Когда использовать
+- Нужно быстро вычислять сумму подмассива [i:j]
+- Поиск подмассива с заданной суммой
+- Баланс левой и правой части массива
+
+### Паттерн
+```
+prefix[0] = nums[0]
+for i from 1 to n-1:
+    prefix[i] = prefix[i-1] + nums[i]
+sum(i,j) = prefix[j] - prefix[i-1]
+```
+
+### Классические задачи
+- Running Sum of 1d Array (1480)
+- Find Pivot Index (724)
+- Subarray Sum Equals K (560)
+- Product of Array Except Self (238)
+
+---
+
+## Bucket Sort
+
+### Когда использовать
+- Частотный анализ с последующей сортировкой по частоте
+- Top-K элементов за линейное время
+- Диапазон значений ограничен или известен
+
+### Паттерн
+```
+freq := map[value]count
+buckets := make([][]value, len(input)+1)
+for val, count := range freq:
+    buckets[count] = append(buckets[count], val)
+// Собрать результат с конца buckets
+```
+
+### Классические задачи
+- Top K Frequent Elements (347)
+- Sort Characters By Frequency (451)
+- Sort Array by Increasing Frequency (1636)
+- Top K Frequent Words (692)
+
+---
+
 ## Binary Search
 
 ### Когда использовать

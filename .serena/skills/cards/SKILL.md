@@ -75,7 +75,7 @@
 
 ## Файлы
 
-- Статус карточек: `references/status.md`
+- Статус карточек: `../../INDEX.md` → раздел "Карточки"
 - Структура ответа: `references/structure.md`
 - Шаблон ответа: `assets/response-template.md`
 
