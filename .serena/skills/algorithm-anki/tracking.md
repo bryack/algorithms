@@ -36,6 +36,7 @@
 | 11. Container With Most Water | 2026-05-29 | two_pointers, medium |
 | 18. 4Sum | 2026-05-25 | two_pointers, medium |
 | 189. Rotate Array | 2026-05-25 | two_pointers, medium |
+| 881. Boats to Save People | 2026-05-30 | two_pointers, medium |
 
 ---
 
@@ -43,7 +44,7 @@
 
 | Задача | Планируемая дата | Теги |
 |--------|:----------------:|------|
-| 881. Boats to Save People | 2026-05-30 | two_pointers, medium |
+| 42. Trapping Rain Water | 2026-05-31 | two_pointers, hard |
 
 ---
 
@@ -52,10 +53,8 @@
 | Задача | Приоритет | Теги |
 |--------|:---------:|------|
 
-| 42. Trapping Rain Water | Высокий | two_pointers, hard |
 | 161. One Edit Distance | Средний | two_pointers, medium |
 | 443. String Compression | Низкий | two_pointers, medium |
-| 881. Boats to Save People | Средний | two_pointers, medium |
 | 917. Reverse Only Letters | Низкий | two_pointers, easy |
 | 228. Summary Ranges | Низкий | two_pointers, easy |
 | 5. Longest Palindromic Substring | Высокий | two_pointers, medium |
