@@ -1,6 +1,6 @@
 # Skills Index — Algorithms Learning Project
 
-> **Последнее обновление: 2026-05-27**
+> **Последнее обновление: 2026-05-30**
 >
 > Читать этот файл в начале каждого чата для восстановления контекста.
 
@@ -25,6 +25,7 @@
 | Статус карточек Go | `cards/references/status.md` |
 | Методика ответа на карточку Go | `cards/SKILL.md` |
 | Шаблон выдачи задачи | `algorithms-mentor/assets/task-template.md` |
+| **Подготовка к собеседованию в Яндекс** | `yandex-interview/SKILL.md` |
 | Правила git | `workflow/git.md` |
 | SQL-задачи по схеме "Расписание" | `sql-problems/SKILL.md` |
 | Алгоритмические паттерны (GCD и др.) | `algorithms-mentor/references/patterns.md` |
@@ -101,6 +102,7 @@
 | "Перерыв" | `workflow/session.md` → BREAK_START в `.session_start` |
 | "Продолжаем" | `workflow/session.md` → BREAK_END в `.session_start` |
 | "Запиши видео для Telegram" | Помочь со структурой разбора, НЕ писать готовый текст |
+| "Помоги подготовиться к Яндексу" | `yandex-interview/SKILL.md` → имитация собеса без примеров, чек-лист по критериям Яндекса |
 
 ---
 
