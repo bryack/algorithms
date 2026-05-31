@@ -190,3 +190,21 @@ func addStrings(num1 string, num2 string) string {
 
 	return string(res)
 }
+
+func countSubstrings(s string) int {
+	res := 0
+	n := len(s)
+
+	for center := 0; center < 2*n-1; center++ {
+		l := center / 2
+		r := l + center%2
+
+		for l >= 0 && r < n && s[l] == s[r] {
+			res++
+			l--
+			r++
+		}
+	}
+
+	return res
+}

@@ -111,3 +111,25 @@ func TestAddStrings(t *testing.T) {
 		})
 	}
 }
+
+func TestCountSubstrings(t *testing.T) {
+	tests := []struct {
+		name string
+		s    string
+		want int
+	}{
+		{name: "test1", s: "abc", want: 3},
+		{name: "empty", s: "", want: 0},
+		{name: "single_char", s: "a", want: 1},
+		{name: "all_same", s: "aaa", want: 6},
+		{name: "even_palindrome", s: "abba", want: 6},
+		{name: "odd_palindrome", s: "abcba", want: 7},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := countSubstrings(tt.s)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
