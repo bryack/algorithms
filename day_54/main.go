@@ -135,3 +135,30 @@ func intervalIntersection(firstList [][]int, secondList [][]int) [][]int {
 	}
 	return res
 }
+
+func reverseWords(s string) string {
+	buf := []byte(s)
+	end := 0
+
+	for end < len(buf) {
+		start := end
+		for end < len(buf) && buf[end] != ' ' {
+			end++
+		}
+		if start == end {
+			end++
+		} else {
+			reverse(buf, start, end-1)
+		}
+
+	}
+	return string(buf)
+}
+
+func reverse(buf []byte, i, j int) {
+	for i <= j {
+		buf[i], buf[j] = buf[j], buf[i]
+		i++
+		j--
+	}
+}

@@ -64,3 +64,26 @@ func TestIsOneEditDistance(t *testing.T) {
 		})
 	}
 }
+
+func TestReverseWords(t *testing.T) {
+	tests := []struct {
+		name string
+		s    string
+		want string
+	}{
+		{name: "test1", s: "Let's take LeetCode contest", want: "s'teL ekat edoCteeL tsetnoc"},
+		{name: "test2", s: "Mr Ding", want: "rM gniD"},
+		{name: "empty", s: "", want: ""},
+		{name: "single_word", s: "hello", want: "olleh"},
+		{name: "trailing_space", s: "abc ", want: "cba "},
+		{name: "leading_space", s: " abc", want: " cba"},
+		{name: "multiple_spaces", s: "a  b", want: "a  b"},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := reverseWords(tt.s)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
