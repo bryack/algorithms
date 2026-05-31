@@ -87,3 +87,27 @@ func TestReverseWords(t *testing.T) {
 		})
 	}
 }
+
+func TestAddStrings(t *testing.T) {
+	tests := []struct {
+		name string
+		num1 string
+		num2 string
+		want string
+	}{
+		{name: "insert middle", num1: "11", num2: "123", want: "134"},
+		{name: "zero_plus_zero", num1: "0", num2: "0", want: "0"},
+		{name: "carry_last_digit", num1: "1", num2: "9", want: "10"},
+		{name: "carry_cascade", num1: "999", num2: "1", want: "1000"},
+		{name: "equal_length", num1: "123", num2: "456", want: "579"},
+		{name: "diff_length", num1: "456", num2: "77", want: "533"},
+		{name: "add_zero", num1: "123", num2: "0", want: "123"},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			res := addStrings(tt.num1, tt.num2)
+			assert.Equal(t, tt.want, res)
+		})
+	}
+}
