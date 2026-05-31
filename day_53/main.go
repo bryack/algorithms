@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func backspaceCompare(s string, t string) bool {
 	i, j := len(s)-1, len(t)-1
@@ -130,4 +132,27 @@ func compress(chars []byte) int {
 		}
 	}
 	return idx
+}
+
+func isOneEditDistance(s string, t string) bool {
+	m, n := len(s), len(t)
+
+	if m > n {
+		s, t = t, s
+		m, n = n, m
+	}
+
+	if n-m > 1 {
+		return false
+	}
+
+	for i := 0; i < m; i++ {
+		if s[i] != t[i] {
+			if m == n {
+				return s[i+1:] == t[i+1:]
+			}
+			return s[i:] == t[i+1:]
+		}
+	}
+	return n-m == 1
 }
