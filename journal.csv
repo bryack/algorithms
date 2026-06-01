@@ -317,3 +317,15 @@
 2026-06-01,Алгоритмы,LeetCode 557: Reverse Words in a String III (разминка),Решена через Two Pointers внутри слова на []byte. O(n) time O(n) space.,day_55/main.go,1,0.2ч,Warm-up L4
 2026-06-01,Алгоритмы,LeetCode 415: Add Strings (разминка),Решена через Two Pointers с конца + carry + reverse. O(max(n,m)) time/space.,day_55/main.go,1,0.2ч,Warm-up L4
 2026-06-01,Алгоритмы,LeetCode 647: Palindromic Substrings (разминка),Решена через Expand Around Center (2n-1 центров). O(n^2) time O(1) space.,day_55/main.go,2,0.25ч,Warm-up L4
+2026-06-01,Карточки,Telegram Post ANKI LC 1768,Опубликован пост с методологией Anki-карточек для алгоритмов.,Telegram-канал,1,0.3ч,Telegram Post
+2026-06-01,Алгоритмы,LeetCode 643: Maximum Average Subarray I (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_55/main.go,1,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 42: Trapping Rain Water (разминка),Решена через Two Pointers с maxL/maxR. O(n) time O(1) space. Решено самостоятельно.,day_55/main.go,3,0.2ч,Warm-up L4
+2026-06-01,Go,Nature of Go Test - Structs/Methods/Interfaces/Generics/Maps/Iterators,Прохождение теста по темам фундаментального Go.,Nature of Go,2,0.5ч,Тест завершён
+2026-06-01,Карточки,Anki Algorithm Cards (LC 917 & LC 42 upgrade),Созданы 3 карточки для LC 917 и доработан набор для LC 42.,Anki,2,0.7ч,Anki Creation
+2026-06-01,Алгоритмы,LeetCode 1343: Number of Sub-arrays of Size K and Average >= Threshold (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 1876: Substrings of Size Three with Distinct Characters (разминка),Решена через Fixed-size Sliding Window. Уникальность проверена через прямое сравнение. O(n) time O(1) space.,day_55/main.go,1,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 2090: K Radius Subarray Averages (разминка),Решена через Fixed-size Sliding Window (размер 2k+1). Предзаполнение -1. O(n) time O(n) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K (разминка),Решена через Sliding Window + Frequency Map. O(n) time O(k) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks (разминка),Решена через Fixed-size Sliding Window. Счётчик 'W' в окне. O(n) time O(1) space.,day_55/main.go,1,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 2653: Sliding Subarray Beauty (разминка),Решена через Fixed-size Sliding Window + Bucket Counting. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4

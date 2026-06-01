@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 )
 
@@ -241,6 +242,178 @@ func countSubstrings(s string) int {
 			res++
 			l--
 			r++
+		}
+	}
+	return res
+}
+
+func findMaxAverage(nums []int, k int) float64 {
+	begin := 0
+	wState := 0
+	res := math.MinInt
+
+	for end := range nums {
+		wState += nums[end]
+		if end-begin+1 == k {
+			res = max(res, wState)
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return float64(res) / float64(k)
+}
+
+func numOfSubarrays(arr []int, k int, threshold int) int {
+	begin := 0
+	wState := 0
+	res := 0
+
+	for end := range arr {
+		wState += arr[end]
+
+		if end-begin+1 == k {
+			average := wState / k
+			if average >= threshold {
+				res++
+			}
+			wState -= arr[begin]
+			begin++
+		}
+	}
+	return res
+}
+
+func countGoodSubstrings(s string) int {
+	begin := 0
+	res := 0
+
+	for end := range s {
+		if end-begin+1 == 3 {
+			if s[begin] != s[end] && s[begin] != s[end-1] && s[end] != s[end-1] {
+				res++
+			}
+			begin++
+			end = begin
+		}
+	}
+	return res
+}
+
+func getAverages(nums []int, k int) []int {
+	res := make([]int, len(nums))
+	for i := range res {
+		res[i] = -1
+	}
+
+	begin := 0
+	wState := 0
+
+	for end := range nums {
+		wState += nums[end]
+		if end-begin == k*2 {
+			r := wState / (end - begin + 1)
+			res[begin+k] = r
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return res
+}
+
+func maximumSubarraySum(nums []int, k int) int64 {
+	begin := 0
+	m := map[int]int{}
+	wState := 0
+	res := 0
+
+	for end := range nums {
+		m[nums[end]]++
+		wState += nums[end]
+		if end-begin+1 == k {
+			if len(m) == k {
+				res = max(res, wState)
+			}
+			if m[nums[begin]] > 1 {
+				m[nums[begin]]--
+			} else {
+				delete(m, nums[begin])
+			}
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return int64(res)
+}
+
+func maxVowels(s string, k int) int {
+	begin := 0
+	res := 0
+	wState := 0
+
+	for end := range s {
+		if s[end] == 'a' || s[end] == 'e' || s[end] == 'i' || s[end] == 'o' || s[end] == 'u' {
+			wState++
+		}
+		if end-begin+1 == k {
+			res = max(res, wState)
+			if s[begin] == 'a' || s[begin] == 'e' || s[begin] == 'i' || s[begin] == 'o' || s[begin] == 'u' {
+				wState--
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+func minimumRecolors(blocks string, k int) int {
+	begin := 0
+	wState := 0
+	res := 101
+
+	for end := range blocks {
+		if blocks[end] == 'W' {
+			wState++
+		}
+		if end-begin+1 == k {
+			res = min(res, wState)
+			if blocks[begin] == 'W' {
+				wState--
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+func getSubarrayBeauty(nums []int, k int, x int) []int {
+	begin := 0
+	res := []int{}
+	var freq [101]int
+
+	for end := range nums {
+
+		freq[nums[end]+50]++
+
+		if end-begin+1 == k {
+			count := 0
+			found := false
+
+			for i := 0; i < 50; i++ {
+				count += freq[i]
+
+				if count >= x {
+					res = append(res, i-50)
+					found = true
+					break
+				}
+			}
+
+			if !found {
+				res = append(res, 0)
+			}
+
+			freq[nums[begin]+50]--
+			begin++
 		}
 	}
 	return res
