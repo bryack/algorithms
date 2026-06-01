@@ -329,3 +329,6 @@
 2026-06-01,Алгоритмы,LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
 2026-06-01,Алгоритмы,LeetCode 2379: Minimum Recolors to Get K Consecutive Black Blocks (разминка),Решена через Fixed-size Sliding Window. Счётчик 'W' в окне. O(n) time O(1) space.,day_55/main.go,1,0.1ч,Warm-up L4
 2026-06-01,Алгоритмы,LeetCode 2653: Sliding Subarray Beauty (разминка),Решена через Fixed-size Sliding Window + Bucket Counting. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 1423: Maximum Points You Can Obtain from Cards (разминка),Решена через инверсию: Sliding Window на 'невыбранных' картах. O(k) time O(1) space.,day_55/main.go,2,0.2ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 209: Minimum Size Subarray Sum (разминка),Решена через Dynamic Sliding Window. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-01,Алгоритмы,LeetCode 1004: Max Consecutive Ones III (разминка),Решена через Dynamic Sliding Window (счётчик нулей). O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4

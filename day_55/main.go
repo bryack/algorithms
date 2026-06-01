@@ -418,3 +418,66 @@ func getSubarrayBeauty(nums []int, k int, x int) []int {
 	}
 	return res
 }
+
+func maxScore(cardPoints []int, k int) int {
+	begin, end := 0, len(cardPoints)-k
+	wState := 0
+
+	for i := end; i < len(cardPoints); i++ {
+		wState += cardPoints[i]
+	}
+
+	res := wState
+
+	for end < len(cardPoints) {
+		wState = wState + cardPoints[begin] - cardPoints[end]
+		res = max(res, wState)
+		begin++
+		end++
+	}
+	return res
+}
+
+func minSubArrayLen(target int, nums []int) int {
+	begin := 0
+	res := len(nums) + 1
+	wState := 0
+
+	for end := range nums {
+		wState += nums[end]
+
+		for wState >= target {
+			res = min(res, end-begin+1)
+			wState -= nums[begin]
+			begin++
+		}
+	}
+
+	if res == len(nums)+1 {
+		return 0
+	}
+	return res
+}
+
+func longestOnes(nums []int, k int) int {
+	begin := 0
+	res := 0
+	wState := 0
+
+	for end := range nums {
+		if nums[end] == 0 {
+			wState++
+		}
+
+		for wState > k {
+			if nums[begin] == 0 {
+				wState--
+			}
+			begin++
+		}
+
+		res = max(res, end-begin+1)
+
+	}
+	return res
+}
