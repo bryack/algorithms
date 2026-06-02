@@ -332,3 +332,10 @@
 2026-06-01,Алгоритмы,LeetCode 1423: Maximum Points You Can Obtain from Cards (разминка),Решена через инверсию: Sliding Window на 'невыбранных' картах. O(k) time O(1) space.,day_55/main.go,2,0.2ч,Warm-up L4
 2026-06-01,Алгоритмы,LeetCode 209: Minimum Size Subarray Sum (разминка),Решена через Dynamic Sliding Window. O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
 2026-06-01,Алгоритмы,LeetCode 1004: Max Consecutive Ones III (разминка),Решена через Dynamic Sliding Window (счётчик нулей). O(n) time O(1) space.,day_55/main.go,2,0.1ч,Warm-up L4
+2026-06-02,Алгоритмы,LeetCode 42: Trapping Rain Water (разминка),Решена через Two Pointers с maxL/maxR. O(n) time O(1) space.,day_56/main.go,3,0.1ч,Warm-up L4. Самостоятельное решение.
+2026-06-02,Алгоритмы,LeetCode 5: Longest Palindromic Substring (разминка),Решена через Expand Around Center (2n-1 центров). O(n^2) time O(1) space.,day_56/main.go,3,0.2ч,Upgrade 🔴 L1 -> 🟢 L4. Решена самостоятельно.
+2026-06-02,Собеседование,Telegram Video: LeetCode 11: Container With Most Water,Записано видео с разбором алгоритма Two Pointers. O(n) time O(1) space.,Telegram-канал,2,1.2ч,Разбор для канала. Тренировка объяснения.
+2026-06-02,Собеседование,Telegram Post: LeetCode 26: Remove Duplicates from Sorted Array,Написание и публикация поста в Telegram-канал.,Telegram-канал,1,0.2ч,Разбор опубликован.
+2026-06-02,LinkedIn,Nand to Tetris - AND Gate Implementation,Написание и публикация поста в LinkedIn про реализацию AND на HDL.,LinkedIn,2,2.4ч,Пост опубликован.
+2026-06-02,Go,The Nature of Go - Test 9: Advanced Error Handling,Прохождение теста по теме продвинутой работы с ошибками. Всё пройдено.,Nature of Go,3,0.27ч,Тест завершён успешно.
+2026-06-02,Go,The Nature of Go - Lecture 10: GC and Runtime Internals,Прослушивание лекции про GC и рантайм (частично). Продолжу завтра.,Nature of Go,2,3.5ч,Лекция прослушана не полностью.

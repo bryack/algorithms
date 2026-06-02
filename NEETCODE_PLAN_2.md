@@ -5,19 +5,19 @@
 | Статус | Задача | Сложность | Тема / Паттерн | Дата | Оценка / Retention | Ревью |
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [x] | **344. Reverse String** | Easy | Two Pointers (swap in-place) | 2026-05-01 | ⚪ L5 | |
-| [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-05-01 | 🟢 L4 | 2026-06-01 |
-| [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) | 2026-05-03 | 🟢 L4 | 2026-06-01 |
-| [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-05-03 | 🟢 L4 | 2026-06-01 |
-| [x] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | 2026-05-03 | 🟢 L4 | 2026-06-01 |
+| [x] | **125. Valid Palindrome** | Easy | Two Pointers (left/right) | 2026-06-01 | 🟢 L4 | |
+| [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) | 2026-06-01 | 🟢 L4 | |
+| [x] | **1768. Merge Strings Alternately** | Easy | Two Pointers (interleave) | 2026-06-01 | 🟢 L4 | |
+| [x] | **88. Merge Sorted Array** | Easy | Two Pointers (fill from end) | 2026-06-01 | 🟢 L4 | |
 | [x] | **392. Is Subsequence** | Easy | Two Pointers (converging check) | 2026-05-04 | ⚪ L5 | 2026-09-04 |
-| [x] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | 2026-05-04 | 🟢 L4 | 2026-06-01 |
-| [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-05-02 | 🟢 L4 | 2026-06-01 |
-| [x] | **15. 3Sum** | Medium | Two Pointers + Sorting | 2026-05-04 | 🟢 L4 | 2026-06-01 |
-| [x] | **18. 4Sum** | Medium | Two Pointers + Sorting | 2026-05-05 | 🟢 L4 | 2026-06-01 |
-| [x] | **189. Rotate Array** | Medium | Two Pointers / Reverse | 2026-05-06 | 🟢 L4 | 2026-06-01 |
-| [x] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | 2026-05-06 | 🟢 L4 | 2026-06-01 |
-| [x] | **881. Boats to Save People** | Medium | Two Pointers (greedy pairing) | 2026-05-06 | 🟢 L4 | 2026-06-01 |
-| [x] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | 2026-05-07 | 🟢 L4 | 2026-06-01 |
+| [x] | **26. Remove Duplicates from Sorted Array** | Easy | Two Pointers (fast & slow, overwrite) | 2026-06-01 | 🟢 L4 | |
+| [x] | **167. Two Sum II - Input Array Is Sorted** | Medium | Two Pointers (sorted array, converge) | 2026-06-01 | 🟢 L4 | |
+| [x] | **15. 3Sum** | Medium | Two Pointers + Sorting | 2026-06-01 | 🟢 L4 | |
+| [x] | **18. 4Sum** | Medium | Two Pointers + Sorting | 2026-06-01 | 🟢 L4 | |
+| [x] | **189. Rotate Array** | Medium | Two Pointers / Reverse | 2026-06-01 | 🟢 L4 | |
+| [x] | **11. Container With Most Water** | Medium | Two Pointers (maximization) | 2026-06-01 | 🟢 L4 | |
+| [x] | **881. Boats to Save People** | Medium | Two Pointers (greedy pairing) | 2026-06-01 | 🟢 L4 | |
+| [x] | **42. Trapping Rain Water** | Hard | Two Pointers / Prefix Max | 2026-06-01 | 🟢 L4 | |
 
 ## Bonus (NeetCode 150, уже решены)
 
@@ -79,7 +79,7 @@
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [x] | **917. Reverse Only Letters** | Easy | Two Pointers (swap letters, skip non-letters) | 2026-05-08 | 🟢 L3 | |
 | [x] | **680. Valid Palindrome II** | Easy | Two Pointers (left/right, skip check) — повторение | 2026-05-20 | 🟢 L4 | |
-| [x] | **5. Longest Palindromic Substring** | Medium | Two Pointers (expand around center) | 2026-05-09 | 🔴 L1 | 2026-05-16 |
+| [x] | **5. Longest Palindromic Substring** | Medium | Two Pointers (expand around center) | 2026-06-02 | 🟢 L4 | |
 | [x] | **647. Palindromic Substrings** | Medium | Two Pointers (expand around center, count) | 2026-05-30 | 🟢 L4 | |
 
 ## Дополнительная практика: Задачи с собеседований Яндекс

@@ -39,6 +39,7 @@
 | 881. Boats to Save People | 2026-05-30 | two_pointers, medium |
 | 42. Trapping Rain Water | 2026-05-30 | two_pointers, hard |
 | 917. Reverse Only Letters | 2026-06-01 | two_pointers, easy |
+| 5. Longest Palindromic Substring | 2026-06-02 | two_pointers, medium |
 
 ---
 
@@ -46,7 +47,6 @@
 
 | Задача | Планируемая дата | Теги |
 |--------|:----------------:|------|
-| 5. Longest Palindromic Substring | 2026-06-02 | two_pointers, medium |
 
 ---
 
@@ -55,7 +55,7 @@
 | Задача | Приоритет | Теги |
 |--------|:---------:|------|
 
-| 161. One Edit Distance | Средний | two_pointers, medium |
+| 161. One Edit Distance | Высокий | two_pointers, medium |
 | 844. Backspace String Compare | Средний | two_pointers, easy |
 | 443. String Compression | Низкий | two_pointers, medium |
 | 228. Summary Ranges | Низкий | two_pointers, easy |
