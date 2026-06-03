@@ -339,3 +339,10 @@
 2026-06-02,LinkedIn,Nand to Tetris - AND Gate Implementation,Написание и публикация поста в LinkedIn про реализацию AND на HDL.,LinkedIn,2,2.4ч,Пост опубликован.
 2026-06-02,Go,The Nature of Go - Test 9: Advanced Error Handling,Прохождение теста по теме продвинутой работы с ошибками. Всё пройдено.,Nature of Go,3,0.27ч,Тест завершён успешно.
 2026-06-02,Go,The Nature of Go - Lecture 10: GC and Runtime Internals,Прослушивание лекции про GC и рантайм (частично). Продолжу завтра.,Nature of Go,2,3.5ч,Лекция прослушана не полностью.
+2026-06-03,Алгоритмы,LeetCode 228: Summary Ranges (разминка),Решена через Two Pointers (range tracking). O(n) time O(1) space.,day_57/main.go,1,0.4ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 443: String Compression (разминка),Решена in-place через Two Pointers и strconv.Itoa. O(n) time O(1) space.,day_57/main.go,2,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 161: One Edit Distance (разминка),Решена через Two Pointers (3 случая). O(n) time O(1) space.,day_57/main.go,2,0.3ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 986: Interval List Intersections (разминка),Решена через Two Pointers (max start / min end). O(n+m) time O(1) space.,day_57/main.go,2,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 557: Reverse Words in a String III (разминка),Решена через Two Pointers внутри слова на []byte. O(n) time O(n) space.,day_57/main.go,1,0.3ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 415: Add Strings (разминка),Решена через Two Pointers с конца + carry + reverse. O(max(n,m)) time/space.,day_57/main.go,1,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 647: Palindromic Substrings (разминка),Решена через Expand Around Center (2n-1 центров). O(n^2) time O(1) space.,day_57/main.go,2,0.3ч,Warm-up L4
