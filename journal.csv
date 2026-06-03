@@ -346,3 +346,16 @@
 2026-06-03,Алгоритмы,LeetCode 557: Reverse Words in a String III (разминка),Решена через Two Pointers внутри слова на []byte. O(n) time O(n) space.,day_57/main.go,1,0.3ч,Warm-up L4
 2026-06-03,Алгоритмы,LeetCode 415: Add Strings (разминка),Решена через Two Pointers с конца + carry + reverse. O(max(n,m)) time/space.,day_57/main.go,1,0.2ч,Warm-up L4
 2026-06-03,Алгоритмы,LeetCode 647: Palindromic Substrings (разминка),Решена через Expand Around Center (2n-1 центров). O(n^2) time O(1) space.,day_57/main.go,2,0.3ч,Warm-up L4
+2026-06-03,Собеседование,Telegram Post: LeetCode 88: Merge Sorted Array (with Anki),Написание и публикация поста с карточками Anki для задачи Merge Sorted Array.,Telegram-канал,1,0.3ч,Разбор с карточками опубликован.
+2026-06-03,Алгоритмы,LeetCode 643: Maximum Average Subarray I (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_57/main.go,1,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_57/main.go,2,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 1876: Substrings of Size Three with Distinct Characters (разминка),Решена через Fixed-size Sliding Window (size 3). O(n) time O(1) space.,day_57/main.go,1,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 2090: K Radius Subarray Averages (разминка),Решена через Fixed-size Sliding Window (2k+1). O(n) time O(n) space.,day_57/main.go,2,0.1ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 2461: Maximum Sum of Distinct Subarrays With Length K (разминка),Решена через Fixed-size Sliding Window + frequency map. O(n) time O(k) space.,day_57/main.go,2,0.5ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 1456: Maximum Number of Vowels in a Substring of Given Length (разминка),Решена через Fixed-size Sliding Window. O(n) time O(1) space.,day_57/main.go,2,0.3ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 2653: Sliding Subarray Beauty (разминка),Решена через Fixed-size Sliding Window + bucket counting. O(n) time O(1) space.,day_57/main.go,2,0.2ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 1423: Maximum Points You Can Obtain from Cards (разминка),Решена через Fixed-size Sliding Window (инверсия). O(k) time O(1) space.,day_57/main.go,2,0.5ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 209: Minimum Size Subarray Sum (разминка),Решена через Dynamic Sliding Window. O(n) time O(1) space.,day_57/main.go,2,0.5ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 1004: Max Consecutive Ones III (разминка),Решена через Dynamic Sliding Window (счётчик нулей). O(n) time O(1) space.,day_57/main.go,2,0.4ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 1493: Longest Subarray of 1's After Deleting One Element (разминка),Решена через Dynamic Sliding Window (счётчик нулей). O(n) time O(1) space.,day_57/main.go,2,0.3ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 904: Fruit Into Baskets (разминка),Решена через Dynamic Sliding Window + frequency map (len(m) > 2). O(n) time O(1) space.,day_57/main.go,2,0.4ч,Warm-up L4

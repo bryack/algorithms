@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 )
 
@@ -161,6 +162,283 @@ func countSubstrings(s string) int {
 			left--
 			right++
 		}
+	}
+	return res
+}
+
+func findMaxAverage(nums []int, k int) float64 {
+	begin := 0
+	res := math.MinInt
+	wState := 0
+
+	for end := range nums {
+		wState += nums[end]
+
+		if end-begin+1 == k {
+			res = max(res, wState)
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return float64(res) / float64(k)
+}
+
+func numOfSubarrays(arr []int, k int, threshold int) int {
+	begin := 0
+	res := 0
+	wState := 0
+
+	for end := range arr {
+		wState += arr[end]
+
+		if end-begin+1 == k {
+			if wState/k >= threshold {
+				res++
+			}
+			wState -= arr[begin]
+			begin++
+		}
+	}
+	return res
+}
+
+func countGoodSubstrings(s string) int {
+	begin := 0
+	res := 0
+
+	for end := range s {
+
+		if end-begin+1 == 3 {
+			if s[end] != s[begin] && s[begin+1] != s[end] && s[begin] != s[begin+1] {
+				res++
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+func getAverages(nums []int, k int) []int {
+	res := make([]int, len(nums))
+
+	for i := range res {
+		res[i] = -1
+	}
+
+	begin := 0
+	wState := 0
+
+	for end := range nums {
+		wState += nums[end]
+
+		if end-begin == 2*k {
+			res[begin+k] = wState / (end - begin + 1)
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return res
+}
+
+func maximumSubarraySum(nums []int, k int) int64 {
+	begin := 0
+	m := map[int]int{}
+	res := 0
+	wState := 0
+
+	for end := range nums {
+		wState += nums[end]
+		m[nums[end]]++
+
+		if end-begin+1 == k {
+			if len(m) == k {
+				res = max(res, wState)
+			}
+
+			m[nums[begin]]--
+			if m[nums[begin]] <= 0 {
+				delete(m, nums[begin])
+			}
+
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	return int64(res)
+}
+
+func maxVowels(s string, k int) int {
+	begin := 0
+	res := 0
+	wState := 0
+
+	for end := range s {
+		if s[end] == 'a' || s[end] == 'e' || s[end] == 'i' || s[end] == 'o' || s[end] == 'u' {
+			wState++
+		}
+
+		if end-begin+1 == k {
+			res = max(res, wState)
+
+			if s[begin] == 'a' || s[begin] == 'e' || s[begin] == 'i' || s[begin] == 'o' || s[begin] == 'u' {
+				wState--
+			}
+			begin++
+		}
+	}
+	return res
+}
+
+func getSubarrayBeauty(nums []int, k int, x int) []int {
+	begin := 0
+	res := []int{}
+	var arr [101]int
+
+	for end := range nums {
+		arr[nums[end]+50]++
+
+		if end-begin+1 == k {
+			count := 0
+			found := false
+			for i := 0; i < 50; i++ {
+				count += arr[i]
+				if count >= x {
+					res = append(res, i-50)
+					found = true
+					break
+				}
+			}
+
+			if !found {
+				res = append(res, 0)
+			}
+
+			arr[nums[begin]+50]--
+			begin++
+		}
+	}
+	return res
+}
+
+func maxScore(cardPoints []int, k int) int {
+	n := len(cardPoints)
+	wState := 0
+	end := n - k
+
+	for i := end; i < n; i++ {
+		wState += cardPoints[i]
+	}
+
+	maxP := wState
+	begin := 0
+
+	for end < n {
+		wState = wState - cardPoints[end] + cardPoints[begin]
+		maxP = max(maxP, wState)
+		end++
+		begin++
+	}
+	return maxP
+}
+
+func minSubArrayLen(target int, nums []int) int {
+	begin := 0
+	res := len(nums) + 1
+	wState := 0
+
+	for end := range nums {
+		wState += nums[end]
+
+		for wState >= target {
+			res = min(res, end-begin+1)
+			wState -= nums[begin]
+			begin++
+		}
+	}
+	if res == len(nums)+1 {
+		return 0
+	}
+	return res
+}
+
+func longestOnes(nums []int, k int) int {
+	begin := 0
+	res := 0
+	wState := 0
+
+	for end := range nums {
+		if nums[end] == 0 {
+			wState++
+		}
+
+		for wState > k {
+			if nums[begin] == 0 {
+				wState--
+			}
+			begin++
+		}
+		res = max(res, end-begin+1)
+	}
+	return res
+}
+
+func longestSubarray(nums []int) int {
+	begin := 0
+	res := 0
+	wState := 0
+
+	for end := range nums {
+		if nums[end] == 0 {
+			wState++
+		}
+
+		for wState > 1 {
+			if nums[begin] == 0 {
+				wState--
+			}
+			begin++
+		}
+		res = max(res, end-begin+1)
+	}
+	return res - 1
+}
+
+func totalFruit(fruits []int) int {
+	begin := 0
+	m := map[int]int{}
+	res := 0
+
+	for end := range fruits {
+		m[fruits[end]]++
+
+		for len(m) > 2 {
+			m[fruits[begin]]--
+			if m[fruits[begin]] == 0 {
+				delete(m, fruits[begin])
+			}
+			begin++
+		}
+		res = max(res, end-begin+1)
+	}
+	return res
+}
+
+func lengthOfLongestSubstring(s string) int {
+	begin := 0
+	wState := map[byte]int{}
+	res := 0
+
+	for end := range s {
+		wState[s[end]]++
+
+		for wState[s[end]] > 1 {
+			wState[s[begin]]--
+			if wState[s[begin]] == 0 {
+				delete(wState, s[begin])
+			}
+			begin++
+		}
+		res = max(res, end-begin+1)
 	}
 	return res
 }
