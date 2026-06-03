@@ -442,3 +442,74 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	return res
 }
+
+func characterReplacement(s string, k int) int {
+	begin := 0
+	freq := [26]int{}
+	maxFreq := 0
+	res := 0
+
+	for end := range s {
+		freq[s[end]-'A']++
+		maxFreq = max(maxFreq, freq[s[end]-'A'])
+
+		for (end-begin+1)-maxFreq > k {
+			freq[s[begin]-'A']--
+			begin++
+		}
+
+		res = max(res, end-begin+1)
+
+	}
+	return res
+}
+
+func checkInclusion(s1 string, s2 string) bool {
+	if len(s1) > len(s2) {
+		return false
+	}
+
+	s1Count, s2Count := [26]int{}, [26]int{}
+
+	for i := range s1 {
+		s1Count[s1[i]-'a']++
+		s2Count[s2[i]-'a']++
+	}
+
+	for end := len(s1); end < len(s2); end++ {
+		if s1Count == s2Count {
+			return true
+		}
+		s2Count[s2[end]-'a']++
+		s2Count[s2[end-len(s1)]-'a']--
+	}
+	return s1Count == s2Count
+}
+
+func findAnagrams(s string, sub string) []int {
+	if len(sub) > len(s) {
+		return []int{}
+	}
+	res := []int{}
+
+	freqS, freqSub := [26]int{}, [26]int{}
+	for i := range sub {
+		freqS[s[i]-'a']++
+		freqSub[sub[i]-'a']++
+	}
+
+	end := len(sub)
+	begin := end - len(sub)
+	for ; end < len(s); end++ {
+		if freqS == freqSub {
+			res = append(res, begin)
+		}
+		freqS[s[end]-'a']++
+		freqS[s[begin]-'a']--
+		begin++
+	}
+	if freqS == freqSub {
+		res = append(res, begin)
+	}
+	return res
+}

@@ -18,8 +18,8 @@
 | [x] | **1004. Max Consecutive Ones III** | Medium | Dynamic Sliding Window (at most K flips) | 2026-05-21 | 🟢 L4 | |
 | [x] | **1493. Longest Subarray of 1's After Deleting One Element** | Medium | Dynamic Sliding Window (at most 1 zero) | 2026-05-21 | 🟢 L4 | |
 | [x] | **904. Fruit Into Baskets** | Medium | Dynamic Sliding Window (at most 2 distinct) | 2026-05-21 | 🟢 L4 | |
-| [ ] | **424. Longest Repeating Character Replacement** | Medium | Dynamic Sliding Window (max freq) | | | |
-| [ ] | **567. Permutation in String** | Medium | Fixed-size Sliding Window + Frequency | | | |
+| [x] | **424. Longest Repeating Character Replacement** | Medium | Dynamic Sliding Window (max freq) | 2026-06-03 | 🟢 L4 | |
+| [x] | **567. Permutation in String** | Medium | Fixed-size Sliding Window + Frequency | 2026-06-03 | 🟢 L4 | |
 | [ ] | **438. Find All Anagrams in a String** | Medium | Fixed-size Sliding Window + Frequency | | | |
 | [ ] | **76. Minimum Window Substring** | Hard | Dynamic Sliding Window (minimal valid) | | | |
 | [ ] | **239. Sliding Window Maximum** | Hard | Monotonic Deque | | | |

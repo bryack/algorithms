@@ -359,3 +359,8 @@
 2026-06-03,Алгоритмы,LeetCode 1004: Max Consecutive Ones III (разминка),Решена через Dynamic Sliding Window (счётчик нулей). O(n) time O(1) space.,day_57/main.go,2,0.4ч,Warm-up L4
 2026-06-03,Алгоритмы,LeetCode 1493: Longest Subarray of 1's After Deleting One Element (разминка),Решена через Dynamic Sliding Window (счётчик нулей). O(n) time O(1) space.,day_57/main.go,2,0.3ч,Warm-up L4
 2026-06-03,Алгоритмы,LeetCode 904: Fruit Into Baskets (разминка),Решена через Dynamic Sliding Window + frequency map (len(m) > 2). O(n) time O(1) space.,day_57/main.go,2,0.4ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 3: Longest Substring Without Repeating Characters (разминка),Решена через Dynamic Sliding Window + frequency map (last index). O(n) time O(min(m,n)) space.,day_57/main.go,2,0.3ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 424: Longest Repeating Character Replacement (Medium),Решена через Dynamic Sliding Window + maxFreq tracking. O(n) time O(1) space.,day_57/main.go,2,0.4ч,Retention L4. Ключевой инсайт: maxFreq не обязательно пересчитывать при сжатии.
+2026-06-03,Алгоритмы,LeetCode 567: Permutation in String (разминка),Решена через Fixed-size Sliding Window + Frequency Arrays. O(n) time O(1) space.,day_57/main.go,2,0.4ч,Warm-up L4
+2026-06-03,Алгоритмы,LeetCode 438: Find All Anagrams in a String (Medium),Решена через Fixed-size Sliding Window + Frequency Arrays. O(n) time O(1) space.,day_57/main.go,2,0.6ч,TDD с 9 тестами. Retention L4.
+2026-06-03,Алгоритмы,LeetCode 438: Find All Anagrams in a String (Medium),Решена через Fixed-size Sliding Window + Frequency Arrays. O(n) time O(1) space.,day_57/main.go,2,0.6ч,TDD с 9 тестами. Retention L4.
