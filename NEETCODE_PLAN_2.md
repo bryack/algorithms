@@ -94,3 +94,10 @@
 | [x] | **986. Interval List Intersections** | Medium | Two Pointers (two sorted interval lists) | 2026-05-30 | 🟢 L4 | |
 | [x] | **557. Reverse Words in a String III** | Easy | Two Pointers (reverse each word in-place) | 2026-05-30 | 🟢 L4 | |
 | [x] | **415. Add Strings** | Easy | Two Pointers (add digit strings from end with carry) | 2026-05-30 | 🟢 L4 | |
+| [ ] | **27. Remove Element** | Easy | Two Pointers | | | |
+| [ ] | **349. Intersection of Two Arrays** | Easy | Two Pointers / Sorting | | | |
+| [ ] | **350. Intersection of Two Arrays II** | Easy | Two Pointers / Sorting | | | |
+| [ ] | **80. Remove Duplicates from Sorted Array II** | Medium | Two Pointers | | | |
+| [ ] | **234. Palindrome Linked List** | Easy | Two Pointers | | | |
+| [ ] | **28. Find the Index of the First Occurrence in a String** | Easy | Two Pointers | | | |
+| [ ] | **253. Meeting Rooms II** | Medium | Two Pointers (start/end) | | | |

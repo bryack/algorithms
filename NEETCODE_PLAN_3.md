@@ -20,7 +20,7 @@
 | [x] | **904. Fruit Into Baskets** | Medium | Dynamic Sliding Window (at most 2 distinct) | 2026-05-21 | 🟢 L4 | |
 | [x] | **424. Longest Repeating Character Replacement** | Medium | Dynamic Sliding Window (max freq) | 2026-06-03 | 🟢 L4 | |
 | [x] | **567. Permutation in String** | Medium | Fixed-size Sliding Window + Frequency | 2026-06-03 | 🟢 L4 | |
-| [ ] | **438. Find All Anagrams in a String** | Medium | Fixed-size Sliding Window + Frequency | | | |
+| [x] | **438. Find All Anagrams in a String** | Medium | Fixed-size Sliding Window + Frequency | 2026-06-03 | 🟢 L4 | |
 | [ ] | **76. Minimum Window Substring** | Hard | Dynamic Sliding Window (minimal valid) | | | |
 | [ ] | **239. Sliding Window Maximum** | Hard | Monotonic Deque | | | |
 
@@ -32,6 +32,10 @@
 | :---: | :--- | :---: | :--- | :--- | :--- | :--- |
 | [ ] | **487. Max Consecutive Ones II** | Medium | Dynamic Sliding Window (at most 1 zero flip) | | | |
 | [ ] | **159. Longest Substring with At Most Two Distinct Characters** | Medium | Dynamic Sliding Window (at most 2 distinct) | | | |
+| [ ] | **658. Find K Closest Elements** | Medium | Two Pointers / Sliding Window | | | |
+| [ ] | **340. Longest Substring with At Most K Distinct Characters** | Medium | Sliding Window | | | |
+| [ ] | **220. Contains Duplicate III** | Hard | Sliding Window (bucket/ordered set) | | | |
+| [ ] | **395. Longest Substring with At Least K Repeating Characters** | Medium | Sliding Window / Divide and Conquer | | | |
 
 ## Легенда оценки (Retention)
 
