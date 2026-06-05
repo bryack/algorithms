@@ -362,3 +362,8 @@
 2026-06-03,Алгоритмы,LeetCode 3: Longest Substring Without Repeating Characters (разминка),Решена через Dynamic Sliding Window + frequency map (last index). O(n) time O(min(m,n)) space.,day_57/main.go,2,0.3ч,Warm-up L4
 2026-06-03,Алгоритмы,LeetCode 424: Longest Repeating Character Replacement (Medium),Решена через Dynamic Sliding Window + maxFreq tracking. O(n) time O(1) space.,day_57/main.go,2,0.4ч,Retention L4. Ключевой инсайт: maxFreq не обязательно пересчитывать при сжатии.
 2026-06-03,Алгоритмы,LeetCode 567: Permutation in String (разминка),Решена через Fixed-size Sliding Window + Frequency Arrays. O(n) time O(1) space.,day_57/main.go,2,0.4ч,Warm-up L4
+2026-06-04,LinkedIn,Nand to Tetris - OR Gate Implementation,Написание и публикация поста в LinkedIn про реализацию OR на HDL,LinkedIn,2,0.9ч,Пост опубликован.
+2026-06-04,Собеседование,Telegram post: LeetCode 189: Rotate Array,Написание и публикация поста в Telegram-канал.,Telegram-канал,1,0.5ч,Пост опубликован.
+2026-06-04,Алгоритмы,LeetCode 27: Remove Element,Решена задача удаления элементов in-place через Two Pointers (fast & slow),day_58/main.go,1,0.25ч,🟢 L4.
+2026-06-04,Алгоритмы,LeetCode 350: Intersection of Two Arrays II,Решена задача пересечения массивов с учётом частот через Two Pointers (на отсортированных массивах),day_58/main.go,2,0.1ч,🟢 L4.
+2026-06-04,Алгоритмы,LeetCode 349: Intersection of Two Arrays,Решена задача пересечения двух массивов через сортировку и Two Pointers (уникальные элементы),day_58/main.go,1,0.1ч,🟢 L4.
