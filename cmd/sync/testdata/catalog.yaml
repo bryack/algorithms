@@ -1,0 +1,43 @@
+version: 1
+vault_root: testdata/vault
+blocks:
+  - id: arrays_hashing
+    title: "Arrays & Hashing"
+    folder: Arrays_Hashing
+    plan_file: NEETCODE_PLAN_1.md
+    sections:
+      - group: main
+        title: "Основной блок"
+      - group: yandex
+        title: "Задачи с собеседований Яндекс"
+    problems:
+      - leetcode_id: 217
+        title: "Contains Duplicate"
+        difficulty: Easy
+        pattern: "Hash Set"
+        group: main
+      - leetcode_id: 1
+        title: "Two Sum"
+        difficulty: Easy
+        pattern: "HashMap (One-pass)"
+        group: main
+      - leetcode_id: 2215
+        title: "Find the Difference of Two Arrays"
+        difficulty: Easy
+        pattern: "HashSet Difference"
+        group: yandex
+  - id: two_pointers
+    title: "Two Pointers"
+    folder: Two_pointers
+    plan_file: NEETCODE_PLAN_2.md
+    problems:
+      - leetcode_id: 344
+        title: "Reverse String"
+        difficulty: Easy
+        pattern: "Two Pointers (swap in-place)"
+        group: main
+      - leetcode_id: 350
+        title: "Intersection of Two Arrays II"
+        difficulty: Easy
+        pattern: "Two Pointers / Sorting"
+        group: main

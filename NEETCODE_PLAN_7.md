@@ -1,4 +1,4 @@
-# NeetCode Roadmap — Stack
+# NeetCode Roadmap — Trees
 
 > **Сгенерировано командой `rtk go run ./cmd/sync`.**
 > Не редактируй вручную — правь catalog.yaml (статика) и заметки Obsidian (прогресс).
@@ -49,22 +49,23 @@
 
 | Статус | Задача | Сложность | Тема / Паттерн | Дата | Retention | needRepeat | Решений |
 | :---: | :--- | :---: | :--- | :--- | :--- | :---: | :---: |
-| [x] | **20. Valid Parentheses** | Easy | Stack (bracket matching) | 2026-04-26 | 🟢 L4 |  | 12 |
-| [x] | **22. Generate Parentheses** | Medium | Stack / Backtracking | 2026-07-19 | 🔴 L1 |  | 3 |
-| [x] | **71. Simplify Path** | Medium | Stack (path components) | 2026-07-18 | 🟢 L4 |  | 6 |
-| [ ] | **84. Largest Rectangle In Histogram** | Hard | Monotonic Stack |  |  |  |  |
-| [x] | **150. Evaluate Reverse Polish Notation** | Medium | Stack (postfix evaluation) | 2026-07-23 | 🟢 L4 |  | 2 |
-| [x] | **155. Min Stack** | Medium | Stack with Min Tracking | 2026-07-01 | 🟡 L3 |  | 13 |
-| [x] | **224. Basic Calculator** | Hard | Stack (expression evaluation with parentheses, sign handling) | 2026-07-23 | 🟢 L4 |  | 8 |
-| [x] | **225. Implement Stack Using Queues** | Easy | Queue-based Stack Design | 2026-07-25 | ⚪ L5 |  | 1 |
-| [x] | **232. Implement Queue using Stacks** | Easy | Stack-based Queue Design | 2026-07-25 | 🟢 L4 |  | 4 |
-| [x] | **394. Decode String** | Medium | Stack (nested decoding) | 2026-07-26 | 🟢 L4 |  | 7 |
-| [x] | **682. Baseball Game** | Easy | Stack (score ops) | 2026-07-18 | 🟢 L4 |  | 5 |
-| [x] | **735. Asteroid Collision** | Medium | Stack (collision simulation) | 2026-07-19 | 🟢 L4 |  | 9 |
-| [x] | **739. Daily Temperatures** | Medium | Monotonic Stack | 2026-07-26 | 🟢 L4 |  | 10 |
-| [ ] | **853. Car Fleet** | Medium | Stack / Sorting |  |  |  |  |
-| [ ] | **895. Maximum Frequency Stack** | Hard | Stack + Frequency Map |  |  |  |  |
-| [ ] | **901. Online Stock Span** | Medium | Monotonic Stack |  |  |  |  |
-| [x] | **1047. Remove All Adjacent Duplicates In String** | Easy | Stack (char filtering) | 2026-07-18 | 🟢 L4 |  | 5 |
-| [x] | **2390. Removing Stars From a String** | Medium | Stack (char filtering) | 2026-07-18 | 🟢 L4 |  | 5 |
+| [x] | **50. Pow(x, n)** | Medium | recursion, math | 2026-08-02 | 🟢 L4 |  | 9 |
+| [x] | **98. Validate Binary Search Tree** | Medium | recursion | 2026-08-29 | 🟢 L4 |  | 7 |
+| [x] | **100. Same Tree** | Easy | recursion | 2026-08-12 | 🟢 L4 |  | 5 |
+| [x] | **101. Symmetric Tree** | Easy | recursion | 2026-08-12 | 🟢 L4 |  | 6 |
+| [x] | **104. Maximum Depth of Binary Tree** | Easy | recursion | 2026-08-09 | 🟢 L4 |  | 7 |
+| [x] | **105. Construct Binary Tree from Preorder and Inorder Traversal** | Easy | recursion | 2026-08-13 | 🔴 L1 | true | 4 |
+| [x] | **110. Balanced Binary Tree** | Easy | recursion | 2026-09-07 | 🟡 L3 | true | 4 |
+| [x] | **112. Path Sum** | Easy | recursion | 2026-08-13 | 🟢 L4 |  | 6 |
+| [x] | **226. Invert Binary Tree** | Easy | recursion | 2026-08-09 | 🟢 L4 |  | 8 |
+| [x] | **236. Lowest Common Ancestor of a Binary Tree** | Medium | recursion | 2026-08-20 | 🟢 L4 |  | 10 |
+| [x] | **437. Path Sum III** | Medium | recursion | 2026-08-18 | 🟢 L4 |  | 17 |
+| [x] | **450. Delete Node in a BST** | Medium | recursion | 2026-09-08 | 🟠 L2 | true | 3 |
+| [x] | **509. Fibonacci Number** | Easy | recursion | 2026-08-02 | 🟢 L4 |  | 13 |
+| [x] | **530. Minimum Absolute Difference in BST** | Easy | recursion | 2026-09-10 | 🔴 L1 | true | 1 |
+| [x] | **700. Search in a Binary Search Tree** | Easy | recursion | 2026-08-27 | 🟢 L4 |  | 9 |
+| [x] | **701. Insert into a Binary Search Tree** | Medium | recursion | 2026-08-27 | 🟢 L4 |  | 9 |
+| [x] | **872. Leaf-Similar Trees** | Easy | recursion | 2026-08-13 | 🟢 L4 |  | 6 |
+| [x] | **1372. Longest ZigZag Path in a Binary Tree** | Medium | recursion | 2026-08-19 | 🟢 L4 |  | 7 |
+| [x] | **1448. Count Good Nodes in Binary Tree** | Easy | recursion | 2026-08-16 | 🟢 L4 |  | 5 |
 

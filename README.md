@@ -59,11 +59,13 @@
 │   ├── RemoveDuplicates/   # Дедупликация срезов на дженериках
 │   └── SumMapValues/       # Агрегация числовых мап
 ├── nog/                    # Оптимизация работы с памятью и строками
+├── cmd/sync/               # CLI-утилита синхронизации Obsidian <-> catalog.yaml <-> планы
+│   └── README.md           # Документация по утилите синхронизации
 ├── .agents/                # Материалы менторинга, карточки задач и разборы
 │   └── skills/
 │       ├── algorithms-mentor/  # Дорожная карта и паттерны
 │       └── yandex-interview/   # Шаблоны и подборка задач собеседований Яндекса
-├── NEETCODE_PLAN_1..6.md   # Детальный трекер тем NeetCode 150
+├── NEETCODE_PLAN_1..7.md   # Детальные трекеры тем NeetCode 150
 ├── Plan. Introduction to Algorithms.md # Базовый 6-месячный план подготовки
 └── catalog.yaml            # Структурированный каталог всех решенных задач
 ```
@@ -111,9 +113,25 @@ go test -bench=. -benchmem ./generics/...
 
 ---
 
+## 🔄 Автоматизация и синхронизация
+
+В проект встроена CLI-утилита **`cmd/sync`**, которая синхронизирует решенные задачи из **Obsidian Vault** с каталогом [catalog.yaml](file:///home/bryack/Documents/algorithms/catalog.yaml) и автоматически генерирует дорожные карты `NEETCODE_PLAN_*.md`:
+
+```bash
+# Синхронизация текущего прогресса:
+rtk go run ./cmd/sync
+
+# Автоматический импорт новых заметок из Obsidian в каталог:
+rtk go run ./cmd/sync -import-orphans
+```
+
+Подробное руководство по конфигурации, структуре заметок и флагам утилиты смотрите в [cmd/sync/README.md](file:///home/bryack/Documents/algorithms/cmd/sync/README.md).
+
+---
+
 ## 📈 Планы и трекеры подготовки
 
 В репозитории зафиксированы подробные трекеры и чек-листы:
 - [Plan. Introduction to Algorithms.md](file:///home/bryack/Documents/algorithms/Plan.%20Introduction%20to%20Algorithms.md) — 6-месячная стратегия и математический фундамент.
-- [NEETCODE_PLAN_1.md](file:///home/bryack/Documents/algorithms/NEETCODE_PLAN_1.md) – [NEETCODE_PLAN_6.md](file:///home/bryack/Documents/algorithms/NEETCODE_PLAN_6.md) — дорожная карта по классическим алгоритмическим темам NeetCode 150.
+- [NEETCODE_PLAN_1.md](file:///home/bryack/Documents/algorithms/NEETCODE_PLAN_1.md) – [NEETCODE_PLAN_7.md](file:///home/bryack/Documents/algorithms/NEETCODE_PLAN_7.md) — дорожные карты по классическим алгоритмическим темам NeetCode 150.
 - [catalog.yaml](file:///home/bryack/Documents/algorithms/catalog.yaml) — единый реестр решенных задач с метаданными.

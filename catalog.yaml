@@ -206,6 +206,91 @@ blocks:
           difficulty: Easy
           pattern: Array / Prefix Min
           group: yandex
+        - leetcode_id: 9
+          title: Palindrome Number
+          difficulty: Easy
+          pattern: array, matrix
+          group: main
+        - leetcode_id: 55
+          title: Jump Game
+          difficulty: Medium
+          pattern: greedy_algorithms
+          group: main
+        - leetcode_id: 58
+          title: Length of Last Word
+          difficulty: Easy
+          pattern: array, strings
+          group: main
+        - leetcode_id: 122
+          title: Best Time to Buy and Sell Stock II
+          difficulty: Medium
+          pattern: greedy_algorithms
+          group: main
+        - leetcode_id: 151
+          title: Reverse Words in a String
+          difficulty: Medium
+          pattern: array, strings
+          group: main
+        - leetcode_id: 290
+          title: Word Pattern
+          difficulty: Easy
+          pattern: array, bijection
+          group: main
+        - leetcode_id: 334
+          title: Increasing Triplet Subsequence
+          difficulty: Medium
+          pattern: array, strings
+          group: main
+        - leetcode_id: 345
+          title: Reverse Vowels of a String
+          difficulty: Easy
+          pattern: strings
+          group: main
+        - leetcode_id: 605
+          title: Can Place Flowers
+          difficulty: Easy
+          pattern: array
+          group: main
+        - leetcode_id: 1071
+          title: Greatest Common Divisor of Strings
+          difficulty: Easy
+          pattern: Euclidean_algorithm, strings
+          group: main
+        - leetcode_id: 1207
+          title: Unique Number of Occurrences
+          difficulty: Easy
+          pattern: array
+          group: main
+        - leetcode_id: 1413
+          title: Minimum Value to Get Positive Step by Step Sum
+          difficulty: Easy
+          pattern: array, prefix_sums
+          group: main
+        - leetcode_id: 1431
+          title: Kids With the Greatest Number of Candies
+          difficulty: Easy
+          pattern: hash
+          group: main
+        - leetcode_id: 1588
+          title: Sum of All Odd Length Subarrays
+          difficulty: Easy
+          pattern: array, prefix_sums
+          group: main
+        - leetcode_id: 1657
+          title: Determine if Two Strings Are Close
+          difficulty: Medium
+          pattern: array, strings
+          group: main
+        - leetcode_id: 1991
+          title: Find the Middle Index in Array
+          difficulty: Easy
+          pattern: prefix_sums
+          group: main
+        - leetcode_id: 2352
+          title: Equal Row and Column Pairs
+          difficulty: Medium
+          pattern: array, matrix
+          group: main
     - id: two_pointers
       title: Two Pointers
       folder: Two_pointers
@@ -378,6 +463,16 @@ blocks:
           difficulty: Medium
           pattern: Two Pointers (start/end)
           group: yandex
+        - leetcode_id: 844
+          title: Backspace String Compare
+          difficulty: Easy
+          pattern: two_pointers
+          group: main
+        - leetcode_id: 1679
+          title: Max Number of K-Sum Pairs
+          difficulty: Easy
+          pattern: two_pointers
+          group: main
     - id: sliding_window
       title: Sliding Window
       folder: Sliding window
@@ -663,6 +758,16 @@ blocks:
           difficulty: Medium
           pattern: Two Pointers (swap lists on reaching end)
           group: main
+        - leetcode_id: 328
+          title: Odd Even Linked List
+          difficulty: Easy
+          pattern: linked_lists
+          group: main
+        - leetcode_id: 2130
+          title: Maximum Twin Sum of a Linked List
+          difficulty: Medium
+          pattern: linked_lists
+          group: main
     - id: stack
       title: Stack
       folder: Stack
@@ -781,7 +886,6 @@ blocks:
         - group: string_funcs
           title: Advanced String Functions / Regex / Clause
       problems:
-        # ---------- Select ----------
         - leetcode_id: 1757
           title: Recyclable and Low Fat Products
           difficulty: Easy
@@ -822,7 +926,6 @@ blocks:
           difficulty: Easy
           pattern: Select (CONCAT)
           group: select
-        # ---------- Basic Joins ----------
         - leetcode_id: 1378
           title: Replace Employee ID With The Unique Identifier
           difficulty: Easy
@@ -868,7 +971,6 @@ blocks:
           difficulty: Medium
           pattern: JOIN (left join, AVG, IF)
           group: joins
-        # ---------- Basic Aggregate Functions ----------
         - leetcode_id: 620
           title: Not Boring Movies
           difficulty: Easy
@@ -909,7 +1011,6 @@ blocks:
           difficulty: Medium
           pattern: Aggregate (DATEDIFF, subquery)
           group: agg
-        # ---------- Sorting and Grouping ----------
         - leetcode_id: 2356
           title: Number of Unique Subjects Taught by Each Teacher
           difficulty: Easy
@@ -945,7 +1046,6 @@ blocks:
           difficulty: Medium
           pattern: Grouping (HAVING COUNT = total)
           group: sorting
-        # ---------- Advanced Select and Joins ----------
         - leetcode_id: 1731
           title: The Number of Employees Which Report to Each Employee
           difficulty: Easy
@@ -981,7 +1081,6 @@ blocks:
           difficulty: Medium
           pattern: CASE + aggregate
           group: advanced
-        # ---------- Subqueries ----------
         - leetcode_id: 1978
           title: Employees Whose Manager Left the Company
           difficulty: Easy
@@ -1017,7 +1116,6 @@ blocks:
           difficulty: Hard
           pattern: Window function (DENSE_RANK)
           group: subqueries
-        # ---------- Advanced String Functions / Regex / Clause ----------
         - leetcode_id: 1667
           title: Fix Names in a Table
           difficulty: Easy
@@ -1053,3 +1151,166 @@ blocks:
           difficulty: Medium
           pattern: Regex (REGEXP_LIKE)
           group: string_funcs
+        - leetcode_id: 175
+          title: Combine Two Tables
+          difficulty: Easy
+          pattern: select, left_join
+          group: main
+        - leetcode_id: 181
+          title: Employees Earning More Than Their Managers
+          difficulty: Easy
+          pattern: select, inner_join
+          group: main
+        - leetcode_id: 182
+          title: Duplicate Emails
+          difficulty: Easy
+          pattern: select, having
+          group: main
+        - leetcode_id: 183
+          title: Customers Who Never Order
+          difficulty: Easy
+          pattern: select, where, subqueries
+          group: main
+        - leetcode_id: 511
+          title: Game Play Analysis I
+          difficulty: Easy
+          pattern: select, where, subqueries
+          group: main
+        - leetcode_id: 586
+          title: Customer Placing the Largest Number of Orders
+          difficulty: Easy
+          pattern: select
+          group: main
+        - leetcode_id: 607
+          title: Sales Person
+          difficulty: Easy
+          pattern: select, where, subqueries
+          group: main
+        - leetcode_id: 627
+          title: Swap Sex of Employees
+          difficulty: Easy
+          pattern: update, set, case
+          group: main
+        - leetcode_id: 1050
+          title: Actors and Directors Who Cooperated At Least Three Times
+          difficulty: Easy
+          pattern: select, having
+          group: main
+        - leetcode_id: 1084
+          title: Sales Analysis III
+          difficulty: Easy
+          pattern: select, having, join
+          group: main
+        - leetcode_id: 1179
+          title: Reformat Department Table
+          difficulty: Easy
+          pattern: select, case
+          group: main
+        - leetcode_id: 3586
+          title: Find COVID Recovery Patients
+          difficulty: Medium
+          pattern: select
+          group: main
+    - id: trees
+      title: Trees
+      folder: Binary Tree
+      plan_file: NEETCODE_PLAN_7.md
+      sections:
+        - group: main
+          title: Основной блок
+      problems:
+        - leetcode_id: 50
+          title: Pow(x, n)
+          difficulty: Medium
+          pattern: recursion, math
+          group: main
+        - leetcode_id: 98
+          title: Validate Binary Search Tree
+          difficulty: Medium
+          pattern: recursion
+          group: main
+        - leetcode_id: 100
+          title: Same Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 101
+          title: Symmetric Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 104
+          title: Maximum Depth of Binary Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 105
+          title: Construct Binary Tree from Preorder and Inorder Traversal
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 110
+          title: Balanced Binary Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 112
+          title: Path Sum
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 226
+          title: Invert Binary Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 236
+          title: Lowest Common Ancestor of a Binary Tree
+          difficulty: Medium
+          pattern: recursion
+          group: main
+        - leetcode_id: 437
+          title: Path Sum III
+          difficulty: Medium
+          pattern: recursion
+          group: main
+        - leetcode_id: 450
+          title: Delete Node in a BST
+          difficulty: Medium
+          pattern: recursion
+          group: main
+        - leetcode_id: 509
+          title: Fibonacci Number
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 530
+          title: Minimum Absolute Difference in BST
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 700
+          title: Search in a Binary Search Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 701
+          title: Insert into a Binary Search Tree
+          difficulty: Medium
+          pattern: recursion
+          group: main
+        - leetcode_id: 872
+          title: Leaf-Similar Trees
+          difficulty: Easy
+          pattern: recursion
+          group: main
+        - leetcode_id: 1372
+          title: Longest ZigZag Path in a Binary Tree
+          difficulty: Medium
+          pattern: recursion
+          group: main
+        - leetcode_id: 1448
+          title: Count Good Nodes in Binary Tree
+          difficulty: Easy
+          pattern: recursion
+          group: main

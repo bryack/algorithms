@@ -6,6 +6,6 @@
 .zcode/
 .zed/
 QWEN.md
-sync
+/sync
 .session_start
 AGENTS.md
