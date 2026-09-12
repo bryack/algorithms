@@ -1,0 +1,11 @@
+.directory
+*.pdf
+
+.serena/
+.qwen/
+.zcode/
+.zed/
+QWEN.md
+sync
+.session_start
+AGENTS.md

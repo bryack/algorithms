@@ -1,0 +1,1055 @@
+version: 1
+vault_root: /home/bryack/Documents/Obsidian/bryack/014_Go/algorithms
+blocks:
+    - id: arrays_hashing
+      title: Arrays & Hashing
+      folder: Arrays_Hashing
+      plan_file: NEETCODE_PLAN_1.md
+      sections:
+        - group: main
+          title: Основной блок
+        - group: yandex
+          title: Задачи с собеседований Яндекс
+      problems:
+        - leetcode_id: 217
+          title: Contains Duplicate
+          difficulty: Easy
+          pattern: Hash Set (map[int]struct{})
+          group: main
+        - leetcode_id: 242
+          title: Valid Anagram
+          difficulty: Easy
+          pattern: Frequency Map / Array [26]int
+          group: main
+        - leetcode_id: 1
+          title: Two Sum
+          difficulty: Easy
+          pattern: HashMap (One-pass)
+          group: main
+        - leetcode_id: 387
+          title: First Unique Char
+          difficulty: Easy
+          pattern: Frequency Counting
+          group: main
+        - leetcode_id: 2351
+          title: First Letter Twice
+          difficulty: Easy
+          pattern: Frequency Counting
+          group: main
+        - leetcode_id: 49
+          title: Group Anagrams
+          difficulty: Medium
+          pattern: Categorization / Map Keys
+          group: main
+        - leetcode_id: 205
+          title: Isomorphic Strings
+          difficulty: Easy
+          pattern: String Normalization / Mapping
+          group: main
+        - leetcode_id: 219
+          title: Contains Duplicate II
+          difficulty: Easy
+          pattern: Sliding Window / HashMap
+          group: main
+        - leetcode_id: 1002
+          title: Find Common Chars
+          difficulty: Easy
+          pattern: Frequency Intersection
+          group: main
+        - leetcode_id: 350
+          title: Intersection of Two Arrays II
+          difficulty: Easy
+          pattern: Frequency Counting / Intersection
+          group: main
+        - leetcode_id: 383
+          title: Ransom Note
+          difficulty: Easy
+          pattern: Frequency Counting / Sufficiency
+          group: main
+        - leetcode_id: 1189
+          title: Max Num of Balloons
+          difficulty: Easy
+          pattern: Frequency Counting / Limiting Factor
+          group: main
+        - leetcode_id: 347
+          title: Top K Frequent Elements
+          difficulty: Medium
+          pattern: Bucket Sort / Heap
+          group: main
+        - leetcode_id: 451
+          title: Sort Characters By Frequency
+          difficulty: Medium
+          pattern: Bucket Sort / String Building
+          group: main
+        - leetcode_id: 1636
+          title: Sort Array by Inc Frequency
+          difficulty: Easy
+          pattern: Bucket Sort / Custom Sort
+          group: main
+        - leetcode_id: 692
+          title: Top K Frequent Words
+          difficulty: Medium
+          pattern: Bucket Sort / Lexicographical Sort
+          group: main
+        - leetcode_id: 238
+          title: Product of Array Except Self
+          difficulty: Medium
+          pattern: Prefix & Suffix Products
+          group: main
+        - leetcode_id: 303
+          title: Range Sum Query - Immutable
+          difficulty: Easy
+          pattern: Prefix Sums
+          group: main
+        - leetcode_id: 1480
+          title: Running Sum of 1d Array
+          difficulty: Easy
+          pattern: Prefix Sum
+          group: main
+        - leetcode_id: 1732
+          title: Find the Highest Altitude
+          difficulty: Easy
+          pattern: Prefix Sum
+          group: main
+        - leetcode_id: 724
+          title: Find Pivot Index
+          difficulty: Easy
+          pattern: Prefix Sum
+          group: main
+        - leetcode_id: 560
+          title: Subarray Sum Equals K
+          difficulty: Medium
+          pattern: Prefix Sums + HashMap
+          group: main
+        - leetcode_id: 525
+          title: Contiguous Array
+          difficulty: Medium
+          pattern: Prefix Sums (0 as -1)
+          group: main
+        - leetcode_id: 128
+          title: Longest Consecutive Sequence
+          difficulty: Medium
+          pattern: Intelligent HashSet Search
+          group: main
+        - leetcode_id: 202
+          title: Happy Number
+          difficulty: Easy
+          pattern: HashSet / Floyd
+          group: main
+        - leetcode_id: 36
+          title: Valid Sudoku
+          difficulty: Medium
+          pattern: Matrix / HashSet
+          group: main
+        - leetcode_id: 532
+          title: K-diff Pairs in an Array
+          difficulty: Medium
+          pattern: HashSet / Two Pointers
+          group: main
+        - leetcode_id: 380
+          title: Insert Delete GetRandom O(1)
+          difficulty: Medium
+          pattern: Map + Dynamic Array
+          group: main
+        - leetcode_id: 14
+          title: Longest Common Prefix
+          difficulty: Easy
+          pattern: String (vertical/horizontal scanning)
+          group: main
+        - leetcode_id: 169
+          title: Majority Element
+          difficulty: Easy
+          pattern: Boyer-Moore Voting / HashMap
+          group: main
+        - leetcode_id: 170
+          title: Two Sum III - Data structure design
+          difficulty: Easy
+          pattern: HashMap Design
+          group: main
+        - leetcode_id: 1929
+          title: Concatenation of Array
+          difficulty: Easy
+          pattern: Array
+          group: main
+        - leetcode_id: 706
+          title: Design HashMap
+          difficulty: Easy
+          pattern: HashMap Design (array of buckets)
+          group: main
+        - leetcode_id: 2215
+          title: Find the Difference of Two Arrays
+          difficulty: Easy
+          pattern: HashSet Difference
+          group: yandex
+        - leetcode_id: 1436
+          title: Destination City
+          difficulty: Easy
+          pattern: HashSet (single sink)
+          group: yandex
+        - leetcode_id: 1496
+          title: Path Crossing
+          difficulty: Easy
+          pattern: HashSet (visited points)
+          group: yandex
+        - leetcode_id: 136
+          title: Single Number
+          difficulty: Easy
+          pattern: Bit Manipulation / HashSet
+          group: yandex
+        - leetcode_id: 485
+          title: Max Consecutive Ones
+          difficulty: Easy
+          pattern: Array (linear scan)
+          group: yandex
+        - leetcode_id: 121
+          title: Best Time to Buy and Sell Stock
+          difficulty: Easy
+          pattern: Array / Prefix Min
+          group: yandex
+    - id: two_pointers
+      title: Two Pointers
+      folder: Two_pointers
+      plan_file: NEETCODE_PLAN_2.md
+      sections:
+        - group: main
+          title: Основной блок
+        - group: bonus
+          title: Bonus (NeetCode 150, уже решены)
+        - group: yandex
+          title: 'Дополнительная практика: Палиндромы'
+      problems:
+        - leetcode_id: 344
+          title: Reverse String
+          difficulty: Easy
+          pattern: Two Pointers (swap in-place)
+          group: main
+        - leetcode_id: 125
+          title: Valid Palindrome
+          difficulty: Easy
+          pattern: Two Pointers (left/right)
+          group: main
+        - leetcode_id: 680
+          title: Valid Palindrome II
+          difficulty: Easy
+          pattern: Two Pointers (left/right, skip check)
+          group: main
+        - leetcode_id: 1768
+          title: Merge Strings Alternately
+          difficulty: Easy
+          pattern: Two Pointers (interleave)
+          group: main
+        - leetcode_id: 88
+          title: Merge Sorted Array
+          difficulty: Easy
+          pattern: Two Pointers (fill from end)
+          group: main
+        - leetcode_id: 392
+          title: Is Subsequence
+          difficulty: Easy
+          pattern: Two Pointers (converging check)
+          group: main
+        - leetcode_id: 26
+          title: Remove Duplicates from Sorted Array
+          difficulty: Easy
+          pattern: Two Pointers (fast & slow, overwrite)
+          group: main
+        - leetcode_id: 167
+          title: Two Sum II - Input Array Is Sorted
+          difficulty: Medium
+          pattern: Two Pointers (sorted array, converge)
+          group: main
+        - leetcode_id: 15
+          title: 3Sum
+          difficulty: Medium
+          pattern: Two Pointers + Sorting
+          group: main
+        - leetcode_id: 18
+          title: 4Sum
+          difficulty: Medium
+          pattern: Two Pointers + Sorting
+          group: main
+        - leetcode_id: 189
+          title: Rotate Array
+          difficulty: Medium
+          pattern: Two Pointers / Reverse
+          group: main
+        - leetcode_id: 11
+          title: Container With Most Water
+          difficulty: Medium
+          pattern: Two Pointers (maximization)
+          group: main
+        - leetcode_id: 881
+          title: Boats to Save People
+          difficulty: Medium
+          pattern: Two Pointers (greedy pairing)
+          group: main
+        - leetcode_id: 42
+          title: Trapping Rain Water
+          difficulty: Hard
+          pattern: Two Pointers / Prefix Max
+          group: main
+        - leetcode_id: 283
+          title: Move Zeroes
+          difficulty: Easy
+          pattern: Two Pointers (fast & slow)
+          group: bonus
+        - leetcode_id: 977
+          title: Squares of a Sorted Array
+          difficulty: Easy
+          pattern: Two Pointers (fill from end)
+          group: bonus
+        - leetcode_id: 917
+          title: Reverse Only Letters
+          difficulty: Easy
+          pattern: Two Pointers (swap letters, skip non-letters)
+          group: yandex
+        - leetcode_id: 5
+          title: Longest Palindromic Substring
+          difficulty: Medium
+          pattern: Two Pointers (expand around center)
+          group: yandex
+        - leetcode_id: 647
+          title: Palindromic Substrings
+          difficulty: Medium
+          pattern: Two Pointers (expand around center, count)
+          group: yandex
+        - leetcode_id: 228
+          title: Summary Ranges
+          difficulty: Easy
+          pattern: Two Pointers (consecutive range tracking)
+          group: yandex
+        - leetcode_id: 443
+          title: String Compression
+          difficulty: Medium
+          pattern: Two Pointers (fast & slow, in-place overwrite)
+          group: yandex
+        - leetcode_id: 161
+          title: One Edit Distance
+          difficulty: Medium
+          pattern: Two Pointers (compare strings with one allowed edit)
+          group: yandex
+        - leetcode_id: 986
+          title: Interval List Intersections
+          difficulty: Medium
+          pattern: Two Pointers (two sorted interval lists)
+          group: yandex
+        - leetcode_id: 557
+          title: Reverse Words in a String III
+          difficulty: Easy
+          pattern: Two Pointers (reverse each word in-place)
+          group: yandex
+        - leetcode_id: 415
+          title: Add Strings
+          difficulty: Easy
+          pattern: Two Pointers (add digit strings from end with carry)
+          group: yandex
+        - leetcode_id: 27
+          title: Remove Element
+          difficulty: Easy
+          pattern: Two Pointers
+          group: yandex
+        - leetcode_id: 349
+          title: Intersection of Two Arrays
+          difficulty: Easy
+          pattern: Two Pointers / Sorting
+          group: yandex
+        - leetcode_id: 350
+          title: Intersection of Two Arrays II
+          difficulty: Easy
+          pattern: Two Pointers / Sorting
+          group: yandex
+        - leetcode_id: 80
+          title: Remove Duplicates from Sorted Array II
+          difficulty: Medium
+          pattern: Two Pointers
+          group: yandex
+        - leetcode_id: 234
+          title: Palindrome Linked List
+          difficulty: Easy
+          pattern: Two Pointers
+          group: yandex
+        - leetcode_id: 28
+          title: Find the Index of the First Occurrence in a String
+          difficulty: Easy
+          pattern: Two Pointers
+          group: yandex
+        - leetcode_id: 253
+          title: Meeting Rooms II
+          difficulty: Medium
+          pattern: Two Pointers (start/end)
+          group: yandex
+    - id: sliding_window
+      title: Sliding Window
+      folder: Sliding window
+      plan_file: NEETCODE_PLAN_3.md
+      sections:
+        - group: main
+          title: Основной блок
+        - group: yandex
+          title: 'Дополнительная практика: Задачи с собеседований Яндекс'
+      problems:
+        - leetcode_id: 643
+          title: Maximum Average Subarray I
+          difficulty: Easy
+          pattern: Fixed-size Sliding Window
+          group: main
+        - leetcode_id: 1343
+          title: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window (count valid)
+          group: main
+        - leetcode_id: 2090
+          title: K Radius Subarray Averages
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window (radius average)
+          group: main
+        - leetcode_id: 2461
+          title: Maximum Sum of Distinct Subarrays With Length K
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window + distinct
+          group: main
+        - leetcode_id: 1456
+          title: Maximum Number of Vowels in a Substring of Given Length
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window (string counter)
+          group: main
+        - leetcode_id: 2379
+          title: Minimum Recolors to Get K Consecutive Black Blocks
+          difficulty: Easy
+          pattern: Fixed-size Sliding Window (min ops)
+          group: main
+        - leetcode_id: 1876
+          title: Substrings of Size Three with Distinct Characters
+          difficulty: Easy
+          pattern: Fixed-size Sliding Window (size 3)
+          group: main
+        - leetcode_id: 2653
+          title: Sliding Subarray Beauty
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window (order stat)
+          group: main
+        - leetcode_id: 1423
+          title: Maximum Points You Can Obtain from Cards
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window (edges)
+          group: main
+        - leetcode_id: 3
+          title: Longest Substring Without Repeating Characters
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (distinct chars)
+          group: main
+        - leetcode_id: 209
+          title: Minimum Size Subarray Sum
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (sum >= target)
+          group: main
+        - leetcode_id: 1004
+          title: Max Consecutive Ones III
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (at most K flips)
+          group: main
+        - leetcode_id: 1493
+          title: Longest Subarray of 1's After Deleting One Element
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (at most 1 zero)
+          group: main
+        - leetcode_id: 904
+          title: Fruit Into Baskets
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (at most 2 distinct)
+          group: main
+        - leetcode_id: 424
+          title: Longest Repeating Character Replacement
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (max freq)
+          group: main
+        - leetcode_id: 567
+          title: Permutation in String
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window + Frequency
+          group: main
+        - leetcode_id: 438
+          title: Find All Anagrams in a String
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window + Frequency
+          group: main
+        - leetcode_id: 76
+          title: Minimum Window Substring
+          difficulty: Hard
+          pattern: Dynamic Sliding Window (minimal valid)
+          group: main
+        - leetcode_id: 239
+          title: Sliding Window Maximum
+          difficulty: Hard
+          pattern: Monotonic Deque
+          group: main
+        - leetcode_id: 487
+          title: Max Consecutive Ones II
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (at most 1 zero flip)
+          group: yandex
+        - leetcode_id: 159
+          title: Longest Substring with At Most Two Distinct Characters
+          difficulty: Medium
+          pattern: Dynamic Sliding Window (at most 2 distinct)
+          group: yandex
+        - leetcode_id: 658
+          title: Find K Closest Elements
+          difficulty: Medium
+          pattern: Two Pointers / Sliding Window
+          group: yandex
+        - leetcode_id: 340
+          title: Longest Substring with At Most K Distinct Characters
+          difficulty: Medium
+          pattern: Sliding Window
+          group: yandex
+        - leetcode_id: 220
+          title: Contains Duplicate III
+          difficulty: Hard
+          pattern: Sliding Window (bucket/ordered set)
+          group: yandex
+        - leetcode_id: 395
+          title: Longest Substring with At Least K Repeating Characters
+          difficulty: Medium
+          pattern: Sliding Window / Divide and Conquer
+          group: yandex
+        - leetcode_id: 2024
+          title: Maximize the Confusion of an Exam
+          difficulty: Medium
+          pattern: Non-shrinking Window (lazy max, аналог LC 1004/424)
+          group: yandex
+        - leetcode_id: 1151
+          title: Minimum Swaps to Group All 1's Together
+          difficulty: Medium
+          pattern: Fixed-size Sliding Window (min zeros in window)
+          group: yandex
+        - leetcode_id: 1438
+          title: Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+          difficulty: Hard
+          pattern: Sliding Window + Monotonic Deque (lazy min/max)
+          group: yandex
+        - leetcode_id: 862
+          title: Shortest Subarray with Sum at Least K
+          difficulty: Hard
+          pattern: Sliding Window + Monotonic Deque
+          group: yandex
+        - leetcode_id: 713
+          title: Subarray Product Less Than K
+          difficulty: Medium
+          pattern: Sliding Window (incremental product update)
+          group: yandex
+    - id: linked_list
+      title: Linked List
+      folder: Linked List
+      plan_file: NEETCODE_PLAN_4.md
+      sections:
+        - group: main
+          title: 'Основной блок: Linked List'
+        - group: yandex
+          title: 'Дополнительная практика: Задачи с собеседований Яндекс'
+      problems:
+        - leetcode_id: 206
+          title: Reverse Linked List
+          difficulty: Easy
+          pattern: Iterative Reversal (prev/curr/next)
+          group: main
+        - leetcode_id: 92
+          title: Reverse Linked List II
+          difficulty: Medium
+          pattern: Reverse Sublist (left/right bounds)
+          group: main
+        - leetcode_id: 876
+          title: Middle of the Linked List
+          difficulty: Easy
+          pattern: Two Pointers (fast/slow)
+          group: main
+        - leetcode_id: 2095
+          title: Delete the Middle Node of a Linked List
+          difficulty: Medium
+          pattern: Two Pointers (fast/slow)
+          group: main
+        - leetcode_id: 19
+          title: Remove Nth Node From End of List
+          difficulty: Medium
+          pattern: Two Pointers (gap n)
+          group: main
+        - leetcode_id: 83
+          title: Remove Duplicates from Sorted List
+          difficulty: Easy
+          pattern: Two Pointers (skip duplicates)
+          group: main
+        - leetcode_id: 203
+          title: Remove Linked List Elements
+          difficulty: Easy
+          pattern: Dummy Node / Two Pointers
+          group: main
+        - leetcode_id: 237
+          title: Delete Node in a Linked List
+          difficulty: Medium
+          pattern: Node Copy Trick
+          group: main
+        - leetcode_id: 21
+          title: Merge Two Sorted Lists
+          difficulty: Easy
+          pattern: Two Pointers (merge)
+          group: main
+        - leetcode_id: 24
+          title: Swap Nodes in Pairs
+          difficulty: Medium
+          pattern: Two Pointers (pair swap)
+          group: main
+        - leetcode_id: 143
+          title: Reorder List
+          difficulty: Medium
+          pattern: Find Middle + Reverse + Merge
+          group: main
+        - leetcode_id: 141
+          title: Linked List Cycle
+          difficulty: Easy
+          pattern: Floyd's Cycle Detection (fast/slow)
+          group: main
+        - leetcode_id: 287
+          title: Find the Duplicate Number
+          difficulty: Medium
+          pattern: Floyd's Cycle Detection
+          group: main
+        - leetcode_id: 234
+          title: Palindrome Linked List
+          difficulty: Easy
+          pattern: Two Pointers + Reverse (middle)
+          group: main
+        - leetcode_id: 2
+          title: Add Two Numbers
+          difficulty: Medium
+          pattern: Two Pointers + Carry
+          group: main
+        - leetcode_id: 138
+          title: Copy List with Random Pointer
+          difficulty: Medium
+          pattern: HashMap / Interweave
+          group: main
+        - leetcode_id: 61
+          title: Rotate List
+          difficulty: Medium
+          pattern: Two Pointers (k mod n)
+          group: main
+        - leetcode_id: 707
+          title: Design Linked List
+          difficulty: Medium
+          pattern: Singly/Doubly Linked List Design
+          group: main
+        - leetcode_id: 146
+          title: LRU Cache
+          difficulty: Medium
+          pattern: HashMap + Doubly Linked List
+          group: main
+        - leetcode_id: 460
+          title: LFU Cache
+          difficulty: Hard
+          pattern: HashMap + Frequency Buckets
+          group: main
+        - leetcode_id: 23
+          title: Merge k Sorted Lists
+          difficulty: Hard
+          pattern: Linked List + Divide and Conquer / Heap
+          group: yandex
+        - leetcode_id: 622
+          title: Design Circular Queue
+          difficulty: Medium
+          pattern: Array-based Circular Queue
+          group: yandex
+        - leetcode_id: 160
+          title: Intersection of Two Linked Lists
+          difficulty: Medium
+          pattern: Two Pointers (swap lists on reaching end)
+          group: main
+    - id: stack
+      title: Stack
+      folder: Stack
+      plan_file: NEETCODE_PLAN_5.md
+      sections:
+        - group: main
+          title: Основной блок
+      problems:
+        - leetcode_id: 20
+          title: Valid Parentheses
+          difficulty: Easy
+          pattern: Stack (bracket matching)
+          group: main
+        - leetcode_id: 22
+          title: Generate Parentheses
+          difficulty: Medium
+          pattern: Stack / Backtracking
+          group: main
+        - leetcode_id: 71
+          title: Simplify Path
+          difficulty: Medium
+          pattern: Stack (path components)
+          group: main
+        - leetcode_id: 84
+          title: Largest Rectangle In Histogram
+          difficulty: Hard
+          pattern: Monotonic Stack
+          group: main
+        - leetcode_id: 150
+          title: Evaluate Reverse Polish Notation
+          difficulty: Medium
+          pattern: Stack (postfix evaluation)
+          group: main
+        - leetcode_id: 155
+          title: Min Stack
+          difficulty: Medium
+          pattern: Stack with Min Tracking
+          group: main
+        - leetcode_id: 225
+          title: Implement Stack Using Queues
+          difficulty: Easy
+          pattern: Queue-based Stack Design
+          group: main
+        - leetcode_id: 232
+          title: Implement Queue using Stacks
+          difficulty: Easy
+          pattern: Stack-based Queue Design
+          group: main
+        - leetcode_id: 394
+          title: Decode String
+          difficulty: Medium
+          pattern: Stack (nested decoding)
+          group: main
+        - leetcode_id: 682
+          title: Baseball Game
+          difficulty: Easy
+          pattern: Stack (score ops)
+          group: main
+        - leetcode_id: 735
+          title: Asteroid Collision
+          difficulty: Medium
+          pattern: Stack (collision simulation)
+          group: main
+        - leetcode_id: 739
+          title: Daily Temperatures
+          difficulty: Medium
+          pattern: Monotonic Stack
+          group: main
+        - leetcode_id: 853
+          title: Car Fleet
+          difficulty: Medium
+          pattern: Stack / Sorting
+          group: main
+        - leetcode_id: 895
+          title: Maximum Frequency Stack
+          difficulty: Hard
+          pattern: Stack + Frequency Map
+          group: main
+        - leetcode_id: 901
+          title: Online Stock Span
+          difficulty: Medium
+          pattern: Monotonic Stack
+          group: main
+        - leetcode_id: 2390
+          title: Removing Stars From a String
+          difficulty: Medium
+          pattern: Stack (char filtering)
+          group: main
+        - leetcode_id: 1047
+          title: Remove All Adjacent Duplicates In String
+          difficulty: Easy
+          pattern: Stack (char filtering)
+          group: main
+        - leetcode_id: 224
+          title: Basic Calculator
+          difficulty: Hard
+          pattern: Stack (expression evaluation with parentheses, sign handling)
+          group: main
+    - id: sql
+      title: SQL
+      folder: SQL
+      plan_file: NEETCODE_PLAN_6.md
+      sections:
+        - group: select
+          title: Select
+        - group: joins
+          title: Basic Joins
+        - group: agg
+          title: Basic Aggregate Functions
+        - group: sorting
+          title: Sorting and Grouping
+        - group: advanced
+          title: Advanced Select and Joins
+        - group: subqueries
+          title: Subqueries
+        - group: string_funcs
+          title: Advanced String Functions / Regex / Clause
+      problems:
+        # ---------- Select ----------
+        - leetcode_id: 1757
+          title: Recyclable and Low Fat Products
+          difficulty: Easy
+          pattern: Select (WHERE)
+          group: select
+        - leetcode_id: 584
+          title: Find Customer Referee
+          difficulty: Easy
+          pattern: Select (WHERE, NULL handling)
+          group: select
+        - leetcode_id: 595
+          title: Big Countries
+          difficulty: Easy
+          pattern: Select (WHERE, multiple conditions)
+          group: select
+        - leetcode_id: 1148
+          title: Article Views I
+          difficulty: Easy
+          pattern: Select (DISTINCT, WHERE)
+          group: select
+        - leetcode_id: 1683
+          title: Invalid Tweets
+          difficulty: Easy
+          pattern: Select (WHERE, string length)
+          group: select
+        - leetcode_id: 3436
+          title: Find Valid Emails
+          difficulty: Easy
+          pattern: Select (WHERE, REGEXP)
+          group: select
+        - leetcode_id: 1241
+          title: Number of Comments per Post
+          difficulty: Easy
+          pattern: Aggregate (COUNT, GROUP BY)
+          group: select
+        - leetcode_id: 2504
+          title: Concatenate the Name and the Profession
+          difficulty: Easy
+          pattern: Select (CONCAT)
+          group: select
+        # ---------- Basic Joins ----------
+        - leetcode_id: 1378
+          title: Replace Employee ID With The Unique Identifier
+          difficulty: Easy
+          pattern: JOIN (left join)
+          group: joins
+        - leetcode_id: 1068
+          title: Product Sales Analysis I
+          difficulty: Easy
+          pattern: JOIN (inner join)
+          group: joins
+        - leetcode_id: 1581
+          title: Customer Who Visited but Did Not Make Any Transactions
+          difficulty: Easy
+          pattern: JOIN (left join, filter NULL)
+          group: joins
+        - leetcode_id: 197
+          title: Rising Temperature
+          difficulty: Easy
+          pattern: JOIN (self join, date diff)
+          group: joins
+        - leetcode_id: 1661
+          title: Average Time of Process per Machine
+          difficulty: Easy
+          pattern: JOIN (self join, AVG)
+          group: joins
+        - leetcode_id: 577
+          title: Employee Bonus
+          difficulty: Easy
+          pattern: JOIN (left join, filter NULL)
+          group: joins
+        - leetcode_id: 1280
+          title: Students and Examinations
+          difficulty: Hard
+          pattern: JOIN (cross join + left join, COUNT)
+          group: joins
+        - leetcode_id: 570
+          title: Managers with at Least 5 Direct Reports
+          difficulty: Medium
+          pattern: JOIN (self join, GROUP BY HAVING)
+          group: joins
+        - leetcode_id: 1934
+          title: Confirmation Rate
+          difficulty: Medium
+          pattern: JOIN (left join, AVG, IF)
+          group: joins
+        # ---------- Basic Aggregate Functions ----------
+        - leetcode_id: 620
+          title: Not Boring Movies
+          difficulty: Easy
+          pattern: Aggregate (WHERE + ORDER BY)
+          group: agg
+        - leetcode_id: 1251
+          title: Average Selling Price
+          difficulty: Medium
+          pattern: Aggregate (AVG, JOIN, BETWEEN)
+          group: agg
+        - leetcode_id: 1075
+          title: Project Employees I
+          difficulty: Easy
+          pattern: Aggregate (AVG, JOIN)
+          group: agg
+        - leetcode_id: 1633
+          title: Percentage of Users Attended a Contest
+          difficulty: Medium
+          pattern: Aggregate (COUNT, GROUP BY, ROUND)
+          group: agg
+        - leetcode_id: 1211
+          title: Queries Quality and Percentage
+          difficulty: Medium
+          pattern: Aggregate (AVG, ROUND)
+          group: agg
+        - leetcode_id: 1193
+          title: Monthly Transactions I
+          difficulty: Medium
+          pattern: Aggregate (COUNT, SUM, GROUP BY)
+          group: agg
+        - leetcode_id: 1174
+          title: Immediate Food Delivery II
+          difficulty: Medium
+          pattern: Aggregate (AVG, subquery)
+          group: agg
+        - leetcode_id: 550
+          title: Game Play Analysis IV
+          difficulty: Medium
+          pattern: Aggregate (DATEDIFF, subquery)
+          group: agg
+        # ---------- Sorting and Grouping ----------
+        - leetcode_id: 2356
+          title: Number of Unique Subjects Taught by Each Teacher
+          difficulty: Easy
+          pattern: Aggregate (COUNT DISTINCT, GROUP BY)
+          group: sorting
+        - leetcode_id: 1141
+          title: User Activity for the Past 30 Days I
+          difficulty: Easy
+          pattern: Sorting (WHERE date range)
+          group: sorting
+        - leetcode_id: 1070
+          title: Product Sales Analysis III
+          difficulty: Medium
+          pattern: Subquery (MIN, GROUP BY)
+          group: sorting
+        - leetcode_id: 596
+          title: Classes With at Least 5 Students
+          difficulty: Easy
+          pattern: Grouping (GROUP BY HAVING)
+          group: sorting
+        - leetcode_id: 1729
+          title: Find Followers Count
+          difficulty: Easy
+          pattern: Aggregate (COUNT, GROUP BY)
+          group: sorting
+        - leetcode_id: 619
+          title: Biggest Single Number
+          difficulty: Hard
+          pattern: Subquery (MAX of singletons)
+          group: sorting
+        - leetcode_id: 1045
+          title: Customers Who Bought All Products
+          difficulty: Medium
+          pattern: Grouping (HAVING COUNT = total)
+          group: sorting
+        # ---------- Advanced Select and Joins ----------
+        - leetcode_id: 1731
+          title: The Number of Employees Which Report to Each Employee
+          difficulty: Easy
+          pattern: JOIN (self join, aggregate)
+          group: advanced
+        - leetcode_id: 1789
+          title: Primary Department for Each Employee
+          difficulty: Medium
+          pattern: Subquery (UNION + filter)
+          group: advanced
+        - leetcode_id: 610
+          title: Triangle Judgement
+          difficulty: Easy
+          pattern: Select (WHERE, CASE)
+          group: advanced
+        - leetcode_id: 180
+          title: Consecutive Numbers
+          difficulty: Medium
+          pattern: JOIN (self join x3)
+          group: advanced
+        - leetcode_id: 1164
+          title: Product Price at a Given Date
+          difficulty: Medium
+          pattern: Subquery (window/filtered)
+          group: advanced
+        - leetcode_id: 1204
+          title: Last Person to Fit in the Bus
+          difficulty: Hard
+          pattern: Window function (running sum)
+          group: advanced
+        - leetcode_id: 1907
+          title: Count Salary Categories
+          difficulty: Medium
+          pattern: CASE + aggregate
+          group: advanced
+        # ---------- Subqueries ----------
+        - leetcode_id: 1978
+          title: Employees Whose Manager Left the Company
+          difficulty: Easy
+          pattern: Subquery (NOT IN)
+          group: subqueries
+        - leetcode_id: 626
+          title: Exchange Seats
+          difficulty: Medium
+          pattern: Subquery (CASE, MOD)
+          group: subqueries
+        - leetcode_id: 1341
+          title: Movie Rating
+          difficulty: Medium
+          pattern: Subquery (ORDER BY LIMIT)
+          group: subqueries
+        - leetcode_id: 1321
+          title: Restaurant Growth
+          difficulty: Medium
+          pattern: Window function (running pct)
+          group: subqueries
+        - leetcode_id: 602
+          title: 'Friend Requests II: Who Has the Most Friends'
+          difficulty: Medium
+          pattern: Aggregate (UNION ALL, COUNT)
+          group: subqueries
+        - leetcode_id: 585
+          title: Investments in 2016
+          difficulty: Medium
+          pattern: Subquery (COUNT, filter)
+          group: subqueries
+        - leetcode_id: 185
+          title: Department Top Three Salaries
+          difficulty: Hard
+          pattern: Window function (DENSE_RANK)
+          group: subqueries
+        # ---------- Advanced String Functions / Regex / Clause ----------
+        - leetcode_id: 1667
+          title: Fix Names in a Table
+          difficulty: Easy
+          pattern: String (UPPER, LOWER, CONCAT)
+          group: string_funcs
+        - leetcode_id: 1527
+          title: Patients With a Condition
+          difficulty: Medium
+          pattern: String (LIKE, pattern)
+          group: string_funcs
+        - leetcode_id: 196
+          title: Delete Duplicate Emails
+          difficulty: Easy
+          pattern: DELETE + self join
+          group: string_funcs
+        - leetcode_id: 176
+          title: Second Highest Salary
+          difficulty: Medium
+          pattern: Subquery (MAX, IFNULL)
+          group: string_funcs
+        - leetcode_id: 1484
+          title: Group Sold Products By The Date
+          difficulty: Easy
+          pattern: Aggregate (GROUP_CONCAT)
+          group: string_funcs
+        - leetcode_id: 1327
+          title: List the Products Ordered in a Period
+          difficulty: Easy
+          pattern: JOIN + HAVING
+          group: string_funcs
+        - leetcode_id: 1517
+          title: Find Users With Valid E-Mails
+          difficulty: Medium
+          pattern: Regex (REGEXP_LIKE)
+          group: string_funcs
