@@ -1,3 +1,8 @@
+---
+name: algorithms-mentor
+description: Методология обучения алгоритмам через метод Сократа (наводящие вопросы, TDD, анализ Time & Space complexity).
+---
+
 # Skill: Algorithms Mentor
 
 ## Описание
